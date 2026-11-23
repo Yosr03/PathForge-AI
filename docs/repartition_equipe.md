@@ -1,18 +1,32 @@
 # Répartition de l'équipe — PathForge AI
 
+## Organisation des responsabilités, livrables et collaboration technique
+
+**Projet :** PathForge AI — Plateforme intelligente d'orientation professionnelle par Hybrid RAG et GraphRAG
+
+**Équipe :** 3 membres
+
+**Dépôt GitHub principal :** https://github.com/Yosr03/PathForge-AI
+
+**État d'avancement documenté :** Séances 1 et 2
+
+---
+
 ## 1. Composition de l'équipe
 
-Le projet PathForge AI est réalisé par trois membres, chacun responsable d'un module d'intelligence artificielle.
+Le projet PathForge AI est réalisé par trois membres, chacun responsable d'un module d'intelligence artificielle complémentaire.
 
 | Membre | Rôle principal | Module |
 |---|---|---|
-| **Essaied Nour** | Lead Career Copilot & Recommendation AI | LLM, orchestration GraphRAG, analyse des écarts et recommandations |
-| **Fourati Yosr** | Lead Job & Career Intelligence AI | Analyse des offres, recherche hybride, Neo4j et Graph Retrieval |
+| **Essaied Nour** | Lead Career Copilot & Recommendation AI | LLM, orchestration RAG/GraphRAG, analyse des écarts et recommandations |
+| **Fourati Yosr** | Lead Job & Career Intelligence AI | Analyse des métiers et offres, recherche hybride, Neo4j et Graph Retrieval |
 | **Trabelsi Nidhal** | Lead Profile Intelligence AI | CV Parsing, extraction LLM, Document RAG et analyse du profil |
 
-L'organisation vise une répartition équilibrée du travail, en permettant à chaque membre de contribuer directement au développement des composants IA, LLM et RAG.
+Cette organisation vise une répartition équilibrée, permettant à chaque membre de contribuer au développement de composants IA, NLP, LLM et RAG.
 
-Chaque membre est responsable de son module, depuis le traitement des données jusqu'aux API et à l'intégration dans la plateforme commune.
+Chaque membre est responsable de son module, de la préparation des données à la validation des résultats, en passant par les traitements et les API.
+
+Les composants partagés, l'intégration et la démonstration finale relèvent de la responsabilité collective.
 
 ---
 
@@ -22,24 +36,41 @@ Chaque membre est responsable de son module, depuis le traitement des données j
 
 **Spécialité : LLM + Document RAG**
 
-**Objectif :** comprendre le profil académique et professionnel de l'étudiant.
+**Objectif :** comprendre le profil académique et professionnel de l'étudiant à partir de ses documents et expériences.
 
 **Responsabilités :**
 
-- Développement du système de parsing des CV.
-- Extraction des informations des projets et stages.
-- Utilisation du LLM pour extraire les compétences, expériences et formations.
-- Développement du Document RAG appliqué au profil étudiant.
-- Utilisation de la recherche hybride Qdrant + BM25 via le moteur de recherche commun.
-- Analyse et classification des compétences du candidat.
-- Normalisation des compétences avec ESCO.
-- Identification des preuves associées aux compétences.
-- Développement de l'API Profile Analysis.
-- Développement de l'interface de consultation du profil.
+1. Développer le système de CV Parsing.
+2. Extraire les informations issues des projets et des stages.
+3. Utiliser un LLM pour identifier les compétences, expériences et formations.
+4. Normaliser les compétences extraites à l'aide du référentiel ESCO.
+5. Développer un Document RAG appliqué aux documents du profil.
+6. Exploiter le moteur commun de recherche hybride Qdrant + BM25.
+7. Analyser et structurer les compétences de l'étudiant.
+8. Distinguer les compétences déclarées des compétences documentées.
+9. Conserver les preuves et références associées aux compétences.
+10. Développer l'API Profile Analysis avec FastAPI.
+11. Contribuer à l'interface React de consultation du profil.
+12. Évaluer la qualité de l'extraction et de la structuration.
 
-**Livrable :** un module permettant d'importer un CV et de produire un profil candidat structuré, contenant les compétences, expériences, formations et preuves disponibles.
+**Datasets principaux :**
 
-**Sortie :** `StudentProfile`
+- CV fictifs ou autorisés.
+- Descriptions de projets académiques.
+- Expériences de stages.
+- Référentiel ESCO pour la normalisation.
+
+**Technologies envisagées :**
+
+Python, LLM, Document RAG, Qdrant, BM25, FastAPI, Pydantic et React.
+
+**Livrable attendu :**
+
+Un module permettant à l'étudiant d'importer son CV et ses expériences afin d'obtenir un profil structuré, contenant ses compétences, formations, expériences et preuves documentaires.
+
+**Contrat de sortie :** `StudentProfile`
+
+**État actuel :** module fonctionnel à développer. Le pipeline ESCO–Qdrant déjà réalisé constitue un socle réutilisable pour la normalisation et la recherche.
 
 ---
 
@@ -47,26 +78,61 @@ Chaque membre est responsable de son module, depuis le traitement des données j
 
 **Spécialité : LLM + Hybrid RAG + GraphRAG**
 
-**Objectif :** comprendre les métiers, les offres d'emploi et les exigences professionnelles.
+**Objectif :** comprendre les métiers, les offres d'emploi et les relations entre compétences et exigences professionnelles.
 
 **Responsabilités :**
 
-- Préparation et validation des datasets ESCO et LinkedIn Job Postings.
-- Analyse des descriptions d'offres avec un LLM.
-- Extraction des compétences requises pour chaque métier.
-- Normalisation des compétences professionnelles avec ESCO.
-- Construction du Knowledge Graph dans Neo4j.
-- Développement des relations métiers-compétences-offres.
-- Implémentation du Graph Retrieval avec Cypher.
-- Développement du moteur commun de recherche hybride avec Qdrant et BM25.
-- Recherche et récupération des offres d'emploi pertinentes.
-- Analyse des relations entre métiers, compétences et exigences professionnelles.
-- Développement de l'API Job & Career Intelligence.
-- Évaluation de la pertinence du retrieval.
+1. Préparer et valider le référentiel ESCO.
+2. Préparer un corpus d'offres d'emploi historiques, notamment LinkedIn Job Postings si sa source et ses conditions de réutilisation sont validées.
+3. Analyser les Job Descriptions avec un LLM.
+4. Extraire les compétences et qualifications requises.
+5. Normaliser les compétences professionnelles avec ESCO.
+6. Construire un Knowledge Graph avec Neo4j.
+7. Développer les relations entre métiers, compétences et offres.
+8. Implémenter le Graph Retrieval avec Cypher.
+9. Développer le moteur commun de recherche hybride Qdrant + BM25.
+10. Effectuer la recherche et la récupération des offres pertinentes.
+11. Comparer les exigences des métiers aux informations structurées du profil étudiant.
+12. Développer l'API Job & Career Intelligence.
+13. Évaluer la pertinence du retrieval.
 
-**Livrable :** un moteur intelligent capable d'identifier les métiers et les offres pertinents, leurs compétences requises et les relations qui les justifient.
+**Datasets principaux :**
 
-**Sortie :** `JobRequirements`
+- ESCO v1.2.1 — Occupations.
+- ESCO v1.2.1 — Skills.
+- ESCO v1.2.1 — Occupation–Skill Relations.
+- Corpus LinkedIn Job Postings ou autre source d'offres autorisée.
+
+**Technologies envisagées :**
+
+Python, BGE-M3, Qdrant, BM25, LLM, Neo4j, Cypher, GraphRAG et FastAPI.
+
+**Livrable attendu :**
+
+Un moteur intelligent permettant d'identifier les métiers pertinents, leurs compétences essentielles et optionnelles, ainsi que les relations documentaires et graphiques justifiant les correspondances.
+
+**Contrat de sortie :** `JobRequirements`
+
+#### Travaux déjà réalisés sur le socle Job & Career Intelligence
+
+| Activité | Résultat |
+|---|---|
+| Exploration ESCO | 3 043 lignes de métiers, 13 960 compétences et 126 051 relations |
+| Nettoyage et déduplication | **3 039 métiers uniques** |
+| Préparation documentaire | **3 039 documents métiers** |
+| Token-based Chunking | **512 tokens, overlap 64** |
+| Génération des chunks | **3 314 chunks** |
+| Embeddings | **BAAI/bge-m3 — 1 024 dimensions** |
+| Base vectorielle | **Qdrant — Cosine** |
+| Indexation | **3 314 points dans `pathforge_esco`** |
+| Métadonnées | Payloads associés aux chunks |
+| Recherche | Top-K sémantique avec filtres |
+| Ingestion asynchrone | Script implémenté, reprise vérifiée sur collection complète |
+| Benchmark | 10 questions préparées ; comparaison 512/64 et 256/32 en cours |
+
+Ces réalisations constituent le **socle technique commun**, développé dans le cadre des premières séances. Elles sont principalement rattachées au domaine Job & Career Intelligence, sans exclure la contribution des autres membres.
+
+**À réaliser :** intégration des offres d'emploi, BM25, fusion hybride, construction du graphe Neo4j, Graph Retrieval, matching et API métier.
 
 ---
 
@@ -74,40 +140,56 @@ Chaque membre est responsable de son module, depuis le traitement des données j
 
 **Spécialité : LLM + RAG Orchestration + Recommendation**
 
-**Objectif :** transformer les informations sur l'étudiant et le marché de l'emploi en recommandations professionnelles personnalisées.
+**Objectif :** transformer les informations du profil étudiant et les exigences professionnelles en recommandations personnalisées et explicables.
 
 **Responsabilités :**
 
-- Développement du Career Assistant basé sur un LLM.
-- Orchestration des modules Profile Intelligence et Job & Career Intelligence.
-- Intégration du Hybrid RAG et du Graph Retrieval.
-- Construction du contexte utilisé par le LLM.
-- Développement du Skill Gap Analysis.
-- Identification des compétences documentées et des compétences à approfondir.
-- Recommandation des métiers adaptés au profil étudiant.
-- Génération de Personalized Learning Roadmaps.
-- Intégration du Cross-Encoder pour le reranking.
-- Génération de recommandations accompagnées de sources.
-- Évaluation avec Ragas et des métriques personnalisées.
-- Développement de l'API Career Copilot.
-- Coordination de l'intégration des réponses entre les modules.
+1. Développer le Career Assistant basé sur un LLM.
+2. Orchestrer les modules Profile Intelligence et Job & Career Intelligence.
+3. Intégrer les résultats du Hybrid RAG et du Graph Retrieval.
+4. Construire le contexte transmis au LLM.
+5. Développer le Skill Gap Analysis.
+6. Identifier les compétences acquises, manquantes ou insuffisamment documentées.
+7. Recommander les métiers adaptés au profil.
+8. Générer des Personalized Learning Roadmaps.
+9. Intégrer le reranking avec Cross-Encoder.
+10. Générer des recommandations accompagnées de sources.
+11. Évaluer la qualité des réponses avec Ragas.
+12. Développer l'API Career Copilot.
+13. Coordonner l'intégration des réponses entre les modules.
 
-**Livrable :** un assistant intelligent capable de suggérer des métiers, d'expliquer les écarts de compétences et de générer un parcours de progression personnalisé.
+**Données principales :**
 
-**Sortie :** `CareerRecommendation`
+- `StudentProfile` fourni par le module Profile Intelligence.
+- `JobRequirements` fourni par le module Job & Career Intelligence.
+- Résultats documentaires et graphiques.
+- Références de formations et certifications, si disponibles.
+
+**Technologies envisagées :**
+
+Python, LLM, RAG Orchestration, GraphRAG, Cross-Encoder, Ragas, FastAPI et PostgreSQL.
+
+**Livrable attendu :**
+
+Un assistant intelligent capable de recommander des métiers, d'expliquer les écarts entre les compétences acquises et les exigences professionnelles, puis de générer un parcours de progression personnalisé.
+
+**Contrat de sortie :** `CareerRecommendation`
+
+**État actuel :** module à développer. Il réutilisera les mécanismes de retrieval et les données structurées produits par les deux autres modules.
 
 ---
 
 ## 3. Architecture globale et collaboration
 
-Les trois modules communiquent pour produire une orientation professionnelle personnalisée.
+Les trois modules sont complémentaires.
 
 ### Entrées utilisateur
 
-- CV et expériences académiques.
-- Projets et stages.
+- CV.
+- Projets académiques.
+- Expériences de stage.
 - Compétences déclarées.
-- Objectif professionnel, lorsqu'il est renseigné.
+- Objectif professionnel, si renseigné.
 
 ### Module 1 — Profile Intelligence AI
 
@@ -115,29 +197,47 @@ Les trois modules communiquent pour produire une orientation professionnelle per
 
 CV + Projets + Stages
 
-→ Parsing et extraction LLM
+↓
 
-→ Identification des compétences
+CV Parsing et extraction LLM
 
-→ Document RAG
+↓
 
-→ Profil structuré : `StudentProfile`
+Normalisation des compétences avec ESCO
+
+↓
+
+Document RAG et identification des preuves
+
+↓
+
+**`StudentProfile`**
 
 ### Module 2 — Job & Career Intelligence AI
 
 **Responsable : Fourati Yosr**
 
-ESCO + LinkedIn Job Postings
+ESCO + Offres d'emploi
 
-→ Analyse LLM des offres
+↓
 
-→ Extraction des exigences
+Préparation et analyse des données
 
-→ Recherche hybride Qdrant + BM25
+↓
 
-→ Exploration du graphe Neo4j
+Extraction et normalisation des compétences requises
 
-→ Exigences structurées : `JobRequirements`
+↓
+
+Hybrid Retrieval : Qdrant + BM25
+
+↓
+
+Graph Retrieval : Neo4j + Cypher
+
+↓
+
+**`JobRequirements`**
 
 ### Module 3 — Career Copilot & Recommendation AI
 
@@ -145,30 +245,45 @@ ESCO + LinkedIn Job Postings
 
 `StudentProfile` + `JobRequirements`
 
-→ Orchestration RAG et Graph Retrieval
+↓
 
-→ Reranking
+Orchestration RAG et Graph Retrieval
 
-→ Comparaison des compétences
+↓
 
-→ Skill Gap Analysis
+Reranking
 
-→ Génération de recommandations avec LLM
+↓
 
-→ `CareerRecommendation`
+Comparaison des compétences
+
+↓
+
+Skill Gap Analysis
+
+↓
+
+Génération LLM avec sources
+
+↓
+
+**`CareerRecommendation`**
 
 ### Résultat final
 
 **Personalized Career Roadmap**
 
-La plateforme doit permettre à l'étudiant de :
+La plateforme devra permettre à l'étudiant de :
 
-1. Comprendre les compétences documentées dans son profil.
-2. Découvrir des métiers potentiellement adaptés.
+1. Comprendre ses compétences documentées.
+2. Identifier des métiers potentiellement adaptés.
 3. Comparer son profil aux exigences professionnelles.
-4. Identifier les compétences à approfondir.
-5. Obtenir un parcours de progression personnalisé.
-6. Consulter les sources justifiant les recommandations.
+4. Repérer les compétences manquantes.
+5. Obtenir des recommandations personnalisées.
+6. Suivre un parcours de progression structuré.
+7. Consulter les sources justifiant les recommandations.
+
+Cette architecture représente le fonctionnement cible du système complet.
 
 ---
 
@@ -176,97 +291,256 @@ La plateforme doit permettre à l'étudiant de :
 
 | Composant | Trabelsi Nidhal | Fourati Yosr | Essaied Nour |
 |---|---|---|---|
-| Module principal | Profile Intelligence | Job & Career Intelligence | Career Copilot |
-| LLM | CV Extraction | Job Analysis | Recommendations |
-| RAG | Document RAG | Hybrid RAG + Graph Retrieval | RAG Orchestration |
-| Base de données principale | Accès Qdrant | Qdrant + Neo4j | PostgreSQL / Intégration |
-| Backend | Profile API | Job API | Copilot API |
-| Évaluation | Extraction Quality | Retrieval Quality | Answer Quality |
-| Interface | Profil étudiant | Recherche de métiers et offres | Chatbot et Roadmap |
-| Données principales | CV, projets, stages | ESCO, LinkedIn | Résultats des modules |
-| Sortie | StudentProfile | JobRequirements | CareerRecommendation |
+| **Module principal** | Profile Intelligence | Job & Career Intelligence | Career Copilot |
+| **LLM** | CV et extraction de compétences | Analyse des offres et exigences | Recommandations |
+| **RAG** | Document RAG | Hybrid Retrieval + Graph Retrieval | Orchestration RAG/GraphRAG |
+| **Qdrant** | Utilisation du moteur commun | Développement du retrieval métier | Consommation des résultats |
+| **BM25** | Recherche dans les profils | Moteur hybride commun | Exploitation des résultats |
+| **Neo4j** | Références aux compétences | Construction et requêtes du graphe | Exploitation des relations |
+| **FastAPI** | Profile API | Job API | Copilot API |
+| **React** | Interface du profil | Interface de recherche métier | Chatbot et Roadmap |
+| **Évaluation** | Qualité de l'extraction | Qualité du retrieval | Qualité des réponses |
+| **Datasets** | CV, projets, stages | ESCO, offres d'emploi | Données structurées des modules |
+| **Sortie** | `StudentProfile` | `JobRequirements` | `CareerRecommendation` |
 
-Chaque membre développe son module de bout en bout.
+### Principe d'architecture
 
-La recherche hybride repose sur un moteur commun afin d'éviter la duplication des composants Qdrant, BM25 et des embeddings.
+Le moteur de recherche hybride sera développé comme un **composant partagé**, afin d'éviter de dupliquer :
+
+- Les modèles d'embeddings.
+- Les connexions Qdrant.
+- La recherche BM25.
+- Les mécanismes de fusion.
+- Les fonctions communes de retrieval.
+
+Chaque membre pourra utiliser ce moteur à travers des interfaces définies collectivement.
 
 ---
 
-## 5. Responsabilités transversales
+## 5. Contrats de communication entre modules
 
-Certains composants nécessitent une collaboration entre les trois membres.
+Pour permettre le développement parallèle, les trois modules doivent échanger des données structurées.
+
+### Contrat 1 — StudentProfile
+
+Produit par : **Trabelsi Nidhal**
+
+Contenu attendu :
+
+- Identifiant du profil.
+- Formations.
+- Expériences.
+- Projets.
+- Compétences extraites.
+- Références documentaires.
+- Niveau de confiance ou preuve disponible, lorsque justifiable.
+
+### Contrat 2 — JobRequirements
+
+Produit par : **Fourati Yosr**
+
+Contenu attendu :
+
+- Identifiant ESCO du métier.
+- Intitulé du métier.
+- Compétences essentielles.
+- Compétences optionnelles.
+- Exigences issues des offres.
+- Références des documents.
+- Relations du graphe, lorsqu'elles seront disponibles.
+
+### Contrat 3 — CareerRecommendation
+
+Produit par : **Essaied Nour**
+
+Contenu attendu :
+
+- Métiers recommandés.
+- Compétences déjà documentées.
+- Compétences manquantes.
+- Justifications des correspondances.
+- Recommandations de progression.
+- Learning Roadmap.
+- Sources utilisées.
+
+Les schémas définitifs seront formalisés avec **Pydantic v2** avant l'intégration des API.
+
+---
+
+## 6. Responsabilités transversales
 
 | Activité | Organisation |
 |---|---|
 | Architecture générale | Travail commun |
-| Choix des modèles LLM | Décision commune |
-| Schémas JSON et modèles Pydantic | Définition commune |
-| Backend FastAPI | Chaque membre développe ses API |
-| Frontend React | Chaque membre contribue à l'interface de son module |
+| Choix des modèles | Décision commune |
+| Schémas JSON et Pydantic | Définition commune |
+| Moteur de recherche partagé | Développement coordonné, pilotage Job & Career Intelligence |
+| Backend FastAPI | Chaque membre développe les endpoints de son module |
+| Frontend React | Chaque membre contribue aux écrans de son module |
 | Intégration des modules | Coordination par Essaied Nour |
-| Docker Compose et environnement | Travail commun, responsable opérationnel à confirmer |
+| Docker Compose | Travail commun |
 | PostgreSQL | Intégration applicative coordonnée |
-| GitHub Actions et CI/CD | Travail commun |
+| GitHub Actions / CI/CD | Travail commun |
 | Tests d'intégration | Travail commun |
 | Documentation | Chaque membre documente son module |
-| Soutenance | Travail commun |
+| Démonstration et soutenance | Travail commun |
 
-Les responsabilités transversales seront précisées lors de la planification technique.
-
----
-
-## 6. Planning de développement
-
-| Période | Objectif |
-|---|---|
-| Semaine 1 | Architecture, environnement, choix des modèles et contrats API |
-| Semaines 2–3 | Développement parallèle des trois modules LLM + RAG |
-| Semaine 4 | Intégration des modules et communication entre les API |
-| Semaine 5 | Tests, évaluation, optimisation et démonstration |
-
-Ce planning est prévisionnel et devra être adapté au calendrier des séances et aux contraintes du projet.
+La répartition des responsabilités techniques ne dispense aucun membre de comprendre l'architecture globale.
 
 ---
 
-## 7. Organisation GitHub
+## 7. Planning de développement
+
+Le planning est organisé selon les sept séances du projet fédérateur.
+
+| Séance | Objectif | Responsabilités principales |
+|---|---|---|
+| **S1** | Idéation, problématique, architecture, MoSCoW, MVP | Toute l'équipe |
+| **S2** | Ingestion ESCO, chunking, embeddings, Qdrant, Top-K | Socle commun, principalement Job & Career Intelligence |
+| **S3** | Hybrid Retrieval, BM25, reranking et premiers travaux GraphRAG | P2 avec participation de P1 et P3 |
+| **S4** | CV Parsing, APIs FastAPI, profils structurés et orchestration | P1, P2 et P3 selon leurs modules |
+| **S5** | Interface React, intégration, Skill Gap Analysis et recommandations | P3 avec P1 et P2 |
+| **S6** | Évaluation, tests, qualité, Ragas et CI/CD | Toute l'équipe |
+| **S7** | Déploiement, validation finale, documentation et démonstration | Toute l'équipe |
+
+Ce planning est prévisionnel et devra être ajusté aux consignes officielles des prochaines séances.
+
+### Avancement réel
+
+**Séance 1 :** cadrage, architecture, backlog et dépôt GitHub réalisés.
+
+**Séance 2 :** pipeline ESCO–BGE-M3–Qdrant et recherche Top-K opérationnels. Benchmark comparatif en cours.
+
+Les modules de CV Parsing, GraphRAG et Career Copilot ne sont pas encore finalisés.
+
+---
+
+## 8. Organisation GitHub
+
+### Dépôt de référence
+
+https://github.com/Yosr03/PathForge-AI
+
+**Branche principale :** `main`
 
 ### Branches proposées
 
-- `main` : version intégrée.
-- `feature/profile-intelligence-*` : module Profile Intelligence.
-- `feature/job-intelligence-*` : module Job & Career Intelligence.
-- `feature/career-copilot-*` : module Career Copilot.
-- `feature/integration-*` : intégration transversale.
+- `feature/profile-intelligence-*`
+- `feature/job-intelligence-*`
+- `feature/career-copilot-*`
+- `feature/integration-*`
 
-### Workflow
+### Workflow de collaboration proposé
 
 1. Créer une issue pour chaque tâche.
 2. Développer dans une branche dédiée.
-3. Exécuter les tests du module.
+3. Exécuter les tests.
 4. Ouvrir une Pull Request.
 5. Effectuer une revue de code croisée.
 6. Fusionner après validation.
+7. Mettre à jour la documentation.
+
+**État actuel :** le dépôt personnel et la branche `main` existent. Les branches de fonctionnalités et le workflow collectif sont proposés, mais leur mise en place n'est pas encore confirmée.
+
+Le dépôt personnel ne doit pas être présenté comme un dépôt partagé par les trois membres tant que les accès et les règles de collaboration n'ont pas été configurés.
 
 ---
 
-## 8. Règles de collaboration
+## 9. Règles de collaboration
 
-Afin d'assurer la cohérence technique du projet :
+Pour garantir la cohérence technique du projet :
 
-1. Utiliser un modèle LLM commun au départ.
-2. Définir des formats JSON partagés entre les modules.
-3. Centraliser les composants de recherche communs.
-4. Documenter les API et leurs contrats.
-5. Organiser une intégration régulière.
-6. Effectuer des revues de code croisées.
-7. Partager les données, les scripts et les résultats de benchmark.
-8. Ne jamais publier de données personnelles réelles ou de secrets dans le dépôt public.
-9. Préserver les références aux documents sources.
-10. Valider le fonctionnement global avant chaque démonstration.
+1. Définir les schémas JSON et les contrats API avant l'intégration.
+2. Utiliser des conventions de nommage communes.
+3. Centraliser les composants de recherche partagés.
+4. Préserver les identifiants officiels ESCO.
+5. Conserver la provenance des compétences et des recommandations.
+6. Documenter les API et les décisions techniques.
+7. Tester chaque module séparément.
+8. Effectuer régulièrement des tests d'intégration.
+9. Partager les résultats des benchmarks.
+10. Ne jamais publier de secrets ou de CV personnels non autorisés.
+11. Utiliser Git et les Pull Requests pour les modifications collaboratives.
+12. Vérifier les critères d'acceptation avant chaque démonstration.
 
 ---
 
-## 9. Les trois axes de PathForge AI
+## 10. Livrables attendus par personne
+
+| Responsable | Livrable principal | Exemple de résultat |
+|---|---|---|
+| **Trabelsi Nidhal** | Profile Intelligence AI | Profil étudiant structuré avec compétences, expériences et preuves |
+| **Fourati Yosr** | Job & Career Intelligence AI | Métiers compatibles, compétences exigées et relations justifiées |
+| **Essaied Nour** | Career Copilot & Recommendation AI | Skill Gap Analysis, recommandations et Learning Roadmap |
+
+### Livrable collectif
+
+Une plateforme web PathForge AI intégrant les trois modules dans une expérience utilisateur cohérente.
+
+**Chaîne fonctionnelle cible :**
+
+CV étudiant
+
+↓
+
+Extraction des compétences
+
+↓
+
+Recherche des métiers et exigences
+
+↓
+
+Analyse des écarts
+
+↓
+
+Recommandations personnalisées
+
+↓
+
+Parcours d'apprentissage
+
+---
+
+## 11. Points de vigilance
+
+### 11.1 Dépendances entre modules
+
+Le Career Copilot dépend des sorties `StudentProfile` et `JobRequirements`.
+
+Les schémas de données devront donc être définis suffisamment tôt pour permettre le développement parallèle.
+
+### 11.2 Équilibre de la charge de travail
+
+Le module Job & Career Intelligence comporte plusieurs composants techniques importants : ESCO, ingestion, recherche hybride, Neo4j et analyse des offres.
+
+Le module Profile Intelligence comporte également des défis liés à l'extraction fiable des informations et à la traçabilité des compétences.
+
+Le module Career Copilot doit assurer l'orchestration, la qualité des recommandations et leur évaluation.
+
+L'équilibre sera évalué en fonction du temps de développement et des difficultés réelles, et non uniquement du nombre de tâches.
+
+### 11.3 Mutualisation des composants
+
+Les outils communs, notamment Qdrant, BGE-M3, BM25, Docker Compose et les contrats Pydantic, doivent être réutilisés entre les modules.
+
+### 11.4 Validation progressive
+
+Chaque module devra fournir :
+
+- Un code exécutable.
+- Des tests.
+- Une documentation.
+- Une API ou interface définie.
+- Un résultat démontrable.
+- Des références aux données utilisées.
+
+---
+
+## 12. Conclusion
+
+PathForge AI repose sur trois axes complémentaires :
 
 | Axe | Module | Responsable |
 |---|---|---|
@@ -274,6 +548,8 @@ Afin d'assurer la cohérence technique du projet :
 | **Analyser le marché** | Job & Career Intelligence AI | Fourati Yosr |
 | **Recommander un parcours** | Career Copilot & Recommendation AI | Essaied Nour |
 
-L'objectif final est de réunir trois moteurs intelligents complémentaires dans une seule plateforme.
+Les travaux des séances 1 et 2 ont permis de définir l'architecture et de développer un premier pipeline de recherche vectorielle sur ESCO.
+
+Ce socle sera progressivement enrichi par l'analyse des profils, les offres d'emploi, le Hybrid RAG, le GraphRAG et la génération de recommandations.
 
 **PathForge AI : Analyser → Comparer → Recommander → Progresser.**
