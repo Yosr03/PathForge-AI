@@ -1,0 +1,24 @@
+# Environnement Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Modèles et cache
+.cache/
+models/
+*.safetensors
+
+# Données locales et bases
+qdrant_storage/
+postgres_data/
+data/raw/
+data/processed/
+
+# Sauvegardes locales
+scripts/*_backup.pyscripts/*_backup.py
