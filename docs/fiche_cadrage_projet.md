@@ -1,82 +1,602 @@
 # Fiche de Cadrage d’Ingénierie — Projet Fédérateur AI-BD_BI
+
 ## Spécification du Moteur RAG / Data Intelligent
 
----
-
-### 1. Fiche d'Identité du Projet
-
-- **Nom du Projet :** PathForge AI — Plateforme intelligente d’orientation professionnelle par RAG hybride et GraphRAG
-- **Membres de l'Équipe :**
-  1. [Nom Prénom — Lead Data / Retrieval]
-  2. [Nom Prénom — Lead Backend / MLOps]
-  3. [Nom Prénom — Lead Frontend / Infra]
-- **Lien du Dépôt GitHub :** À renseigner après création du dépôt
-- **Branche de travail principale :** `main` (protection à configurer)
+**Projet : PathForge AI — Transformez vos compétences en parcours professionnel**
 
 ---
 
-### 2. Cadrage du Problème Métier ("Problem-First")
+## 1. Fiche d'identité du projet
 
-#### 2.1 Persona Cible & Contexte Opérationnel
-- **Utilisateur visé :** Étudiant en dernière année d’études supérieures ou jeune diplômé souhaitant identifier des métiers adaptés à son profil. Un conseiller carrière pourra être un utilisateur secondaire à terme.
-- **Point de douleur majeur (Pain point) :** Un diplôme identique peut masquer des parcours, projets, stages et compétences différents. L’étudiant peine à relier ses acquis aux compétences demandées par les métiers et à identifier un plan concret pour combler les écarts.
-- **Limite des approches classiques (Pourquoi l'IA générative ?) :** Les filtres et recherches lexicales simples ne rapprochent pas systématiquement les synonymes de compétences, les descriptions libres de projets et les chaînes de relations métier → compétence → formation. Un LLM seul risque d’affirmer des correspondances non étayées. Le RAG hybride fournit des extraits documentaires, tandis que le graphe explicite les liens multi-étapes.
+| Élément | Information |
+|---|---|
+| **Nom du projet** | PathForge AI |
+| **Intitulé complet** | Plateforme intelligente d'orientation professionnelle par Hybrid RAG et GraphRAG |
+| **Domaine** | Intelligence artificielle, NLP, recherche d'information et orientation professionnelle |
+| **Public cible** | Étudiants en fin de cursus et jeunes diplômés |
+| **Équipe** | 3 membres |
+| **Dépôt GitHub** | https://github.com/Yosr03/PathForge-AI |
+| **Branche principale** | `main` |
+| **Méthodologie** | Développement incrémental, validation par séances et architecture modulaire |
+| **État actuel** | Séances 1 et 2 : cadrage et première chaîne d'ingestion/recherche vectorielle |
 
-#### 2.2 Proposition de Valeur
-PathForge AI analysera un profil étudiant (CV, projets et stages), retrouvera des preuves dans les référentiels métiers et offres, identifiera les compétences acquises et manquantes, puis proposera des métiers et parcours de progression **avec citations vérifiables**. L’interface cible affichera les réponses en streaming et permettra d’inspecter les passages sources. Il s’agit d’une aide à la décision, non d’une garantie d’embauche.
+### Répartition des responsabilités
 
----
+| Membre | Module | Responsabilités principales |
+|---|---|---|
+| **Personne 1** | Profile Intelligence AI / RAG | CV Parsing, extraction des compétences, Document RAG, recherche hybride, API d'analyse du profil |
+| **Personne 2** | Job & Career Intelligence AI / GraphRAG | Analyse des métiers et offres d'emploi, relations ESCO, Knowledge Graph Neo4j, matching profil–métier |
+| **Personne 3** | Career Copilot & Recommendation AI / LLM | Orchestration, Skill Gap Analysis, recommandations, Learning Roadmap, reranking et évaluation |
 
-### 3. Données & Volumétrie
-
-- **Format des données sources :** `[ ] PDF multi-colonnes` `[x] JSON/CSV` `[ ] Tables relationnelles SQL` `[x] Markdown` `[ ] Images/Scans` (PDF CV éventuels en extension après validation du pipeline)
-- **Sources envisagées :**
-  - **ESCO** (https://esco.ec.europa.eu/) : référentiel métiers, compétences et relations, à télécharger dans le format disponible.
-  - **France Travail** (https://francetravail.io/) : offres d’emploi via API, **sous réserve d’accès et de conditions d’utilisation**.
-  - **Profils fictifs annotés** : CV, projets et stages structurés en JSON/Markdown pour tester la personnalisation sans exposer de données personnelles réelles.
-  - **France Compétences** (https://www.francecompetences.fr/) : référentiels de certifications et formations, **modalités d’accès et de réutilisation à vérifier**.
-- **Volumétrie initiale (PoC S1-S3) :** Cible indicative : 100 métiers, 500 compétences, 50 offres, 20 profils fictifs, 50 formations/certifications. **Ce ne sont pas des données déjà collectées.** Le nombre réel de documents et chunks sera calculé après extraction et chunking.
-- **Volumétrie cible en production :** À définir à partir de la volumétrie effectivement accessible, du nombre de chunks, de la latence et de la capacité des services. Aucune estimation non mesurée n’est présentée comme acquise.
-- **Fréquence de mise à jour des données :** `[x] Batch quotidien` (offres, si accès autorisé) `[ ] Temps réel / Streaming` `[x] Statique` (version initiale du référentiel ESCO, actualisable lors des nouvelles publications).
-
----
-
-### 4. Architecture Technique & Composants RAG
-
-- **Stratégie de Chunking :** `[x] Recursive Character` `[ ] Semantic Chunking` `[ ] Parent-Document / Hierarchical`
-  - **Taille de chunk visée :** 512 tokens ; **Overlap :** 64 tokens. Paramètres initiaux à tester ; conserver les frontières de fiches métiers/compétences et les identifiants ESCO.
-  - **Comparaison S2 :** tester une deuxième stratégie (semantic ou segmentation structurée) sur dix questions, avec la même méthode d’évaluation.
-- **Modèle d'Embeddings :** `BAAI/bge-m3` (**1024 dimensions**), multilingue. Choix initial soumis à un test de vitesse et de mémoire sur le poste Windows ; prévoir un modèle plus léger si nécessaire.
-- **Base Vectorielle retenue :** `[x] Qdrant` `[ ] Milvus` `[ ] pgvector`
-  - **Justification :** index HNSW, distance cosinus, filtres par métadonnées et exécution via Docker Compose. Payloads prévus : `doc_id`, `page_number` (null si non applicable), `chunk_id`, `source`, `type_document`, `metier_id`, `langue`.
-- **Reranker (Cross-Encoder) :** `cross-encoder/mmarco-mMiniLMv2-L12-H384-v1` comme candidat initial, à comparer à d’autres modèles adaptés au français en S3.
-- **LLM de Génération :** modèle instruct capable de répondre en français, via API ou service local à choisir selon coût, latence, confidentialité et accès ; décision à valider expérimentalement avant S4.
-- **Recherche hybride prévue en S3 :** dense + BM25, fusion Reciprocal Rank Fusion (RRF), puis reranking Cross-Encoder.
-- **Extension GraphRAG :** Neo4j pour relier `Métier → requiert → Compétence` et `Formation → développe → Compétence`. **Complément au socle RAG obligatoire**, non substitut à Qdrant.
-- **Application cible :** React/Next.js → FastAPI async/Pydantic v2 → recherche Qdrant et Neo4j → LLM ; PostgreSQL pour les données applicatives, SSE pour le streaming, Ragas pour l’évaluation, traçage MLOps selon le backlog.
+Les trois modules seront intégrés et testés collectivement.
 
 ---
 
-### 5. Métriques Quantitatives & SLAs
+## 2. Cadrage du problème métier — Problem-First
 
-| Métrique | Définition / Outil | Objectif Cible (KPI) |
-| :--- | :--- | :---: |
-| **Recall@10 (Retrieval)** | Proportion des questions du jeu de référence pour lesquelles un document pertinent apparaît dans le top-10 | **≥ 85 %** |
-| **Faithfulness (Ragas)** | Degré de fidélité des assertions de la réponse aux extraits récupérés | **≥ 0,85 / 1,00** |
-| **Answer Relevance (Ragas)** | Adéquation de la réponse à la question posée | **≥ 0,80 / 1,00** |
-| **Latence First-Token (TTFT)** | Temps entre l’envoi de la requête et le premier token affiché via SSE | **< 800 ms** |
-| **Latence E2E P95** | 95e percentile du temps total de complétion des requêtes | **< 3,5 s** |
+### 2.1 Persona cible et contexte opérationnel
 
-**Protocole envisagé :** constituer un Golden Dataset de questions, passages attendus et réponses de référence ; journaliser latences et configurations ; comparer dense seul, dense+BM25 et reranking. Les seuils sont **des objectifs imposés par le gabarit**, non des résultats mesurés. Le protocole et la taille du jeu de test seront documentés lors de S2/S3.
+**Utilisateur principal :** étudiant en dernière année d'études supérieures ou jeune diplômé souhaitant identifier les métiers adaptés à son profil et comprendre les compétences nécessaires pour atteindre son objectif professionnel.
+
+**Utilisateur secondaire envisagé :** conseiller d'orientation ou responsable d'accompagnement professionnel.
+
+### Pain point
+
+Deux étudiants peuvent posséder le même diplôme tout en ayant des profils très différents en raison de leurs projets, stages, expériences et compétences.
+
+Les étudiants rencontrent plusieurs difficultés :
+
+- Identifier les métiers correspondant réellement à leur profil.
+- Valoriser les compétences acquises à travers leurs projets.
+- Comprendre les compétences exigées par les employeurs.
+- Distinguer les compétences démontrées des compétences simplement déclarées.
+- Identifier les compétences manquantes.
+- Construire un parcours concret de progression professionnelle.
+
+### Limites des approches classiques
+
+Les plateformes d'emploi traditionnelles reposent souvent sur des filtres, des mots-clés et des correspondances lexicales.
+
+Elles ne permettent pas toujours de comprendre les relations complexes entre :
+
+**Étudiant → Projet → Compétence → Métier → Formation**
+
+Un LLM utilisé seul peut également produire des recommandations insuffisamment justifiées ou non vérifiables.
+
+### Problématique centrale
+
+**Comment relier les compétences documentées d'un étudiant aux exigences professionnelles d'un métier, tout en proposant des recommandations personnalisées, explicables et fondées sur des sources vérifiables ?**
+
+### 2.2 Proposition de valeur
+
+PathForge AI vise à :
+
+1. Analyser les CV, projets et expériences académiques.
+2. Extraire et normaliser les compétences.
+3. Rechercher les métiers correspondant au profil.
+4. Identifier les compétences essentielles et optionnelles requises.
+5. Comparer les compétences du profil aux exigences professionnelles.
+6. Détecter les écarts et les preuves insuffisantes.
+7. Proposer un parcours d'apprentissage personnalisé.
+8. Fournir des justifications et références documentaires.
+
+L'interface cible permettra de consulter les sources utilisées et, si la génération en streaming est retenue, d'afficher progressivement les réponses.
+
+**Positionnement :** outil d'aide à l'orientation, et non système de certification des compétences ou garantie de recrutement.
 
 ---
 
-### 6. Gestion des Risques & Garde-fous
+## 3. Données et volumétrie
 
-- **Prévention des Hallucinations :** directive de génération : « Si l’information n’est pas présente dans les extraits ci-dessus, répondez explicitement que le corpus ne permet pas de conclure. » Exiger des citations vérifiables ; exposer les chunks dans le Source Drawer ; évaluer avec Ragas.
-- **Protection des Secrets :** stocker clés API et identifiants dans `.env` local, exclu de Git ; versionner uniquement `.env.example` sans secrets.
-- **Isolation Réseau :** Qdrant et PostgreSQL dans un réseau Docker interne privé ; n’exposer que les ports nécessaires au développement local.
-- **Confidentialité :** utiliser des profils fictifs pour le PoC ; ne pas ingérer de vrais CV sans base légale, consentement approprié et politique de conservation.
-- **Fraîcheur et licences des données :** conserver `source`, version et date de collecte ; vérifier les droits d’accès et de réutilisation des APIs et référentiels.
-- **Biais de recommandation :** présenter les suggestions comme une aide à l’orientation, afficher les compétences manquantes et permettre à l’utilisateur de corriger son profil.
-- **Risques techniques :** surveiller consommation RAM, temps d’embedding et latence ; prévoir un modèle d’embedding plus léger et un corpus réduit pour le PoC.
+### 3.1 Formats de données
+
+| Format | Utilisation |
+|---|---|
+| CSV | Référentiel ESCO source |
+| JSON | Corpus préparé, profils structurés et benchmark |
+| Markdown | Documentation et descriptions de projets |
+| PDF | CV étudiants, dans les prochaines étapes |
+| SQL | Données applicatives futures dans PostgreSQL |
+| Images / scans | Hors périmètre initial |
+
+### 3.2 Sources de données
+
+#### Dataset 1 — ESCO v1.2.1
+
+**Source officielle :** https://esco.ec.europa.eu/
+
+ESCO est le référentiel principal utilisé pour relier les métiers aux compétences.
+
+| Données | Volumétrie |
+|---|---:|
+| Lignes de métiers source | 3 043 |
+| Métiers uniques après nettoyage | **3 039** |
+| Compétences | **13 960** |
+| Relations métiers-compétences | **126 051** |
+| Documents métiers préparés | **3 039** |
+| Chunks indexés dans Qdrant | **3 314** |
+
+Les identifiants officiels ESCO sont conservés pour assurer la traçabilité.
+
+**État :** corpus métiers préparé, découpé, vectorisé et indexé.
+
+Les compétences et relations ESCO sont déjà utilisées pour enrichir les descriptions documentaires. Leur exploitation sous forme de graphe Neo4j reste à réaliser.
+
+#### Dataset 2 — Offres d'emploi
+
+**Source envisagée :** France Travail — https://francetravail.io/
+
+Objectif :
+
+- Analyser les descriptions d'offres.
+- Extraire les compétences et qualifications demandées.
+- Identifier les exigences professionnelles.
+- Compléter le référentiel ESCO avec des besoins issus du marché.
+
+L'accès aux données et les conditions de réutilisation devront être vérifiés.
+
+**État : intégration prévue.**
+
+#### Dataset 3 — Profils étudiants
+
+Des profils fictifs, anonymisés ou autorisés seront préparés pour tester :
+
+- CV Parsing.
+- Extraction des compétences, formations et expériences.
+- Analyse du profil.
+- Matching profil–métier.
+- Recommandations personnalisées.
+
+**État : intégration prévue.**
+
+#### Dataset 4 — Formations et certifications
+
+**Source envisagée :** France Compétences — https://www.francecompetences.fr/
+
+Objectif :
+
+- Identifier les formations pertinentes.
+- Relier les formations aux compétences développées.
+- Construire des Learning Roadmaps.
+
+Les modalités d'accès et de réutilisation restent à vérifier.
+
+**État : source complémentaire envisagée, non encore intégrée.**
+
+### 3.3 Stratégie d'intégration des données
+
+Nous adoptons une **approche incrémentale**.
+
+La séance 2 se concentre sur la validation du pipeline ESCO :
+
+**ESCO → Preprocessing → Chunking → Embeddings → Qdrant → Top-K**
+
+Les autres sources seront intégrées progressivement après validation des mécanismes d'ingestion et de recherche.
+
+Cette stratégie permet de tester chaque composant séparément et de limiter les difficultés de débogage lors de l'intégration multi-source.
+
+### 3.4 Fréquence de mise à jour
+
+- **ESCO :** corpus versionné, actualisé lors de nouvelles publications pertinentes.
+- **Offres d'emploi :** mises à jour batch envisagées, selon la disponibilité des données et les autorisations.
+- **Profils étudiants :** mise à jour lors d'une modification autorisée du profil.
+- **Formations :** actualisation selon les sources disponibles.
+
+Aucun mécanisme de synchronisation quotidienne n'est encore implémenté.
+
+---
+
+## 4. Architecture technique et composants RAG
+
+### 4.1 Architecture cible
+
+PathForge AI repose sur deux pipelines complémentaires.
+
+**Pipeline d'ingestion :**
+
+Sources documentaires
+
+↓
+
+Extraction et nettoyage
+
+↓
+
+Normalisation des compétences
+
+↓
+
+Chunking
+
+↓
+
+Embeddings BGE-M3
+
+↓
+
+Indexation Qdrant
+
+↓
+
+Construction du graphe Neo4j (prévue)
+
+**Pipeline de recherche et génération :**
+
+Interface React (prévue)
+
+↓
+
+Backend FastAPI (prévu)
+
+↓
+
+Recherche dense Qdrant + recherche lexicale BM25
+
+↓
+
+Exploration du graphe Neo4j
+
+↓
+
+Fusion et reranking
+
+↓
+
+Construction du contexte GraphRAG
+
+↓
+
+LLM
+
+↓
+
+Réponse personnalisée avec sources
+
+### 4.2 Stratégie de chunking
+
+**Stratégie effectivement implémentée : Token-based Chunking.**
+
+| Paramètre | Configuration principale |
+|---|---|
+| Modèle de tokenisation | BGE-M3 |
+| Chunk size | **512 tokens** |
+| Chunk overlap | **64 tokens** |
+| Documents | **3 039** |
+| Chunks générés | **3 314** |
+
+Le chevauchement préserve une partie du contexte entre deux chunks.
+
+Cette stratégie est fondée sur le nombre de tokens. Elle ne doit pas être présentée comme un Semantic Chunking.
+
+**Comparaison en préparation :**
+
+- Configuration A : 512 tokens, overlap 64.
+- Configuration B : 256 tokens, overlap 32.
+- Jeu d'évaluation : 10 questions avec métiers attendus.
+
+L'objectif est de comparer la pertinence des résultats avant de sélectionner définitivement une configuration.
+
+### 4.3 Modèle d'embeddings
+
+**Modèle retenu : BAAI/bge-m3.**
+
+Caractéristiques :
+
+- Modèle préentraîné.
+- Support multilingue.
+- Embeddings denses.
+- Dimension : **1 024**.
+- Vecteurs normalisés.
+- Exécution locale sur CPU.
+
+Le modèle transforme les passages textuels et les requêtes en vecteurs exploitables par le moteur de recherche.
+
+### 4.4 Base vectorielle
+
+**Base sélectionnée : Qdrant.**
+
+Justifications :
+
+- Recherche vectorielle native.
+- Similarité Cosine.
+- Indexation HNSW.
+- Filtrage des payloads.
+- Client Python.
+- Déploiement Docker Compose.
+- Évolution possible vers la recherche hybride.
+
+**Collection principale :** `pathforge_esco`
+
+| Élément | Valeur |
+|---|---|
+| Dimension vectorielle | 1 024 |
+| Distance | Cosine |
+| Points indexés | **3 314** |
+| Stockage | Volume Docker persistant |
+| Métadonnées | Payloads |
+| Recherche | Top-K |
+
+Les payloads permettent de conserver les informations nécessaires à la traçabilité, comme le titre, le texte, la source, le type, l'identifiant ESCO et la position du chunk.
+
+### 4.5 Ingestion asynchrone
+
+Le script `scripts/ingest.py` utilise **AsyncQdrantClient**.
+
+Fonctionnalités implémentées :
+
+- Lecture du corpus préparé.
+- Vérification des points déjà indexés.
+- Génération des embeddings manquants.
+- Traitement par lots de 64.
+- Identifiants stables.
+- Reprise d'ingestion.
+- Vérification finale.
+- Mode `--dry-run`.
+
+**Validation effectuée :** 3 314 points attendus et 3 314 points présents dans Qdrant.
+
+La reprise sans réindexation inutile a été vérifiée. Une insertion asynchrone effective de nouveaux points reste à valider séparément.
+
+### 4.6 Recherche sémantique
+
+Le script `scripts/search_test.py` permet de :
+
+- Recevoir une requête.
+- Générer son embedding.
+- Rechercher les vecteurs proches dans Qdrant.
+- Retourner les résultats Top-K.
+- Afficher les scores de similarité.
+- Appliquer des filtres par métadonnées.
+
+**Exemple testé :**
+
+*Which occupations require Python, SQL and data analysis skills?*
+
+Premier résultat observé : **Data Analyst**, avec un score de similarité de **0,6368**.
+
+Ce score représente une similarité vectorielle et non une probabilité de réussite professionnelle.
+
+### 4.7 Recherche hybride — Prévue
+
+L'architecture cible combinera :
+
+- **Dense Retrieval :** embeddings BGE-M3.
+- **Sparse / Lexical Retrieval :** BM25.
+- **Fusion :** Reciprocal Rank Fusion (RRF).
+- **Reranking :** Cross-Encoder.
+
+La recherche dense est opérationnelle. Les autres mécanismes restent à intégrer et à évaluer.
+
+### 4.8 Extension GraphRAG — Prévue
+
+Neo4j permettra de représenter les relations suivantes :
+
+- Étudiant → possède → Compétence.
+- Projet → démontre → Compétence.
+- Métier → requiert → Compétence.
+- Formation → développe → Compétence.
+- Offre d'emploi → concerne → Métier.
+
+Le Graph Retrieval complétera le Dense Retrieval afin de répondre à des questions nécessitant plusieurs relations.
+
+**GraphRAG est une extension du socle RAG, et non un remplacement de Qdrant.**
+
+### 4.9 Génération et application
+
+Composants prévus :
+
+- **FastAPI :** backend et orchestration.
+- **React :** interface utilisateur.
+- **LLM instruct :** génération de recommandations.
+- **Cross-Encoder :** reranking.
+- **PostgreSQL :** stockage applicatif.
+- **SSE :** streaming éventuel des réponses.
+- **Ragas :** évaluation de la génération.
+
+Le choix définitif du LLM et du Cross-Encoder sera validé selon les performances, les ressources et les contraintes de confidentialité.
+
+---
+
+## 5. Métriques quantitatives et SLAs
+
+### 5.1 Objectifs cibles du projet
+
+| Métrique | Définition | Objectif |
+|---|---|---|
+| **Recall@10** | Couverture des documents pertinents dans les 10 premiers résultats | ≥ 85 % |
+| **Faithfulness — Ragas** | Fidélité des réponses aux sources | ≥ 0,85 |
+| **Answer Relevance — Ragas** | Pertinence des réponses générées | ≥ 0,80 |
+| **TTFT** | Temps jusqu'au premier token généré | < 800 ms |
+| **Latence E2E P95** | 95e percentile du temps de réponse complet | < 3,5 s |
+
+Ces valeurs sont des **objectifs de performance issus du cadrage**, pas des résultats déjà mesurés.
+
+Leur faisabilité devra être vérifiée expérimentalement.
+
+### 5.2 Benchmark de la séance 2
+
+Un jeu de **10 questions** avec identifiants ESCO attendus a été préparé.
+
+Métriques retenues :
+
+**Hit@5 :** proportion de questions pour lesquelles le métier attendu figure parmi les cinq premiers métiers distincts.
+
+**MRR@5 :** moyenne de l'inverse du rang du métier attendu, limité aux cinq premiers résultats.
+
+**Latence :** temps de recherche, à mesurer dans des conditions comparables.
+
+Configurations comparées :
+
+| Configuration | Chunk size | Overlap |
+|---|---:|---:|
+| A | 512 | 64 |
+| B | 256 | 32 |
+
+Le benchmark doit permettre de comparer les stratégies de chunking sur une base expérimentale.
+
+**État :** jeu de questions préparé ; résultats comparatifs finaux non encore confirmés.
+
+### 5.3 Évaluation future du système complet
+
+Après intégration du RAG et du GraphRAG :
+
+- Comparaison Dense Retrieval / Hybrid Retrieval.
+- Évaluation de la pertinence des sources.
+- Évaluation de la fidélité des réponses.
+- Mesure des hallucinations.
+- Mesure de la latence.
+- Évaluation du matching profil–métier.
+- Évaluation de la qualité des recommandations.
+
+---
+
+## 6. Gestion des risques et garde-fous
+
+### 6.1 Prévention des hallucinations
+
+Le LLM devra produire des réponses fondées sur les documents récupérés.
+
+Règle prévue :
+
+*Si les sources disponibles ne permettent pas de conclure, le système doit le signaler explicitement.*
+
+Les recommandations devront être accompagnées de références vérifiables.
+
+### 6.2 Protection des secrets
+
+- Variables sensibles dans `.env`.
+- Exclusion de `.env` du dépôt Git.
+- Utilisation éventuelle d'un `.env.example` sans secrets.
+- Aucun identifiant ni clé API dans le code versionné.
+
+### 6.3 Isolation et sécurité
+
+- Déploiement avec Docker Compose.
+- Réseau Docker pour les services.
+- Exposition limitée aux ports nécessaires.
+- Volumes persistants pour les bases.
+
+La sécurité des accès devra être renforcée avant tout déploiement public.
+
+### 6.4 Confidentialité
+
+- Utilisation initiale de profils fictifs.
+- Anonymisation ou autorisation appropriée pour les données réelles.
+- Minimisation des données personnelles.
+- Politique de conservation à définir.
+- Protection des CV et informations personnelles.
+
+### 6.5 Traçabilité des données
+
+- Conservation des identifiants ESCO.
+- Conservation de la source documentaire.
+- Versionnement des référentiels.
+- Métadonnées associées aux chunks.
+- Références vérifiables dans les futures recommandations.
+
+### 6.6 Biais de recommandation
+
+Le système devra :
+
+- Expliquer les compétences prises en compte.
+- Identifier les preuves insuffisantes.
+- Permettre la correction des informations du profil.
+- Éviter de présenter les recommandations comme des décisions définitives.
+
+### 6.7 Risques techniques
+
+Risques identifiés :
+
+- Consommation mémoire du modèle BGE-M3.
+- Temps de génération des embeddings sur CPU.
+- Augmentation du nombre de chunks.
+- Latence de recherche et de génération.
+- Synchronisation entre Qdrant, PostgreSQL et Neo4j.
+- Qualité variable des données externes.
+
+Mesures envisagées :
+
+- Batching.
+- Ingestion reprenable.
+- Benchmark de chunking.
+- Surveillance de la latence.
+- Réduction du corpus pour certains tests.
+- Évaluation d'un modèle plus léger si nécessaire.
+
+---
+
+## 7. État d'avancement du projet
+
+### Séance 1 — Idéation et cadrage
+
+**Réalisé :**
+
+- [x] Définition de la problématique.
+- [x] Identification des personas.
+- [x] Définition de la proposition de valeur.
+- [x] Cadrage du MVP.
+- [x] Priorisation MoSCoW.
+- [x] Conception de l'architecture initiale.
+- [x] Choix des technologies principales.
+- [x] Sélection du référentiel ESCO.
+- [x] Création du dépôt GitHub.
+
+### Séance 2 — Ingestion et Vector Database
+
+**Réalisé :**
+
+- [x] Exploration des données ESCO.
+- [x] Préparation et nettoyage du corpus.
+- [x] Obtention de 3 039 métiers uniques.
+- [x] Token-based Chunking 512/64.
+- [x] Génération de 3 314 chunks.
+- [x] Embeddings BGE-M3 de 1 024 dimensions.
+- [x] Déploiement de Qdrant et PostgreSQL avec Docker Compose.
+- [x] Création de la collection `pathforge_esco`.
+- [x] Indexation de 3 314 points.
+- [x] Métadonnées associées aux vecteurs.
+- [x] Recherche sémantique Top-K.
+- [x] Filtrage par métadonnées.
+- [x] Implémentation de l'ingestion asynchrone.
+- [x] Vérification de reprise sur collection complète.
+- [x] Préparation du jeu de 10 questions.
+
+**En cours :**
+
+- [ ] Vérification de l'indexation 256/32.
+- [ ] Calcul des métriques Hit@5 et MRR@5.
+- [ ] Comparaison expérimentale des deux configurations.
+- [ ] Validation d'une insertion asynchrone effective de points manquants.
+
+### Étapes suivantes
+
+- [ ] Intégration des profils étudiants.
+- [ ] Intégration des offres d'emploi.
+- [ ] Implémentation de BM25.
+- [ ] Fusion hybride RRF.
+- [ ] Construction du Knowledge Graph Neo4j.
+- [ ] Graph Retrieval.
+- [ ] Développement de FastAPI.
+- [ ] Développement de React.
+- [ ] Intégration du LLM.
+- [ ] Reranking Cross-Encoder.
+- [ ] Skill Gap Analysis.
+- [ ] Learning Roadmap.
+- [ ] Évaluation Ragas.
+- [ ] Tests d'intégration et démonstration finale.
+
+---
+
+## 8. Conclusion du cadrage
+
+PathForge AI vise à construire une plateforme d'orientation professionnelle fondée sur des données documentées, une recherche hybride et un graphe de connaissances.
+
+Le projet suit une **approche progressive et modulaire**.
+
+Les séances 1 et 2 ont permis de définir le problème métier, de concevoir l'architecture cible et de développer une première chaîne fonctionnelle :
+
+**ESCO → Preprocessing → Chunking → BGE-M3 → Qdrant → Semantic Search Top-K**
+
+Les prochaines étapes consisteront à intégrer les profils étudiants et les offres d'emploi, enrichir la recherche avec BM25 et Neo4j, puis construire un moteur de recommandation personnalisé, explicable et évalué.
+
+**La priorité est de valider chaque composant avant l'intégration complète du système.**
