@@ -21,4 +21,4 @@ data/raw/
 data/processed/
 
 # Sauvegardes locales
-scripts/*_backup.pyscripts/*_backup.py
+scripts/*backup.pyscripts/*backup.py
