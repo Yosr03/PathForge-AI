@@ -1,0 +1,962 @@
+[
+  {
+    "filename": "occupations",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "occupations",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "occupations",
+    "data header": "iscoGroup",
+    "property": "http://www.w3.org/2004/02/skos/core#notation",
+    "description": "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."
+  },
+  {
+    "filename": "occupations",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "occupations",
+    "data header": "altLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "description": "An alternative lexical label for a resource."
+  },
+  {
+    "filename": "occupations",
+    "data header": "hiddenLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#hiddenLabel",
+    "description": "A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."
+  },
+  {
+    "filename": "occupations",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "occupations",
+    "data header": "modifiedDate",
+    "property": "http://purl.org/dc/terms/modified",
+    "description": "Date on which the resource was changed."
+  },
+  {
+    "filename": "occupations",
+    "data header": "regulatedProfessionNote",
+    "property": "http://data.europa.eu/esco/model#regulatedProfessionNote",
+    "description": "The subject occupation is regulated according the description in the note.  The note typically contains a hyperlink."
+  },
+  {
+    "filename": "occupations",
+    "data header": "scopeNote",
+    "property": "http://www.w3.org/2004/02/skos/core#scopeNote",
+    "description": "A note that helps to clarify the meaning and/or the use of a concept."
+  },
+  {
+    "filename": "occupations",
+    "data header": "definition",
+    "property": "http://www.w3.org/2004/02/skos/core#definition",
+    "description": "A statement or formal explanation of the meaning of a concept."
+  },
+  {
+    "filename": "occupations",
+    "data header": "inScheme",
+    "property": "http://www.w3.org/2004/02/skos/core#inScheme",
+    "description": "Relates a resource (for example a concept) to a concept scheme in which it is included."
+  },
+  {
+    "filename": "occupations",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "occupations",
+    "data header": "code",
+    "property": "http://www.w3.org/2004/02/skos/core#notation",
+    "description": "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."
+  },
+  {
+    "filename": "occupations",
+    "data header": "naceCode",
+    "property": "http://data.europa.eu/esco/model#hasNACECode",
+    "description": "A tagging concept using the NACE codes to specify the industry sector of the tagged subject."
+  },
+  {
+    "filename": "skills",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "skills",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "skills",
+    "data header": "skillType",
+    "property": "http://data.europa.eu/esco/model#skillType",
+    "description": "Type of competence (a tagging concept)"
+  },
+  {
+    "filename": "skills",
+    "data header": "reuseLevel",
+    "property": "http://data.europa.eu/esco/model#skillReuseLevel",
+    "description": "Reuseability level of a skill"
+  },
+  {
+    "filename": "skills",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "skills",
+    "data header": "altLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "description": "An alternative lexical label for a resource."
+  },
+  {
+    "filename": "skills",
+    "data header": "hiddenLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#hiddenLabel",
+    "description": "A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."
+  },
+  {
+    "filename": "skills",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "skills",
+    "data header": "modifiedDate",
+    "property": "http://purl.org/dc/terms/modified",
+    "description": "Date on which the resource was changed."
+  },
+  {
+    "filename": "skills",
+    "data header": "scopeNote",
+    "property": "http://www.w3.org/2004/02/skos/core#scopeNote",
+    "description": "A note that helps to clarify the meaning and/or the use of a concept."
+  },
+  {
+    "filename": "skills",
+    "data header": "definition",
+    "property": "http://www.w3.org/2004/02/skos/core#definition",
+    "description": "A statement or formal explanation of the meaning of a concept."
+  },
+  {
+    "filename": "skills",
+    "data header": "inScheme",
+    "property": "http://www.w3.org/2004/02/skos/core#inScheme",
+    "description": "Relates a resource (for example a concept) to a concept scheme in which it is included."
+  },
+  {
+    "filename": "skills",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "ISCOGroups",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "ISCOGroups",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "ISCOGroups",
+    "data header": "code",
+    "property": "http://www.w3.org/2004/02/skos/core#notation",
+    "description": "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."
+  },
+  {
+    "filename": "ISCOGroups",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "ISCOGroups",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "ISCOGroups",
+    "data header": "altLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "description": "An alternative lexical label for a resource."
+  },
+  {
+    "filename": "ISCOGroups",
+    "data header": "inScheme",
+    "property": "http://www.w3.org/2004/02/skos/core#inScheme",
+    "description": "Relates a resource (for example a concept) to a concept scheme in which it is included."
+  },
+  {
+    "filename": "ISCOGroups",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "skillGroups",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "skillGroups",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "skillGroups",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "skillGroups",
+    "data header": "altLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "description": "An alternative lexical label for a resource."
+  },
+  {
+    "filename": "skillGroups",
+    "data header": "hiddenLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#hiddenLabel",
+    "description": "A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."
+  },
+  {
+    "filename": "skillGroups",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "skillGroups",
+    "data header": "modifiedDate",
+    "property": "http://purl.org/dc/terms/modified",
+    "description": "Date on which the resource was changed."
+  },
+  {
+    "filename": "skillGroups",
+    "data header": "scopeNote",
+    "property": "http://www.w3.org/2004/02/skos/core#scopeNote",
+    "description": "A note that helps to clarify the meaning and/or the use of a concept."
+  },
+  {
+    "filename": "skillGroups",
+    "data header": "inScheme",
+    "property": "http://www.w3.org/2004/02/skos/core#inScheme",
+    "description": "Relates a resource (for example a concept) to a concept scheme in which it is included."
+  },
+  {
+    "filename": "skillGroups",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "skillGroups",
+    "data header": "code",
+    "property": "http://www.w3.org/2004/02/skos/core#notation",
+    "description": "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."
+  },
+  {
+    "filename": "transversalSkillsCollection",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "transversalSkillsCollection",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "transversalSkillsCollection",
+    "data header": "skillType",
+    "property": "http://data.europa.eu/esco/model#skillType",
+    "description": "Type of competence (a tagging concept)"
+  },
+  {
+    "filename": "transversalSkillsCollection",
+    "data header": "reuseLevel",
+    "property": "http://data.europa.eu/esco/model#skillReuseLevel",
+    "description": "Reuseability level of a skill"
+  },
+  {
+    "filename": "transversalSkillsCollection",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "transversalSkillsCollection",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "transversalSkillsCollection",
+    "data header": "altLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "description": "An alternative lexical label for a resource."
+  },
+  {
+    "filename": "transversalSkillsCollection",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "transversalSkillsCollection",
+    "data header": "broaderConceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "transversalSkillsCollection",
+    "data header": "broaderConceptPT",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "languageSkillsCollection",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "languageSkillsCollection",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "languageSkillsCollection",
+    "data header": "skillType",
+    "property": "http://data.europa.eu/esco/model#skillType",
+    "description": "Type of competence (a tagging concept)"
+  },
+  {
+    "filename": "languageSkillsCollection",
+    "data header": "reuseLevel",
+    "property": "http://data.europa.eu/esco/model#skillReuseLevel",
+    "description": "Reuseability level of a skill"
+  },
+  {
+    "filename": "languageSkillsCollection",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "languageSkillsCollection",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "languageSkillsCollection",
+    "data header": "altLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "description": "An alternative lexical label for a resource."
+  },
+  {
+    "filename": "languageSkillsCollection",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "languageSkillsCollection",
+    "data header": "broaderConceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "languageSkillsCollection",
+    "data header": "broaderConceptPT",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "conceptSchemes",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "conceptSchemes",
+    "data header": "conceptSchemeUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "conceptSchemes",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "conceptSchemes",
+    "data header": "title",
+    "property": "http://purl.org/dc/terms/title",
+    "description": "A name given to the resource."
+  },
+  {
+    "filename": "conceptSchemes",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "conceptSchemes",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "conceptSchemes",
+    "data header": "hasTopConcept",
+    "property": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+    "description": "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."
+  },
+  {
+    "filename": "digCompSkillsCollection",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "digCompSkillsCollection",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "digCompSkillsCollection",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "digCompSkillsCollection",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "digCompSkillsCollection",
+    "data header": "skillType",
+    "property": "http://data.europa.eu/esco/model#skillType",
+    "description": "Type of competence (a tagging concept)"
+  },
+  {
+    "filename": "digCompSkillsCollection",
+    "data header": "reuseLevel",
+    "property": "http://data.europa.eu/esco/model#skillReuseLevel",
+    "description": "Reuseability level of a skill"
+  },
+  {
+    "filename": "digCompSkillsCollection",
+    "data header": "altLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "description": "An alternative lexical label for a resource."
+  },
+  {
+    "filename": "digCompSkillsCollection",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "digCompSkillsCollection",
+    "data header": "broaderConceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "digCompSkillsCollection",
+    "data header": "broaderConceptPT",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "greenSkillsCollection",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "greenSkillsCollection",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "greenSkillsCollection",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "greenSkillsCollection",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "greenSkillsCollection",
+    "data header": "skillType",
+    "property": "http://data.europa.eu/esco/model#skillType",
+    "description": "Type of competence (a tagging concept)"
+  },
+  {
+    "filename": "greenSkillsCollection",
+    "data header": "reuseLevel",
+    "property": "http://data.europa.eu/esco/model#skillReuseLevel",
+    "description": "Reuseability level of a skill"
+  },
+  {
+    "filename": "greenSkillsCollection",
+    "data header": "altLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "description": "An alternative lexical label for a resource."
+  },
+  {
+    "filename": "greenSkillsCollection",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "greenSkillsCollection",
+    "data header": "broaderConceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "greenSkillsCollection",
+    "data header": "broaderConceptPT",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "researchSkillsCollection",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "researchSkillsCollection",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "researchSkillsCollection",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "researchSkillsCollection",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "researchSkillsCollection",
+    "data header": "skillType",
+    "property": "http://data.europa.eu/esco/model#skillType",
+    "description": "Type of competence (a tagging concept)"
+  },
+  {
+    "filename": "researchSkillsCollection",
+    "data header": "reuseLevel",
+    "property": "http://data.europa.eu/esco/model#skillReuseLevel",
+    "description": "Reuseability level of a skill"
+  },
+  {
+    "filename": "researchSkillsCollection",
+    "data header": "altLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "description": "An alternative lexical label for a resource."
+  },
+  {
+    "filename": "researchSkillsCollection",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "researchSkillsCollection",
+    "data header": "broaderConceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "researchSkillsCollection",
+    "data header": "broaderConceptPT",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "digitalSkillsCollection",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "digitalSkillsCollection",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "digitalSkillsCollection",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "digitalSkillsCollection",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "digitalSkillsCollection",
+    "data header": "skillType",
+    "property": "http://data.europa.eu/esco/model#skillType",
+    "description": "Type of competence (a tagging concept)"
+  },
+  {
+    "filename": "digitalSkillsCollection",
+    "data header": "reuseLevel",
+    "property": "http://data.europa.eu/esco/model#skillReuseLevel",
+    "description": "Reuseability level of a skill"
+  },
+  {
+    "filename": "digitalSkillsCollection",
+    "data header": "altLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "description": "An alternative lexical label for a resource."
+  },
+  {
+    "filename": "digitalSkillsCollection",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "digitalSkillsCollection",
+    "data header": "broaderConceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "digitalSkillsCollection",
+    "data header": "broaderConceptPT",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "researchOccupationsCollection",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "researchOccupationsCollection",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "researchOccupationsCollection",
+    "data header": "preferredLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "researchOccupationsCollection",
+    "data header": "status",
+    "property": "http://purl.org/iso25964/skos-thes#status",
+    "description": "ISO status\n- on ThesaurusConcept\n- on ThesaurusTerm"
+  },
+  {
+    "filename": "researchOccupationsCollection",
+    "data header": "altLabels",
+    "property": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "description": "An alternative lexical label for a resource."
+  },
+  {
+    "filename": "researchOccupationsCollection",
+    "data header": "description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "researchOccupationsCollection",
+    "data header": "broaderConceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "researchOccupationsCollection",
+    "data header": "broaderConceptPT",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "filename",
+    "data header": "data header",
+    "property": "property",
+    "description": "description"
+  },
+  {
+    "filename": "broaderRelationsOccPillar",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "broaderRelationsOccPillar",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "broaderRelationsOccPillar",
+    "data header": "conceptLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "broaderRelationsOccPillar",
+    "data header": "broaderType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "broaderRelationsOccPillar",
+    "data header": "broaderUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "broaderRelationsOccPillar",
+    "data header": "broaderLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "broaderRelationsSkillPillar",
+    "data header": "conceptType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "broaderRelationsSkillPillar",
+    "data header": "conceptUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "broaderRelationsSkillPillar",
+    "data header": "conceptLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "broaderRelationsSkillPillar",
+    "data header": "broaderType",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "broaderRelationsSkillPillar",
+    "data header": "broaderUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "broaderRelationsSkillPillar",
+    "data header": "broaderLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "occupationSkillRelations",
+    "data header": "occupationUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "occupationSkillRelations",
+    "data header": "occupationLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "occupationSkillRelations",
+    "data header": "relationType",
+    "property": "http://data.europa.eu/esco/model#relatedOptionalSkill | http://data.europa.eu/esco/model#relatedEssentialSkill",
+    "description": "The ESCO skill or competence that is relevant (but optional) for the subject occuption. | The ESCO skill or competence that is essential for the subject occupation or skill."
+  },
+  {
+    "filename": "occupationSkillRelations",
+    "data header": "skillType",
+    "property": "http://data.europa.eu/esco/model#skillType",
+    "description": "Type of competence (a tagging concept)"
+  },
+  {
+    "filename": "occupationSkillRelations",
+    "data header": "skillUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "occupationSkillRelations",
+    "data header": "skillLabel",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "skillSkillRelations",
+    "data header": "originalSkillUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "skillSkillRelations",
+    "data header": "originalSkillType",
+    "property": "http://data.europa.eu/esco/model#skillType",
+    "description": "Type of competence (a tagging concept)"
+  },
+  {
+    "filename": "skillSkillRelations",
+    "data header": "relationType",
+    "property": "http://data.europa.eu/esco/model#relatedOptionalSkill | http://data.europa.eu/esco/model#relatedEssentialSkill",
+    "description": "The ESCO skill or competence that is relevant (but optional) for the subject occuption. | The ESCO skill or competence that is essential for the subject occupation or skill."
+  },
+  {
+    "filename": "skillSkillRelations",
+    "data header": "relatedSkillType",
+    "property": "http://data.europa.eu/esco/model#skillType",
+    "description": "Type of competence (a tagging concept)"
+  },
+  {
+    "filename": "skillSkillRelations",
+    "data header": "relatedSkillUri",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 0 URI",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 0 preferred term",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 1 URI",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 1 preferred term",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 2 URI",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 2 preferred term",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 3 URI",
+    "property": "",
+    "description": "No direct related property exists"
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 3 preferred term",
+    "property": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "description": "The preferred lexical label for a resource, in a given language."
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Description",
+    "property": "http://purl.org/dc/terms/description",
+    "description": "An account of the resource."
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Scope note",
+    "property": "http://www.w3.org/2004/02/skos/core#scopeNote",
+    "description": "A note that helps to clarify the meaning and/or the use of a concept."
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 0 code",
+    "property": "http://www.w3.org/2004/02/skos/core#notation",
+    "description": "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 1 code",
+    "property": "http://www.w3.org/2004/02/skos/core#notation",
+    "description": "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 2 code",
+    "property": "http://www.w3.org/2004/02/skos/core#notation",
+    "description": "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."
+  },
+  {
+    "filename": "skillsHierarchy",
+    "data header": "Level 3 code",
+    "property": "http://www.w3.org/2004/02/skos/core#notation",
+    "description": "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."
+  }
+]
