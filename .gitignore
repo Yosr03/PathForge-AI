@@ -22,3 +22,6 @@ data/processed/
 
 # Sauvegardes locales
 scripts/*backup.pyscripts/*backup.py
+
+/scripts/ingest_backup.py
+/scripts/ingest_full_backup.py
