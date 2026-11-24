@@ -1,0 +1,6 @@
+{
+  "profile_id": "P01",
+  "metric": "faithfulness",
+  "judge": "gemma2:2b",
+  "score": 1.0
+}

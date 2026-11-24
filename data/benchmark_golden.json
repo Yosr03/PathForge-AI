@@ -1,0 +1,392 @@
+[
+  {
+    "id": "P01",
+    "user_input": "I am a student skilled in Python, SQL, Power BI and data visualization. I completed an internship analyzing sales data and creating dashboards. Which occupation best matches my profile?",
+    "expected_occupation": "data analyst",
+    "expected_uri": "http://data.europa.eu/esco/occupation/d3edb8f8-3a06-47a0-8fb9-9b212c006aa2",
+    "reference": "The recommended occupation is data analyst. The student's SQL experience relates to the ESCO skill 'use databases'. Power BI and dashboard creation relate to 'business intelligence' and 'data visualisation software'. The sales analysis internship supports a connection with 'business analytics'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements; it does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: data analyst\nDescription: Data analysts import, inspect, clean, transform, validate, model, or interpret collections of data with regard to the business goals of the company. They ensure that the data sources and repositories provide consistent and reliable data. Data analysts use different algorithms and IT tools as demanded by the situation and the current data. They might prepare reports in the form of visualisations such as graphs, charts, and dashboards.\nEssential skills: digital data processing, information structure, business intelligence, data mining, documentation types, visual presentation techniques, data engineering, data visualisation software, information extraction, statistics, information categorisation, business analytics, resource description framework query language, query languages, information confidentiality, unstructured data, data quality assessment, data ethics, data science, data models, normalise data, use data processing techniques, interpret current data, establish data processes, execute analytical mathematical calculations, apply statistical analysis techniques, perform data mining, use databases, integrate ICT data, analyse big data, handle data samples, perform data cleansing, define data quality criteria, implement data quality processes, collect ICT data, manage data\nOptional skills: marketing analytics, web analytics, MDX, information architecture, social network analysis, XQuery, database, image recognition, SPARQL, statistical modeling techniques, research design, game theory, multidisciplinary research, healthcare analytics, LDAP, data storage, online analytical processing, cloud technologies, LINQ, Hadoop, N1QL, gather data for forensic purposes, use spreadsheets software, manage quantitative data, store digital data and systems, manage data collection systems, make data-driven decisions, deliver visual presentation of data, report analysis results, manage cloud data and storage, create data models"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "validated_by_human": true,
+    "source": "ESCO v1.2.1",
+    "source_uri": "http://data.europa.eu/esco/occupation/d3edb8f8-3a06-47a0-8fb9-9b212c006aa2",
+    "reference_original": "The expected occupation is data analyst. According to ESCO v1.2.1, its essential skills include: digital data processing, information structure, business intelligence, data mining, documentation types, visual presentation techniques, data engineering, data visualisation software, information extraction, statistics, information categorisation, business analytics, resource description framework query language, query languages, information confidentiality, unstructured data, data quality assessment, data ethics, data science, data models, normalise data, use data processing techniques, interpret current data, establish data processes, execute analytical mathematical calculations, apply statistical analysis techniques, perform data mining, use databases, integrate ICT data, analyse big data, handle data samples, perform data cleansing, define data quality criteria, implement data quality processes, collect ICT data, manage data. Its optional skills include: marketing analytics, web analytics, MDX, information architecture, social network analysis, XQuery, database, image recognition, SPARQL, statistical modeling techniques, research design, game theory, multidisciplinary research, healthcare analytics, LDAP, data storage, online analytical processing, cloud technologies, LINQ, Hadoop, N1QL, gather data for forensic purposes, use spreadsheets software, manage quantitative data, store digital data and systems, manage data collection systems, make data-driven decisions, deliver visual presentation of data, report analysis results, manage cloud data and storage, create data models.",
+    "reference_short": "The most relevant occupation for this profile is data analyst. The student's documented experience is consistent with this occupation. ESCO v1.2.1 identifies the following essential skills as particularly relevant: business intelligence, data visualisation software, use databases, business analytics. This is a career recommendation, not a certification of the student's skills.",
+    "selected_essential_skills": [
+      "business intelligence",
+      "data visualisation software",
+      "use databases",
+      "business analytics"
+    ],
+    "reference_final": "The recommended occupation is data analyst. The student's SQL experience relates to the ESCO skill 'use databases'. Power BI and dashboard creation relate to 'business intelligence' and 'data visualisation software'. The sales analysis internship supports a connection with 'business analytics'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements; it does not certify the student's competence.",
+    "reference_status": "validated",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Manual review of occupation relevance, ESCO essential skills and reference explanation",
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/d3edb8f8-3a06-47a0-8fb9-9b212c006aa2"
+  },
+  {
+    "id": "P02",
+    "user_input": "I developed machine learning models using Python, PyTorch and TensorFlow. My projects include predictive modeling and intelligent systems. Which career suits my skills?",
+    "expected_occupation": "artificial intelligence engineer",
+    "expected_uri": "http://data.europa.eu/esco/occupation/35553663-deab-4d9a-bf22-15c1625d28e8",
+    "reference": "The recommended occupation is artificial intelligence engineer. The student's Python programming relates to the ESCO skill 'Python (computer programming)'. Projects involving machine learning, PyTorch and TensorFlow are consistent with 'artificial neural networks', 'algorithms' and 'principles of artificial intelligence'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements; it does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: artificial intelligence engineer\nDescription: Artificial intelligence engineer apply methods of artificial intelligence in engineering, robotics and computer science to design programs which simulate intelligence including thinking models, cognitive and knowledge-based systems, problem solving, and decision making. They also integrate structured knowledge into computer systems (ontologies, knowledge bases) in order to solve complex problems normally requiring a high level of human expertise or artificial intelligence methods.\nEssential skills: digital data processing, information structure, computer simulation, systems development life-cycle, information architecture, computer programming, data mining, visual presentation techniques, algorithms, artificial neural networks, information extraction, task algorithmisation, information categorisation, business process modelling, resource description framework query language, unstructured data, Python (computer programming), principles of artificial intelligence, data science, data models, creatively use digital technologies, use data processing techniques, design process, analyse big data, develop creative ideas, create data sets, analyse business requirements, develop statistical software, deliver visual presentation of data, apply ICT systems theory, define technical requirements\nOptional skills: Haskell, Erlang, SAS language, Agile project management, Ruby (computer programming), Common Lisp, Lisp, Visual Basic, business intelligence, Java (computer programming), Prolog (computer programming), OpenEdge Advanced Business Language, JavaScript, Perl, Smalltalk (computer programming), PHP, Assembly (computer programming), C#, R, Groovy, SPARQL, operational research, computer vision, Microsoft Visual C++, TypeScript, business analytics, CoffeeScript, Objective-C, database development tools, ML (computer programming), C++, SAP R3, Swift (computer programming), ICT project management methodologies, MATLAB, LINQ, Scratch (computer programming), Process-based management, lean project management, VBScript, COBOL, Pascal (computer programming), deep learning, N1QL, Scala, manage ICT data classification, assess ICT knowledge, build predictive models, perform dimensionality reduction, manage business knowledge, apply systemic design thinking, build recommender systems, identify processes for re-engineering, design database scheme, utilise machine learning, design application interfaces, build business relationships, manage ICT semantic integration"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "validated_by_human": true,
+    "source": "ESCO v1.2.1",
+    "source_uri": "http://data.europa.eu/esco/occupation/35553663-deab-4d9a-bf22-15c1625d28e8",
+    "reference_original": "The expected occupation is artificial intelligence engineer. According to ESCO v1.2.1, its essential skills include: digital data processing, information structure, computer simulation, systems development life-cycle, information architecture, computer programming, data mining, visual presentation techniques, algorithms, artificial neural networks, information extraction, task algorithmisation, information categorisation, business process modelling, resource description framework query language, unstructured data, Python (computer programming), principles of artificial intelligence, data science, data models, creatively use digital technologies, use data processing techniques, design process, analyse big data, develop creative ideas, create data sets, analyse business requirements, develop statistical software, deliver visual presentation of data, apply ICT systems theory, define technical requirements. Its optional skills include: Haskell, Erlang, SAS language, Agile project management, Ruby (computer programming), Common Lisp, Lisp, Visual Basic, business intelligence, Java (computer programming), Prolog (computer programming), OpenEdge Advanced Business Language, JavaScript, Perl, Smalltalk (computer programming), PHP, Assembly (computer programming), C#, R, Groovy, SPARQL, operational research, computer vision, Microsoft Visual C++, TypeScript, business analytics, CoffeeScript, Objective-C, database development tools, ML (computer programming), C++, SAP R3, Swift (computer programming), ICT project management methodologies, MATLAB, LINQ, Scratch (computer programming), Process-based management, lean project management, VBScript, COBOL, Pascal (computer programming), deep learning, N1QL, Scala, manage ICT data classification, assess ICT knowledge, build predictive models, perform dimensionality reduction, manage business knowledge, apply systemic design thinking, build recommender systems, identify processes for re-engineering, design database scheme, utilise machine learning, design application interfaces, build business relationships, manage ICT semantic integration.",
+    "reference_short": "The most relevant occupation for this profile is artificial intelligence engineer. The student's documented experience is consistent with this occupation. ESCO v1.2.1 identifies the following essential skills as particularly relevant: Python (computer programming), artificial neural networks, algorithms, principles of artificial intelligence. This is a career recommendation, not a certification of the student's skills.",
+    "selected_essential_skills": [
+      "Python (computer programming)",
+      "artificial neural networks",
+      "algorithms",
+      "principles of artificial intelligence"
+    ],
+    "reference_final": "The recommended occupation is artificial intelligence engineer. The student's Python programming relates to the ESCO skill 'Python (computer programming)'. Projects involving machine learning, PyTorch and TensorFlow are consistent with 'artificial neural networks', 'algorithms' and 'principles of artificial intelligence'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements; it does not certify the student's competence.",
+    "reference_status": "validated",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Manual review of occupation relevance, ESCO essential skills and reference explanation",
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/35553663-deab-4d9a-bf22-15c1625d28e8"
+  },
+  {
+    "id": "P03",
+    "user_input": "I have experience designing relational database schemas, defining data models and optimizing database structures. What occupation fits my profile?",
+    "expected_occupation": "database designer",
+    "expected_uri": "http://data.europa.eu/esco/occupation/8d9ec84d-cf2d-4179-87bc-335cda54a427",
+    "reference": "The recommended occupation is database designer. The student's experience designing relational schemas relates to the ESCO skill 'design database scheme'. Data modelling and database structure optimisation are consistent with 'database management systems' and 'create database diagrams', although diagram creation is not explicitly stated in the profile. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements; it does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: database designer\nDescription: Database designers specify the database's logical structure, processes, and information flows. They design data models and databases to serve data acquisition.\nEssential skills: information structure, systems development life-cycle, database, web programming, ICT security legislation, business process modelling, resource description framework query language, query languages, database development tools, database management systems, systems theory, migrate existing data, use markup languages, develop automated migration methods, assess ICT knowledge, manage database, perform data analysis, create software design, write database documentation, design database scheme, operate relational database management system, create database diagrams, create data sets, analyse business requirements, manage standards for data exchange, apply ICT systems theory, define technical requirements\nOptional skills: Haskell, Erlang, SAS language, Agile project management, Ruby (computer programming), Common Lisp, Lisp, Visual Basic, Java (computer programming), MDX, computer programming, Prolog (computer programming), OpenEdge Advanced Business Language, JavaScript, DB2, Microsoft Access, XQuery, Perl, Smalltalk (computer programming), PHP, OpenEdge Database, Assembly (computer programming), data engineering, ObjectStore, C#, MySQL, TripleStore, R, Groovy, ASP.NET, APL, SPARQL, Oracle WebLogic, Microsoft Visual C++, IBM Informix, TypeScript, CoffeeScript, Objective-C, ML (computer programming), LDAP, PostgreSQL, AJAX, C++, Filemaker (database management systems), SAP R3, Swift (computer programming), ICT project management methodologies, SQL Server, MATLAB, unstructured data, CA Datacom/DB, LINQ, Python (computer programming), Scratch (computer programming), Process-based management, Teradata Database, lean project management, VBScript, Oracle Relational Database, COBOL, MarkLogic, Pascal (computer programming), ABAP, data science, N1QL, data models, Scala, define database physical structure, use databases, use access control software, design database in the cloud, design database backup specifications, apply technical communication skills, manage cloud data and storage, build business relationships, perform resource planning"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "validated_by_human": true,
+    "source": "ESCO v1.2.1",
+    "source_uri": "http://data.europa.eu/esco/occupation/8d9ec84d-cf2d-4179-87bc-335cda54a427",
+    "reference_original": "The expected occupation is database designer. According to ESCO v1.2.1, its essential skills include: information structure, systems development life-cycle, database, web programming, ICT security legislation, business process modelling, resource description framework query language, query languages, database development tools, database management systems, systems theory, migrate existing data, use markup languages, develop automated migration methods, assess ICT knowledge, manage database, perform data analysis, create software design, write database documentation, design database scheme, operate relational database management system, create database diagrams, create data sets, analyse business requirements, manage standards for data exchange, apply ICT systems theory, define technical requirements. Its optional skills include: Haskell, Erlang, SAS language, Agile project management, Ruby (computer programming), Common Lisp, Lisp, Visual Basic, Java (computer programming), MDX, computer programming, Prolog (computer programming), OpenEdge Advanced Business Language, JavaScript, DB2, Microsoft Access, XQuery, Perl, Smalltalk (computer programming), PHP, OpenEdge Database, Assembly (computer programming), data engineering, ObjectStore, C#, MySQL, TripleStore, R, Groovy, ASP.NET, APL, SPARQL, Oracle WebLogic, Microsoft Visual C++, IBM Informix, TypeScript, CoffeeScript, Objective-C, ML (computer programming), LDAP, PostgreSQL, AJAX, C++, Filemaker (database management systems), SAP R3, Swift (computer programming), ICT project management methodologies, SQL Server, MATLAB, unstructured data, CA Datacom/DB, LINQ, Python (computer programming), Scratch (computer programming), Process-based management, Teradata Database, lean project management, VBScript, Oracle Relational Database, COBOL, MarkLogic, Pascal (computer programming), ABAP, data science, N1QL, data models, Scala, define database physical structure, use databases, use access control software, design database in the cloud, design database backup specifications, apply technical communication skills, manage cloud data and storage, build business relationships, perform resource planning.",
+    "reference_short": "The most relevant occupation for this profile is database designer. The student's documented experience is consistent with this occupation. ESCO v1.2.1 identifies the following essential skills as particularly relevant: design database scheme, database management systems, create database diagrams. This is a career recommendation, not a certification of the student's skills.",
+    "selected_essential_skills": [
+      "design database scheme",
+      "database management systems",
+      "create database diagrams"
+    ],
+    "reference_final": "The recommended occupation is database designer. The student's experience designing relational schemas relates to the ESCO skill 'design database scheme'. Data modelling and database structure optimisation are consistent with 'database management systems' and 'create database diagrams', although diagram creation is not explicitly stated in the profile. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements; it does not certify the student's competence.",
+    "reference_status": "validated",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Manual review of occupation relevance, ESCO essential skills and reference explanation",
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/8d9ec84d-cf2d-4179-87bc-335cda54a427"
+  },
+  {
+    "id": "P04",
+    "user_input": "I build web applications using JavaScript, Python and APIs. I use Git, write tests and develop software features. Which occupation corresponds to my experience?",
+    "expected_occupation": "software developer",
+    "expected_uri": "http://data.europa.eu/esco/occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1",
+    "reference": "The recommended occupation is software developer. Building applications with JavaScript and Python relates to 'computer programming'. API development relates to 'web services'. Git relates to 'tools for software configuration management'. Writing tests supports software quality, but does not by itself prove the ESCO skill 'debug software'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements; it does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: software developer\nDescription: Software developers implement or program all kinds of software systems based on specifications and designs by using programming languages, tools, and platforms.\nEssential skills: engineering principles, computer programming, technical drawings, ICT debugging tools, project management, engineering processes, integrated development environment software, tools for software configuration management, web services, use an application-specific interface, develop automated migration methods, identify customer requirements, utilise computer-aided software engineering tools, debug software, use software design patterns, perform scientific research, use technical drawing software, manage engineering project, develop software prototype, use software libraries, create flowchart diagram, interpret technical requirements, define technical requirements, analyse software specifications\nOptional skills: Haskell, KDevelop, Erlang, SAS language, Ruby (computer programming), Common Lisp, Apache Maven, Lisp, Apache Tomcat, Visual Basic, screen reader, defence standard procedures, Java (computer programming), Drupal, software frameworks, Prolog (computer programming), OpenEdge Advanced Business Language, blockchain openness, JavaScript, Perl, Smalltalk (computer programming), PHP, software anomalies, Xcode, Assembly (computer programming), C#, R, Groovy, ASP.NET, cyber attack counter-measures, APL, SQL, object-oriented modelling, Puppet (tools for software configuration management), data visualisation software, smart contract, STAF, Eclipse (integrated development environment software), WordPress, Ansible, NoSQL, ICT security legislation, Microsoft Visual C++, TypeScript, World Wide Web Consortium standards, Oracle Application Development Framework, Ajax Framework, blockchain platforms, CoffeeScript, Objective-C, JavaScript Framework, ML (computer programming), IBM WebSphere, SPARK, AJAX, C++, trading software, SAP R3, Swift (computer programming), MATLAB, Salt (tools for software configuration management), Python (computer programming), Scratch (computer programming), VBScript, COBOL, Pascal (computer programming), ABAP, Internet of Things, Jenkins (tools for software configuration management), Scala, migrate existing data, use concurrent programming, use logic programming, do cloud refactoring, use object-oriented programming, collect customer feedback on applications, use query languages, use automatic programming, utilise machine learning, develop creative ideas, use functional programming, integrate system components, adapt to changes in technological development plans, design user interface"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "validated_by_human": true,
+    "source": "ESCO v1.2.1",
+    "source_uri": "http://data.europa.eu/esco/occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1",
+    "reference_original": "The expected occupation is software developer. According to ESCO v1.2.1, its essential skills include: engineering principles, computer programming, technical drawings, ICT debugging tools, project management, engineering processes, integrated development environment software, tools for software configuration management, web services, use an application-specific interface, develop automated migration methods, identify customer requirements, utilise computer-aided software engineering tools, debug software, use software design patterns, perform scientific research, use technical drawing software, manage engineering project, develop software prototype, use software libraries, create flowchart diagram, interpret technical requirements, define technical requirements, analyse software specifications. Its optional skills include: Haskell, KDevelop, Erlang, SAS language, Ruby (computer programming), Common Lisp, Apache Maven, Lisp, Apache Tomcat, Visual Basic, screen reader, defence standard procedures, Java (computer programming), Drupal, software frameworks, Prolog (computer programming), OpenEdge Advanced Business Language, blockchain openness, JavaScript, Perl, Smalltalk (computer programming), PHP, software anomalies, Xcode, Assembly (computer programming), C#, R, Groovy, ASP.NET, cyber attack counter-measures, APL, SQL, object-oriented modelling, Puppet (tools for software configuration management), data visualisation software, smart contract, STAF, Eclipse (integrated development environment software), WordPress, Ansible, NoSQL, ICT security legislation, Microsoft Visual C++, TypeScript, World Wide Web Consortium standards, Oracle Application Development Framework, Ajax Framework, blockchain platforms, CoffeeScript, Objective-C, JavaScript Framework, ML (computer programming), IBM WebSphere, SPARK, AJAX, C++, trading software, SAP R3, Swift (computer programming), MATLAB, Salt (tools for software configuration management), Python (computer programming), Scratch (computer programming), VBScript, COBOL, Pascal (computer programming), ABAP, Internet of Things, Jenkins (tools for software configuration management), Scala, migrate existing data, use concurrent programming, use logic programming, do cloud refactoring, use object-oriented programming, collect customer feedback on applications, use query languages, use automatic programming, utilise machine learning, develop creative ideas, use functional programming, integrate system components, adapt to changes in technological development plans, design user interface.",
+    "reference_short": "The most relevant occupation for this profile is software developer. The student's documented experience is consistent with this occupation. ESCO v1.2.1 identifies the following essential skills as particularly relevant: computer programming, web services, tools for software configuration management, debug software. This is a career recommendation, not a certification of the student's skills.",
+    "selected_essential_skills": [
+      "computer programming",
+      "web services",
+      "tools for software configuration management",
+      "debug software"
+    ],
+    "reference_final": "The recommended occupation is software developer. Building applications with JavaScript and Python relates to 'computer programming'. API development relates to 'web services'. Git relates to 'tools for software configuration management'. Writing tests supports software quality, but does not by itself prove the ESCO skill 'debug software'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements; it does not certify the student's competence.",
+    "reference_status": "validated",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Manual review of occupation relevance, ESCO essential skills and reference explanation",
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1"
+  },
+  {
+    "id": "P05",
+    "user_input": "I developed image classification and object detection projects using convolutional neural networks and OpenCV. Which occupation is most suitable?",
+    "expected_occupation": "computer vision engineer",
+    "expected_uri": "http://data.europa.eu/esco/occupation/1c5a45b9-440e-4726-b565-16a952abd341",
+    "reference": "The recommended occupation is computer vision engineer. Image classification and object detection projects relate to the ESCO skills 'image recognition' and 'develop computer vision system'. CNN projects relate to 'machine learning', while OpenCV experience relates to 'digital image processing'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements; it does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: computer vision engineer\nDescription: Computer vision engineers research, design, develop, and train artificial intelligence algorithms and machine learning primitives that understand the content of digital images based on a large amount of data. They apply this understanding to solve different real-world problems such as security, autonomous driving, robotic manufacturing, digital image classification, medical image processing and diagnosis, etc.\nEssential skills: computer simulation, computer programming, machine learning, image recognition, data engineering, scientific computing, digital twin technology, statistics, integrated development environment software, digital image processing, Python (computer programming), principles of artificial intelligence, data science, normalise data, conduct literature research, utilise computer-aided software engineering tools, interpret current data, establish data processes, execute analytical mathematical calculations, apply statistical analysis techniques, perform dimensionality reduction, develop computer vision system, handle data samples, perform data cleansing, implement data quality processes, develop software prototype, use software libraries, manage data collection systems, deliver visual presentation of data, report analysis results, define technical requirements, develop data processing applications\nOptional skills: mathematical modelling, digital systems, image formation, resource description framework query language, query languages, computer graphics, cognitive computing, signal processing, state estimation, quantum computing, deep learning, use markup languages, debug software, perform data mining, conduct scholarly research, define data quality criteria, conduct quantitative research, conduct qualitative research, create data models, design user interface"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "validated_by_human": true,
+    "source": "ESCO v1.2.1",
+    "source_uri": "http://data.europa.eu/esco/occupation/1c5a45b9-440e-4726-b565-16a952abd341",
+    "reference_original": "The expected occupation is computer vision engineer. According to ESCO v1.2.1, its essential skills include: computer simulation, computer programming, machine learning, image recognition, data engineering, scientific computing, digital twin technology, statistics, integrated development environment software, digital image processing, Python (computer programming), principles of artificial intelligence, data science, normalise data, conduct literature research, utilise computer-aided software engineering tools, interpret current data, establish data processes, execute analytical mathematical calculations, apply statistical analysis techniques, perform dimensionality reduction, develop computer vision system, handle data samples, perform data cleansing, implement data quality processes, develop software prototype, use software libraries, manage data collection systems, deliver visual presentation of data, report analysis results, define technical requirements, develop data processing applications. Its optional skills include: mathematical modelling, digital systems, image formation, resource description framework query language, query languages, computer graphics, cognitive computing, signal processing, state estimation, quantum computing, deep learning, use markup languages, debug software, perform data mining, conduct scholarly research, define data quality criteria, conduct quantitative research, conduct qualitative research, create data models, design user interface.",
+    "reference_short": "The most relevant occupation for this profile is computer vision engineer. The student's documented experience is consistent with this occupation. ESCO v1.2.1 identifies the following essential skills as particularly relevant: machine learning, image recognition, digital image processing, develop computer vision system. This is a career recommendation, not a certification of the student's skills.",
+    "selected_essential_skills": [
+      "machine learning",
+      "image recognition",
+      "digital image processing",
+      "develop computer vision system"
+    ],
+    "reference_final": "The recommended occupation is computer vision engineer. Image classification and object detection projects relate to the ESCO skills 'image recognition' and 'develop computer vision system'. CNN projects relate to 'machine learning', while OpenCV experience relates to 'digital image processing'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements; it does not certify the student's competence.",
+    "reference_status": "validated",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Manual review of occupation relevance, ESCO essential skills and reference explanation",
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/1c5a45b9-440e-4726-b565-16a952abd341"
+  },
+  {
+    "id": "P06",
+    "user_input": "I use Python to build predictive models, apply statistical methods and evaluate machine learning algorithms. I also analyze datasets and communicate findings. Which occupation best matches my profile?",
+    "expected_occupation": "data scientist",
+    "expected_uri": "http://data.europa.eu/esco/occupation/258e46f9-0075-4a2e-adae-1ff0477e0f30",
+    "reference": "The recommended occupation is data scientist. Predictive modelling and statistical methods support a connection with statistics and statistical modeling techniques. Data analysis and communication of findings also support data science and report analysis results. The selected ESCO essential skills are: 'statistics', 'statistical modeling techniques', 'data science', 'report analysis results'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: data scientist\nDescription: Data scientists find and interpret rich data sources, manage large amounts of data, merge data sources, ensure consistency of data-sets, and create visualisations to aid in understanding data. They build mathematical models using data, present and communicate data insights and findings to specialists and scientists in their team and if required, to a non-expert audience, and recommend ways to apply the data.\nEssential skills: mathematical modelling, data mining, visual presentation techniques, data engineering, quantitative analysis, data visualisation software, statistical modeling techniques, information extraction, scientific literature, statistics, information categorisation, resource description framework query language, query languages, online analytical processing, data ethics, data science, empirical analysis, data models, draft scientific or academic papers and technical documentation, normalise data, manage research data, use data processing techniques, interpret current data, interact professionally in research and professional environments, disseminate results to the scientific community, operate open source software, establish data processes, speak different languages, execute analytical mathematical calculations, evaluate research activities, demonstrate disciplinary expertise, use databases, handle data samples, increase the impact of science on policy and society, manage findable accessible interoperable and reusable data, perform scientific research, build recommender systems, perform data cleansing, manage intellectual property rights, apply for research funding, design database scheme, implement data quality processes, collect ICT data, apply research ethics and scientific integrity principles in research activities, promote open innovation in research, publish academic research, promote the transfer of knowledge, think abstractly, mentor individuals, manage data collection systems, manage personal professional development, write scientific publications, deliver visual presentation of data, report analysis results, develop professional network with researchers and scientists, integrate gender dimension in research, perform project management, manage open publications, synthesise information, conduct research across disciplines, develop data processing applications, promote the participation of citizens in scientific and research activities, communicate with a non-scientific audience\nOptional skills: computer simulation, marketing analytics, business intelligence, MDX, social network analysis, XQuery, image recognition, scientific computing, SPARQL, research design, digital curation, business analytics, multidisciplinary research, healthcare analytics, LDAP, unstructured data, LINQ, data quality assessment, state estimation, Hadoop, computational biology, N1QL, manage ICT data classification, use spreadsheets software, perform data mining, integrate ICT data, teach in academic or vocational contexts, manage ICT data architecture, define data quality criteria, design database in the cloud, manage data, apply blended learning, make data-driven decisions, create data models"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/258e46f9-0075-4a2e-adae-1ff0477e0f30",
+    "validated_by_human": true,
+    "reference_status": "validated",
+    "selected_essential_skills": [
+      "statistics",
+      "statistical modeling techniques",
+      "data science",
+      "report analysis results"
+    ],
+    "reference_final": "The recommended occupation is data scientist. Predictive modelling and statistical methods support a connection with statistics and statistical modeling techniques. Data analysis and communication of findings also support data science and report analysis results. The selected ESCO essential skills are: 'statistics', 'statistical modeling techniques', 'data science', 'report analysis results'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Reviewed reference explanation and ESCO skill alignment"
+  },
+  {
+    "id": "P07",
+    "user_input": "I develop ETL pipelines, transform large datasets and automate data ingestion using Python and SQL. I have experience with distributed data processing. Which career fits my profile?",
+    "expected_occupation": "data engineer",
+    "expected_uri": "http://data.europa.eu/esco/occupation/2079755f-d809-49e6-8037-4de6180e54c0",
+    "reference": "The recommended occupation is data engineer. ETL pipelines and automated ingestion relate to establishing data processes. Dataset transformation supports process data and developing data processing applications. Data storage is a related occupational requirement, not explicitly demonstrated. The selected ESCO essential skills are: 'establish data processes', 'process data', 'develop data processing applications', 'data storage'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: data engineer\nDescription: Data engineers develop the architecture needed to process, manage, and store large amounts of data which will be used by data scientists for analysis. They design the infrastructure and maintain data pipelines and warehouses to leverage data for strategic advantage.\nEssential skills: digital data processing, data warehouse, computer science, data analytics, data storage, database management systems, cloud technologies, unstructured data, data models, manage research data, use data processing techniques, establish data processes, perform dimensionality reduction, use databases, manage ICT data architecture, manage quantitative data, store digital data and systems, design database in the cloud, create data sets, manage data, process data, develop data processing applications, implement data warehousing techniques\nOptional skills: statistics, Teradata Database, SAS Data Management, analyse pipeline database information, create data models"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/2079755f-d809-49e6-8037-4de6180e54c0",
+    "validated_by_human": true,
+    "reference_status": "validated",
+    "selected_essential_skills": [
+      "establish data processes",
+      "process data",
+      "develop data processing applications",
+      "data storage"
+    ],
+    "reference_final": "The recommended occupation is data engineer. ETL pipelines and automated ingestion relate to establishing data processes. Dataset transformation supports process data and developing data processing applications. Data storage is a related occupational requirement, not explicitly demonstrated. The selected ESCO essential skills are: 'establish data processes', 'process data', 'develop data processing applications', 'data storage'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Reviewed reference explanation and ESCO skill alignment"
+  },
+  {
+    "id": "P08",
+    "user_input": "I gather business requirements, communicate with stakeholders and translate business needs into technical specifications for information systems. Which occupation suits my experience?",
+    "expected_occupation": "ICT business analyst",
+    "expected_uri": "http://data.europa.eu/esco/occupation/fe0fa514-b48d-4a53-9757-a283c0baacf0",
+    "reference": "The recommended occupation is ICT business analyst. Gathering stakeholder needs relates to analysing business requirements and interacting with users to gather requirements. Translating those needs into specifications relates to defining technical requirements. The selected ESCO essential skills are: 'analyse business requirements', 'interact with users to gather requirements', 'define technical requirements'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: ICT business analyst\nDescription: ICT business analysts are in charge of analysing and designing an organisation's processes and systems, assessing the business model and its integration with technology. They also identify change needs, assess the impact of the change, capture and document requirements and then ensure that these requirements are delivered whilst supporting the business through the implementation process.\nEssential skills: business requirements techniques, digital systems, product usage risks analysis, business process modelling, legal requirements of ICT products, propose ICT solutions to business problems, identify customer requirements, translate requirements into visual design, apply change management, provide cost benefit analysis reports, analyse business processes, create business process models, analyse the context of an organisation, interact with users to gather requirements, analyse business requirements, identify legal requirements, define technical requirements, implement strategic planning\nOptional skills: systems development life-cycle, internal risk management policy, business intelligence, information architecture, innovation processes, visual presentation techniques, decision support systems, information extraction, organisational resilience, information categorisation, cloud technologies, business strategy concepts, unstructured data, business ICT systems, ICT market, design process, execute analytical mathematical calculations, provide user documentation, manage ICT project"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/fe0fa514-b48d-4a53-9757-a283c0baacf0",
+    "validated_by_human": true,
+    "reference_status": "validated",
+    "selected_essential_skills": [
+      "analyse business requirements",
+      "interact with users to gather requirements",
+      "define technical requirements"
+    ],
+    "reference_final": "The recommended occupation is ICT business analyst. Gathering stakeholder needs relates to analysing business requirements and interacting with users to gather requirements. Translating those needs into specifications relates to defining technical requirements. The selected ESCO essential skills are: 'analyse business requirements', 'interact with users to gather requirements', 'define technical requirements'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Reviewed reference explanation and ESCO skill alignment"
+  },
+  {
+    "id": "P09",
+    "user_input": "I design test cases, execute automated tests and report software defects. I use testing frameworks and verify application quality before releases. Which occupation matches my skills?",
+    "expected_occupation": "software tester",
+    "expected_uri": "http://data.europa.eu/esco/occupation/106f79e4-6264-45f1-9e7a-297435cd684b",
+    "reference": "The recommended occupation is software tester. Automated test execution relates to executing software tests. Defect reporting relates to reporting test findings. Test cases support testing documentation, although complete documentation is not explicitly shown. The selected ESCO essential skills are: 'execute software tests', 'report test findings', 'provide software testing documentation'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: software tester\nDescription: Software testers perform software tests. They may also plan and design them. They may also debug and repair software although this mainly corresponds to designers and developers. They ensure that applications function properly before delivering them to internal and external clients.\nEssential skills: software architecture models, software anomalies, levels of software testing, software metrics, report test findings, provide software testing documentation, perform software unit testing, execute software tests, address problems critically, replicate customer software issues\nOptional skills: Haskell, Erlang, SAS language, Agile project management, Ruby (computer programming), Common Lisp, Lisp, Visual Basic, Java (computer programming), MDX, computer programming, Prolog (computer programming), OpenEdge Advanced Business Language, digital systems, JavaScript, XQuery, Perl, Smalltalk (computer programming), PHP, Assembly (computer programming), software components libraries, hardware components, C#, R, Groovy, ASP.NET, APL, SPARQL, ICT debugging tools, audit techniques, tools for ICT test automation, Microsoft Visual C++, TypeScript, resource description framework query language, CoffeeScript, Objective-C, query languages, ML (computer programming), LDAP, AJAX, C++, trading software, SAP R3, Swift (computer programming), ICT project management methodologies, MATLAB, application usability, unstructured data, LINQ, Python (computer programming), Scratch (computer programming), Process-based management, lean project management, VBScript, COBOL, Pascal (computer programming), ABAP, ICT performance analysis methods, N1QL, Scala, manage schedule of tasks, debug software, plan software testing, use scripting programming, develop automated software tests, develop ICT test suite, conduct ICT code review, measure software usability, execute integration testing, perform software recovery testing"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/106f79e4-6264-45f1-9e7a-297435cd684b",
+    "validated_by_human": true,
+    "reference_status": "validated",
+    "selected_essential_skills": [
+      "execute software tests",
+      "report test findings",
+      "provide software testing documentation"
+    ],
+    "reference_final": "The recommended occupation is software tester. Automated test execution relates to executing software tests. Defect reporting relates to reporting test findings. Test cases support testing documentation, although complete documentation is not explicitly shown. The selected ESCO essential skills are: 'execute software tests', 'report test findings', 'provide software testing documentation'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Reviewed reference explanation and ESCO skill alignment"
+  },
+  {
+    "id": "P10",
+    "user_input": "I manage database servers, monitor database performance, configure backups and restore data after failures. I also manage user access and database security. Which occupation best fits my profile?",
+    "expected_occupation": "database administrator",
+    "expected_uri": "http://data.europa.eu/esco/occupation/8c57af09-719c-42b3-be40-6ed4946236cc",
+    "reference": "The recommended occupation is database administrator. Database server administration relates to managing databases. Backups and recovery relate to performing backups. Monitoring and access control relate to maintaining performance and database security. The selected ESCO essential skills are: 'manage database', 'perform backups', 'maintain database performance', 'maintain database security'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: database administrator\nDescription: Database administrators test, implement and administer computer databases. They use their expertise in database management systems to plan, coordinate and implement security measures to safeguard computer databases. They also use scripts and configuration files to tailor a database to users' needs.\nEssential skills: information structure, domain name service, system backup best practice, distributed computing, resource description framework query language, query languages, database development tools, data storage, database management systems, data quality assessment, data models, define database physical structure, use an application-specific interface, administer ICT system, apply company policies, manage database, use databases, use scripting programming, design database scheme, operate relational database management system, perform ICT troubleshooting, interpret technical texts, balance database resources, design database backup specifications, perform backups, maintain database performance, maintain database security, create data models\nOptional skills: business intelligence, MDX, DB2, Microsoft Access, XQuery, OpenEdge Database, data engineering, ObjectStore, MySQL, TripleStore, SPARQL, IBM Informix, LDAP, PostgreSQL, online analytical processing, Filemaker (database management systems), SQL Server, quality assurance methodologies, LINQ, Teradata Database, Oracle Relational Database, MarkLogic, N1QL, implement ICT security policies, use spreadsheets software, protect personal data and privacy, use different communication channels, use automatic programming, execute ICT audits, design database in the cloud, use back-up and recovery tools, remove computer virus or malware from a computer, implement anti-virus software, provide ICT support, manage cloud data and storage, provide technical training, support ICT system users, estimate duration of work, implement a firewall"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/8c57af09-719c-42b3-be40-6ed4946236cc",
+    "validated_by_human": true,
+    "reference_status": "validated",
+    "selected_essential_skills": [
+      "manage database",
+      "perform backups",
+      "maintain database performance",
+      "maintain database security"
+    ],
+    "reference_final": "The recommended occupation is database administrator. Database server administration relates to managing databases. Backups and recovery relate to performing backups. Monitoring and access control relate to maintaining performance and database security. The selected ESCO essential skills are: 'manage database', 'perform backups', 'maintain database performance', 'maintain database security'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Reviewed reference explanation and ESCO skill alignment"
+  },
+  {
+    "id": "P11",
+    "user_input": "I develop responsive websites using HTML, CSS and JavaScript. I integrate frontend interfaces with backend APIs and optimize web application performance. Which occupation suits me?",
+    "expected_occupation": "web developer",
+    "expected_uri": "http://data.europa.eu/esco/occupation/c40a2919-48a9-40ea-b506-1f34f693496d",
+    "reference": "The recommended occupation is web developer. Building websites with HTML, CSS and JavaScript relates to web programming, markup languages and style sheet languages. Backend API integration relates to web services. The selected ESCO essential skills are: 'web programming', 'use markup languages', 'style sheet languages', 'web services'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: web developer\nDescription: Web developers develop, implement and document web-accessible software based on the designs provided. They align the client's web presence with its business strategy, troubleshoot software problems and issues and look for ways to improve the application.\nEssential skills: domain name service, computer programming, ICT debugging tools, web programming, World Wide Web Consortium standards, integrated development environment software, web based collaborative platforms, tools for software configuration management, style sheet languages, Joomla, content development processes, web services, use an application-specific interface, use markup languages, use e-services, debug software, use software design patterns, translate requirements into visual design, develop digital content, collect customer feedback on applications, develop software prototype, interpret technical texts, use software libraries, create flowchart diagram, implement front-end website design, analyse software specifications\nOptional skills: Haskell, KDevelop, Erlang, SAS language, Ruby (computer programming), Common Lisp, Apache Maven, Lisp, Sass, Visual Basic, Java (computer programming), LESS, Prolog (computer programming), OpenEdge Advanced Business Language, JavaScript, Perl, Smalltalk (computer programming), PHP, software anomalies, Xcode, Assembly (computer programming), C#, R, Groovy, ASP.NET, APL, object-oriented modelling, WebCMS, Puppet (tools for software configuration management), STAF, Eclipse (integrated development environment software), WordPress, Ansible, ICT security legislation, Microsoft Visual C++, TypeScript, JSSS, web application security threats, CoffeeScript, Objective-C, JavaScript Framework, ML (computer programming), IBM WebSphere, augmented reality, SPARK, WildFly, AJAX, C++, SAP R3, Swift (computer programming), MATLAB, Salt (tools for software configuration management), Python (computer programming), Scratch (computer programming), VBScript, COBOL, CSS, Pascal (computer programming), ABAP, Jenkins (tools for software configuration management), Scala, migrate existing data, utilise computer-aided software engineering tools, use presentation software, use concurrent programming, conduct content quality assurance, use logic programming, use object-oriented programming, use query languages, use automatic programming, use word processing software, develop creative ideas, implement anti-virus software, use functional programming, compose description for web elements, adapt to changes in technological development plans, design user interface"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/c40a2919-48a9-40ea-b506-1f34f693496d",
+    "validated_by_human": true,
+    "reference_status": "validated",
+    "selected_essential_skills": [
+      "web programming",
+      "use markup languages",
+      "style sheet languages",
+      "web services"
+    ],
+    "reference_final": "The recommended occupation is web developer. Building websites with HTML, CSS and JavaScript relates to web programming, markup languages and style sheet languages. Backend API integration relates to web services. The selected ESCO essential skills are: 'web programming', 'use markup languages', 'style sheet languages', 'web services'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Reviewed reference explanation and ESCO skill alignment"
+  },
+  {
+    "id": "P12",
+    "user_input": "I configure routers and switches, design computer networks and troubleshoot connectivity issues. I also work with network protocols and infrastructure monitoring. Which career matches my experience?",
+    "expected_occupation": "ICT network engineer",
+    "expected_uri": "http://data.europa.eu/esco/occupation/cf2b03cd-feb7-4f47-90f6-ff1ed6016d3d",
+    "reference": "The recommended occupation is ICT network engineer. Network design relates to designing computer networks. Router configuration relates to ICT network routing. Troubleshooting and monitoring relate to analysing network configuration and performance. The selected ESCO essential skills are: 'design computer network', 'ICT network routing', 'analyse network configuration and performance'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: ICT network engineer\nDescription: ICT network engineers implement, maintain and support computer networks. They also perform network modelling, analysis, and planning. They may also design network and computer security measures. They may research and recommend network and data communications hardware and software.\nEssential skills: network engineering, ICT network routing, information security strategy, computer programming, ICT debugging tools, mobile operating systems, cloud technologies, network standards, ICT performance analysis methods, migrate existing data, use an application-specific interface, develop automated migration methods, design computer network, define technology strategy, debug software, use software design patterns, analyse network configuration and performance, collect customer feedback on applications, apply information security policies, forecast future ICT network needs, implement a virtual private network, implement ICT network diagnostic tools, analyse software specifications\nOptional skills: Haskell, KDevelop, Erlang, SAS language, network management system tools, Ruby (computer programming), Common Lisp, Apache Maven, Lisp, Visual Basic, Java (computer programming), Prolog (computer programming), OpenEdge Advanced Business Language, JavaScript, Smalltalk (computer programming), PHP, Xcode, Assembly (computer programming), C#, R, Groovy, ASP.NET, APL, Puppet (tools for software configuration management), STAF, Vagrant, Eclipse (integrated development environment software), Ansible, Microsoft Visual C++, TypeScript, integrated development environment software, CoffeeScript, Objective-C, tools for software configuration management, ICT problem management techniques, ML (computer programming), AJAX, C++, BlackBerry, SAP R3, Swift (computer programming), MATLAB, Salt (tools for software configuration management), Python (computer programming), iOS, Scratch (computer programming), Android (mobile operating systems), VBScript, COBOL, Pascal (computer programming), ABAP, Internet of Things, Jenkins (tools for software configuration management), Scala, create solutions to problems, implement ICT security policies, use concurrent programming, use logic programming, design cloud networks, use object-oriented programming, develop with cloud services, develop software prototype, use automatic programming, use back-up and recovery tools, remove computer virus or malware from a computer, install electronic communication equipment, develop creative ideas, create flowchart diagram, implement anti-virus software, implement spam protection, automate cloud tasks, use functional programming, design for organisational complexity, implement a firewall, adapt to changes in technological development plans"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/cf2b03cd-feb7-4f47-90f6-ff1ed6016d3d",
+    "validated_by_human": true,
+    "reference_status": "validated",
+    "selected_essential_skills": [
+      "design computer network",
+      "ICT network routing",
+      "analyse network configuration and performance"
+    ],
+    "reference_final": "The recommended occupation is ICT network engineer. Network design relates to designing computer networks. Router configuration relates to ICT network routing. Troubleshooting and monitoring relate to analysing network configuration and performance. The selected ESCO essential skills are: 'design computer network', 'ICT network routing', 'analyse network configuration and performance'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Reviewed reference explanation and ESCO skill alignment"
+  },
+  {
+    "id": "P13",
+    "user_input": "I assess cybersecurity risks, identify vulnerabilities and develop risk mitigation plans. I also work on security policies, compliance and risk reporting. Which occupation best matches my profile?",
+    "expected_occupation": "cybersecurity risk manager",
+    "expected_uri": "http://data.europa.eu/esco/occupation/7754d570-9519-48c2-b1c9-8e165f8bca0f",
+    "reference": "The recommended occupation is cybersecurity risk manager. Assessing vulnerabilities and cybersecurity risks relates to assessment of risks and threats. Risk mitigation plans relate to implementing ICT risk management and broader risk management. The selected ESCO essential skills are: 'assessment of risks and threats', 'implement ICT risk management', 'risk management'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: cybersecurity risk manager\nDescription: Cybersecurity risk managers identify, analyse, assess, estimate and mitigate cybersecurity-related risks of ICT infrastructures such as systems or services. They manage these aspects by planning risk analysis, applying, reporting, assessing, communicating, and treating them. They establish a risk management strategy for the organisation and ensure that risks remain at an acceptable level for the organisation by selecting mitigation actions and controls.\nEssential skills: ICT safety, internal risk management policy, ethical hacking principles, information security strategy, ICT network security risks, ICT security standards, attack vectors, cyber attack counter-measures, security threats, risk management, security engineering, assessment of risks and threats, cyber security, ICT performance analysis methods, establish an ICT security prevention plan, manage system security, communicate with stakeholders, establish an Information Security Management System, implement ICT risk management, engage with stakeholders, ensure adherence to organisational ICT standards, advice on security risk management\nOptional skills: domain name service, systems development life-cycle, computer forensics, cloud security and compliance, ICT quality policy, decision support systems, internet governance, Outsourcing model, hybrid model, audit techniques, tools for ICT test automation, ICT security legislation, organisational resilience, service-oriented modelling, levels of software testing, cloud monitoring and reporting, web application security threats, ICT project management, ICT problem management techniques, information confidentiality, legal requirements of ICT products, Open source model, investment analysis, ICT recovery techniques, ICT system user requirements, mobile device management, ICT encryption, Internet of Things, ICT process quality models, use an application-specific interface, implement ICT security policies, define technology strategy, develop information security strategy, define security policies, use ICT ticketing system, manage disaster recovery plans, develop with cloud services, execute ICT audits, use back-up and recovery tools, remove computer virus or malware from a computer, solve ICT system problems, implement a virtual private network, implement anti-virus software, implement cloud security and compliance, implement spam protection, lead disaster recovery exercises, design for organisational complexity, implement a firewall, manage keys for data protection, identify ICT security risks"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/7754d570-9519-48c2-b1c9-8e165f8bca0f",
+    "validated_by_human": true,
+    "reference_status": "validated",
+    "selected_essential_skills": [
+      "assessment of risks and threats",
+      "implement ICT risk management",
+      "risk management"
+    ],
+    "reference_final": "The recommended occupation is cybersecurity risk manager. Assessing vulnerabilities and cybersecurity risks relates to assessment of risks and threats. Risk mitigation plans relate to implementing ICT risk management and broader risk management. The selected ESCO essential skills are: 'assessment of risks and threats', 'implement ICT risk management', 'risk management'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Reviewed reference explanation and ESCO skill alignment"
+  },
+  {
+    "id": "P14",
+    "user_input": "I design robotic systems, program sensors and actuators and integrate control algorithms. I have worked on robot navigation and automation projects. Which occupation suits my skills?",
+    "expected_occupation": "robotics engineer",
+    "expected_uri": "http://data.europa.eu/esco/occupation/551a6797-3ca9-41fc-9dca-9a982a8fd8a6",
+    "reference": "The recommended occupation is robotics engineer. Robotic system development relates to robotics and robotic components. Control algorithms and automation projects relate to automatic control systems and designing automation components. The selected ESCO essential skills are: 'robotics', 'robotic components', 'automatic control system', 'design automation components'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: robotics engineer\nDescription: Robotics engineers design and develop robotic devices and applications in combination with mechanical engineering principles. They use pre-established designs and current developments for improving or inventing systems, machinery and equipment. They combine several knowledge fields such as computing, engineering, and electronics in the development of new engineering applications.\nEssential skills: human-robot collaboration, engineering principles, technical drawings, automatic control system, engineering processes, robotic components, mechanical engineering, robotics, mechanics, adjust engineering designs, develop computer vision system, perform scientific research, use technical drawing software, execute feasibility study, assess financial viability, approve engineering design, design automation components\nOptional skills: model based system engineering, manufacturing processes, electrical engineering, safety engineering, design principles, computer engineering, microprocessors, electronics, industrial engineering, state estimation, mechatronics, product data management, industrial research and development, keep up with digital transformation of industrial processes, debug software, record test data, create software design, perform test run, apply advanced manufacturing, create technical plans, calibrate mechatronic instruments, test mechatronic units, maintain robotic equipment, use CAM software, assemble robots, analyse test data, follow standards for machinery safety, advise on machinery malfunctions, simulate mechatronic design concepts, draft design specifications, use CAD software, design prototypes, conduct performance tests, assemble mechatronic units, prepare production prototypes, control production"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/551a6797-3ca9-41fc-9dca-9a982a8fd8a6",
+    "validated_by_human": true,
+    "reference_status": "validated",
+    "selected_essential_skills": [
+      "robotics",
+      "robotic components",
+      "automatic control system",
+      "design automation components"
+    ],
+    "reference_final": "The recommended occupation is robotics engineer. Robotic system development relates to robotics and robotic components. Control algorithms and automation projects relate to automatic control systems and designing automation components. The selected ESCO essential skills are: 'robotics', 'robotic components', 'automatic control system', 'design automation components'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Reviewed reference explanation and ESCO skill alignment"
+  },
+  {
+    "id": "P15",
+    "user_input": "I develop firmware for embedded devices and analyze security vulnerabilities in connected hardware. I work with microcontrollers, secure communication and embedded system protection. Which occupation best fits my profile?",
+    "expected_occupation": "embedded systems security engineer",
+    "expected_uri": "http://data.europa.eu/esco/occupation/1c5a896a-e010-4217-a29a-c44db26e25da",
+    "reference": "The recommended occupation is embedded systems security engineer. Firmware and microcontroller experience relates to embedded systems. Hardware vulnerability analysis relates to security engineering and identifying ICT system weaknesses. Formal security testing remains an occupational requirement not explicitly demonstrated. The selected ESCO essential skills are: 'embedded systems', 'security engineering', 'identify ICT system weaknesses', 'perform ICT security testing'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "reference_contexts": [
+      "Occupation: embedded systems security engineer\nDescription: Embedded systems security engineers advise and implement solutions to control access to data and programs in embedded and connected systems. They help ensuring the safe operation of products with embedded systems and connected devices by being responsible for the protection and security of the related systems and design, plan and execute security measures accordingly. Embedded systems security engineers help to keep attackers at bay by implementing safeguards that prevent intrusions and breaches.\nEssential skills: information security strategy, embedded systems, computer programming, ICT network security risks, digital systems, ICT security standards, software anomalies, safety engineering, cyber attack counter-measures, security engineering, Internet of Things, manage IT security compliances, utilise computer-aided software engineering tools, perform risk analysis, keep up with the latest information systems solutions, provide ICT consulting advice, use software design patterns, define security policies, report test findings, develop software prototype, analyse ICT system, develop ICT device driver, interpret technical texts, use software libraries, create flowchart diagram, execute software tests, monitor system performance, define technical requirements, identify ICT system weaknesses, perform ICT security testing, identify ICT security risks\nOptional skills: ICT safety, ethical hacking principles, organisational resilience, cloud technologies, ICT encryption, debug software, develop creative ideas, perform project management, integrate system components, design user interface"
+    ],
+    "retrieved_contexts": [],
+    "response": null,
+    "reference_source": "ESCO v1.2.1",
+    "reference_source_uri": "http://data.europa.eu/esco/occupation/1c5a896a-e010-4217-a29a-c44db26e25da",
+    "validated_by_human": true,
+    "reference_status": "validated",
+    "selected_essential_skills": [
+      "embedded systems",
+      "security engineering",
+      "identify ICT system weaknesses",
+      "perform ICT security testing"
+    ],
+    "reference_final": "The recommended occupation is embedded systems security engineer. Firmware and microcontroller experience relates to embedded systems. Hardware vulnerability analysis relates to security engineering and identifying ICT system weaknesses. Formal security testing remains an occupational requirement not explicitly demonstrated. The selected ESCO essential skills are: 'embedded systems', 'security engineering', 'identify ICT system weaknesses', 'perform ICT security testing'. This recommendation is based on the stated profile and ESCO v1.2.1 occupation requirements. It does not certify the student's competence.",
+    "validation_date": "2026-11-24",
+    "validation_scope": "Reviewed reference explanation and ESCO skill alignment"
+  }
+]
