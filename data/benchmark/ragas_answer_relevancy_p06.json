@@ -1,0 +1,8 @@
+{
+  "profile_id": "P06",
+  "metric": "answer_relevancy",
+  "judge": "gemma2:2b",
+  "embeddings": "BAAI/bge-m3",
+  "score": 0.5590340251351801,
+  "evaluation_seconds": 87.65
+}

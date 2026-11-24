@@ -1,0 +1,100 @@
+{
+  "project": "PathForge AI",
+  "session": 3,
+  "retrieval_benchmark": {
+    "profiles": 15,
+    "statistics": {
+      "dense": {
+        "mean_ms": 3005.32,
+        "median_ms": 2718.45,
+        "min_ms": 2552.58,
+        "max_ms": 5596.77
+      },
+      "bm25": {
+        "mean_ms": 46.0,
+        "median_ms": 45.85,
+        "min_ms": 32.2,
+        "max_ms": 68.12
+      },
+      "rrf": {
+        "mean_ms": 0.06,
+        "median_ms": 0.06,
+        "min_ms": 0.04,
+        "max_ms": 0.08
+      },
+      "reranking": {
+        "mean_ms": 1725.2,
+        "median_ms": 1713.64,
+        "min_ms": 1424.48,
+        "max_ms": 1980.94
+      },
+      "total": {
+        "mean_ms": 4776.58,
+        "median_ms": 4454.33,
+        "min_ms": 4144.32,
+        "max_ms": 7628.14
+      }
+    },
+    "time_share_percent": {
+      "dense": 62.9178,
+      "bm25": 0.963,
+      "rrf": 0.0013,
+      "reranking": 36.1179
+    }
+  },
+  "full_pipeline_benchmark": {
+    "profiles": 3,
+    "llm": "gemma2:2b",
+    "statistics": {
+      "retrieval_ms": {
+        "mean_ms": 7963.1,
+        "median_ms": 5101.53,
+        "min_ms": 4887.91,
+        "max_ms": 13899.87
+      },
+      "generation_ms": {
+        "mean_ms": 59577.42,
+        "median_ms": 61465.27,
+        "min_ms": 55221.1,
+        "max_ms": 62045.88
+      },
+      "total_ms": {
+        "mean_ms": 67541.8,
+        "median_ms": 66353.95,
+        "min_ms": 60323.97,
+        "max_ms": 75947.47
+      }
+    },
+    "time_share_percent": {
+      "retrieval_ms": 11.7899,
+      "generation_ms": 88.2082
+    },
+    "individual_results": [
+      {
+        "profile_id": "P01",
+        "retrieval_ms": 13899.87,
+        "generation_ms": 62045.88,
+        "total_ms": 75947.47
+      },
+      {
+        "profile_id": "P06",
+        "retrieval_ms": 4887.91,
+        "generation_ms": 61465.27,
+        "total_ms": 66353.95
+      },
+      {
+        "profile_id": "P13",
+        "retrieval_ms": 5101.53,
+        "generation_ms": 55221.1,
+        "total_ms": 60323.97
+      }
+    ]
+  },
+  "limitations": [
+    "Retrieval benchmark uses 15 profiles.",
+    "Full pipeline benchmark uses only 3 profiles.",
+    "Ragas evaluation time is excluded.",
+    "Cold start effects have not been isolated.",
+    "Local LLM generation is the main latency bottleneck."
+  ]
+}

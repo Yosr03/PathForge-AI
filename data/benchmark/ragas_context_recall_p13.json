@@ -1,0 +1,7 @@
+{
+  "profile_id": "P13",
+  "metric": "context_recall",
+  "judge": "gemma2:2b",
+  "score": 1.0,
+  "evaluation_seconds": 106.18
+}
