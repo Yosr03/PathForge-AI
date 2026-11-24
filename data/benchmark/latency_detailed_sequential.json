@@ -1,0 +1,279 @@
+{
+  "project": "PathForge AI",
+  "profiles": 15,
+  "execution_mode": "sequential",
+  "device": "cpu",
+  "warmup_excluded": true,
+  "warmup_timings_ms": {
+    "dense": 10098.78,
+    "embedding": 7956.74,
+    "qdrant": 2141.65,
+    "deduplication": 0.08,
+    "bm25": 60.49,
+    "rrf": 0.25,
+    "reranking": 3791.12,
+    "total": 13950.65
+  },
+  "statistics": {
+    "embedding": {
+      "mean": 1004.54,
+      "median": 982.43,
+      "min": 752.5,
+      "max": 1780.02
+    },
+    "qdrant": {
+      "mean": 2291.22,
+      "median": 2109.44,
+      "min": 2062.08,
+      "max": 4743.79
+    },
+    "deduplication": {
+      "mean": 0.05,
+      "median": 0.05,
+      "min": 0.03,
+      "max": 0.11
+    },
+    "dense": {
+      "mean": 3296.09,
+      "median": 3056.76,
+      "min": 2832.75,
+      "max": 6046.55
+    },
+    "bm25": {
+      "mean": 56.87,
+      "median": 54.59,
+      "min": 38.21,
+      "max": 94.8
+    },
+    "rrf": {
+      "mean": 0.07,
+      "median": 0.07,
+      "min": 0.04,
+      "max": 0.1
+    },
+    "reranking": {
+      "mean": 2503.41,
+      "median": 2467.5,
+      "min": 2076.14,
+      "max": 3114.52
+    },
+    "total": {
+      "mean": 5856.44,
+      "median": 5838.75,
+      "min": 5099.09,
+      "max": 8181.32
+    }
+  },
+  "results": [
+    {
+      "id": "P01",
+      "occupation": "data analyst",
+      "timings_ms": {
+        "dense": 3171.85,
+        "embedding": 1053.49,
+        "qdrant": 2118.14,
+        "deduplication": 0.04,
+        "bm25": 62.84,
+        "rrf": 0.05,
+        "reranking": 3114.52,
+        "total": 6349.28
+      }
+    },
+    {
+      "id": "P02",
+      "occupation": "artificial intelligence engineer",
+      "timings_ms": {
+        "dense": 3891.23,
+        "embedding": 1780.02,
+        "qdrant": 2110.81,
+        "deduplication": 0.07,
+        "bm25": 65.27,
+        "rrf": 0.08,
+        "reranking": 2594.48,
+        "total": 6551.07
+      }
+    },
+    {
+      "id": "P03",
+      "occupation": "database designer",
+      "timings_ms": {
+        "dense": 2904.14,
+        "embedding": 760.65,
+        "qdrant": 2143.13,
+        "deduplication": 0.08,
+        "bm25": 38.21,
+        "rrf": 0.04,
+        "reranking": 2246.2,
+        "total": 5188.6
+      }
+    },
+    {
+      "id": "P04",
+      "occupation": "software developer",
+      "timings_ms": {
+        "dense": 2832.75,
+        "embedding": 752.5,
+        "qdrant": 2079.96,
+        "deduplication": 0.05,
+        "bm25": 45.32,
+        "rrf": 0.08,
+        "reranking": 2242.73,
+        "total": 5120.89
+      }
+    },
+    {
+      "id": "P05",
+      "occupation": "computer vision engineer",
+      "timings_ms": {
+        "dense": 2869.75,
+        "embedding": 782.13,
+        "qdrant": 2087.31,
+        "deduplication": 0.04,
+        "bm25": 44.52,
+        "rrf": 0.07,
+        "reranking": 2957.9,
+        "total": 5872.26
+      }
+    },
+    {
+      "id": "P06",
+      "occupation": "data scientist",
+      "timings_ms": {
+        "dense": 3173.05,
+        "embedding": 1063.36,
+        "qdrant": 2109.44,
+        "deduplication": 0.04,
+        "bm25": 54.59,
+        "rrf": 0.09,
+        "reranking": 2410.16,
+        "total": 5637.89
+      }
+    },
+    {
+      "id": "P07",
+      "occupation": "data engineer",
+      "timings_ms": {
+        "dense": 3424.32,
+        "embedding": 1112.63,
+        "qdrant": 2311.29,
+        "deduplication": 0.06,
+        "bm25": 94.8,
+        "rrf": 0.07,
+        "reranking": 2583.61,
+        "total": 6102.81
+      }
+    },
+    {
+      "id": "P08",
+      "occupation": "ICT business analyst",
+      "timings_ms": {
+        "dense": 2891.45,
+        "embedding": 820.24,
+        "qdrant": 2071.03,
+        "deduplication": 0.03,
+        "bm25": 40.16,
+        "rrf": 0.07,
+        "reranking": 2167.4,
+        "total": 5099.09
+      }
+    },
+    {
+      "id": "P09",
+      "occupation": "software tester",
+      "timings_ms": {
+        "dense": 2937.1,
+        "embedding": 836.79,
+        "qdrant": 2100.07,
+        "deduplication": 0.03,
+        "bm25": 49.07,
+        "rrf": 0.07,
+        "reranking": 2852.5,
+        "total": 5838.75
+      }
+    },
+    {
+      "id": "P10",
+      "occupation": "database administrator",
+      "timings_ms": {
+        "dense": 6046.55,
+        "embedding": 1302.35,
+        "qdrant": 4743.79,
+        "deduplication": 0.07,
+        "bm25": 58.56,
+        "rrf": 0.07,
+        "reranking": 2076.14,
+        "total": 8181.32
+      }
+    },
+    {
+      "id": "P11",
+      "occupation": "web developer",
+      "timings_ms": {
+        "dense": 2927.85,
+        "embedding": 865.3,
+        "qdrant": 2062.08,
+        "deduplication": 0.11,
+        "bm25": 52.94,
+        "rrf": 0.1,
+        "reranking": 2467.5,
+        "total": 5448.39
+      }
+    },
+    {
+      "id": "P12",
+      "occupation": "ICT network engineer",
+      "timings_ms": {
+        "dense": 3056.76,
+        "embedding": 982.43,
+        "qdrant": 2074.08,
+        "deduplication": 0.03,
+        "bm25": 54.78,
+        "rrf": 0.04,
+        "reranking": 2803.97,
+        "total": 5915.55
+      }
+    },
+    {
+      "id": "P13",
+      "occupation": "cybersecurity risk manager",
+      "timings_ms": {
+        "dense": 3116.39,
+        "embedding": 994.67,
+        "qdrant": 2121.29,
+        "deduplication": 0.06,
+        "bm25": 72.2,
+        "rrf": 0.06,
+        "reranking": 2765.65,
+        "total": 5954.32
+      }
+    },
+    {
+      "id": "P14",
+      "occupation": "robotics engineer",
+      "timings_ms": {
+        "dense": 3223.12,
+        "embedding": 1070.55,
+        "qdrant": 2152.12,
+        "deduplication": 0.06,
+        "bm25": 65.38,
+        "rrf": 0.09,
+        "reranking": 2083.14,
+        "total": 5371.73
+      }
+    },
+    {
+      "id": "P15",
+      "occupation": "embedded systems security engineer",
+      "timings_ms": {
+        "dense": 2975.0,
+        "embedding": 891.06,
+        "qdrant": 2083.75,
+        "deduplication": 0.03,
+        "bm25": 54.35,
+        "rrf": 0.07,
+        "reranking": 2185.21,
+        "total": 5214.63
+      }
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import json
 import re
 import time
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
 
 from qdrant_client import QdrantClient, models
 from rank_bm25 import BM25Okapi
@@ -90,11 +91,16 @@ class RAGEngine:
 
         print("Moteur Hybrid RAG initialisé.")
 
-    def dense_search(self, query):
+    def dense_search_details(self, query, timings=None):
+        start_embedding = time.perf_counter()
         vector = self.embedding_model.encode(
             query,
             normalize_embeddings=True
         ).tolist()
+
+        embedding_ms = (time.perf_counter() - start_embedding) * 1000
+
+        start_qdrant = time.perf_counter()
 
         hits = self.client.search(
             collection_name=COLLECTION,
@@ -113,20 +119,52 @@ class RAGEngine:
             with_payload=True
         )
 
-        uris = []
+        qdrant_ms = (time.perf_counter() - start_qdrant) * 1000
+
+        start_deduplication = time.perf_counter()
+
+        results = []
         seen = set()
 
         for hit in hits:
-            uri = (hit.payload or {}).get("occupation_uri")
+            payload = hit.payload or {}
+            uri = payload.get("occupation_uri")
 
             if uri and uri not in seen:
                 seen.add(uri)
-                uris.append(uri)
 
-            if len(uris) >= CANDIDATES:
+                results.append({
+                    "rank": len(results) + 1,
+                    "uri": uri,
+                    "title": payload.get("title", ""),
+                    "point_id": str(hit.id),
+                    "chunk_index": payload.get("chunk_index"),
+                    "cosine_score": float(hit.score),
+                    "source": payload.get("source", ""),
+                    "text": payload.get("text", "")
+                })
+
+            if len(results) >= CANDIDATES:
                 break
 
-        return uris
+        deduplication_ms = (
+            time.perf_counter() - start_deduplication
+        ) * 1000
+
+        if timings is not None:
+            timings.update({
+                "embedding": round(embedding_ms, 2),
+                "qdrant": round(qdrant_ms, 2),
+                "deduplication": round(deduplication_ms, 2)
+            })
+
+        return results
+
+    def dense_search(self, query):
+        return [
+            row["uri"]
+            for row in self.dense_search_details(query)
+        ]
 
     def bm25_search(self, query):
         scores = self.bm25.get_scores(tokenize(query))
@@ -205,13 +243,40 @@ class RAGEngine:
 
         start_total = time.perf_counter()
 
-        start = time.perf_counter()
-        dense = self.dense_search(query)
-        dense_ms = (time.perf_counter() - start) * 1000
+        dense_timings = {}
 
-        start = time.perf_counter()
-        sparse = self.bm25_search(query)
-        bm25_ms = (time.perf_counter() - start) * 1000
+        def run_dense():
+            start = time.perf_counter()
+
+            details = self.dense_search_details(
+                query,
+                timings=dense_timings
+            )
+
+            uris = [row["uri"] for row in details]
+            elapsed = (time.perf_counter() - start) * 1000
+
+            return details, uris, elapsed
+
+        def run_sparse():
+            start = time.perf_counter()
+            uris = self.bm25_search(query)
+            elapsed = (time.perf_counter() - start) * 1000
+
+            return uris, elapsed
+
+        start_parallel = time.perf_counter()
+
+        with ThreadPoolExecutor(max_workers=2) as executor:
+            dense_future = executor.submit(run_dense)
+            sparse_future = executor.submit(run_sparse)
+
+            dense_details, dense, dense_ms = dense_future.result()
+            sparse, bm25_ms = sparse_future.result()
+
+        parallel_ms = (
+            time.perf_counter() - start_parallel
+        ) * 1000
 
         start = time.perf_counter()
         hybrid = self.rrf_fusion(dense, sparse)
@@ -233,6 +298,7 @@ class RAGEngine:
                 "rerank_top_n": RERANK_TOP_N,
                 "final_top_k": TOP_K
             },
+            "dense_results": dense_details,
             "before_reranking": [
                 {
                     "uri": uri,
@@ -244,7 +310,9 @@ class RAGEngine:
             "results": reranked,
             "timings_ms": {
                 "dense": round(dense_ms, 2),
+                **dense_timings,
                 "bm25": round(bm25_ms, 2),
+                "parallel_retrieval": round(parallel_ms, 2),
                 "rrf": round(rrf_ms, 2),
                 "reranking": round(rerank_ms, 2),
                 "total": round(total_ms, 2)

@@ -1,0 +1,14 @@
+{
+  "profile_id": "P02",
+  "mode": "chunk",
+  "question": "I developed machine learning models using Python, PyTorch and TensorFlow. My projects include predictive modeling and intelligent systems. Which career suits my skills?",
+  "expected_occupation": "artificial intelligence engineer",
+  "dense_first": "electromechanical engineer",
+  "dense_expected_rank": 12,
+  "reranked_first": "artificial intelligence engineer",
+  "reranked_expected_rank": 1,
+  "rank_gain": 11,
+  "strict_case_validated": true,
+  "selection_method": "Retrospective selection",
+  "source": "Observed terminal output"
+}

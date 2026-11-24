@@ -1,0 +1,295 @@
+{
+  "project": "PathForge AI",
+  "profiles": 15,
+  "execution_mode": "parallel",
+  "warmup_excluded": true,
+  "statistics": {
+    "dense": {
+      "mean": 2885.92,
+      "median": 2891.19,
+      "min": 2757.76,
+      "max": 3031.33
+    },
+    "embedding": {
+      "mean": 782.22,
+      "median": 765.07,
+      "min": 667.17,
+      "max": 922.99
+    },
+    "qdrant": {
+      "mean": 2103.34,
+      "median": 2091.14,
+      "min": 2074.23,
+      "max": 2265.77
+    },
+    "deduplication": {
+      "mean": 0.06,
+      "median": 0.06,
+      "min": 0.03,
+      "max": 0.09
+    },
+    "bm25": {
+      "mean": 69.3,
+      "median": 66.95,
+      "min": 57.36,
+      "max": 86.79
+    },
+    "parallel_retrieval": {
+      "mean": 2887.22,
+      "median": 2892.37,
+      "min": 2759.04,
+      "max": 3033.33
+    },
+    "rrf": {
+      "mean": 0.07,
+      "median": 0.07,
+      "min": 0.05,
+      "max": 0.09
+    },
+    "reranking": {
+      "mean": 1854.7,
+      "median": 1824.51,
+      "min": 1464.68,
+      "max": 2192.12
+    },
+    "total": {
+      "mean": 4742.0,
+      "median": 4769.24,
+      "min": 4228.4,
+      "max": 5043.58
+    }
+  },
+  "comparison": {
+    "sequential_ms": 5856.44,
+    "parallel_ms": 4742.0,
+    "gain_percent": 19.03
+  },
+  "ranking_differences": [],
+  "results": [
+    {
+      "id": "P01",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 3010.93,
+        "embedding": 919.59,
+        "qdrant": 2091.14,
+        "deduplication": 0.05,
+        "bm25": 86.79,
+        "parallel_retrieval": 3012.39,
+        "rrf": 0.06,
+        "reranking": 1917.31,
+        "total": 4929.77
+      }
+    },
+    {
+      "id": "P02",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2920.81,
+        "embedding": 846.0,
+        "qdrant": 2074.62,
+        "deduplication": 0.03,
+        "bm25": 66.95,
+        "parallel_retrieval": 2922.8,
+        "rrf": 0.06,
+        "reranking": 2034.48,
+        "total": 4957.35
+      }
+    },
+    {
+      "id": "P03",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2762.45,
+        "embedding": 668.21,
+        "qdrant": 2093.86,
+        "deduplication": 0.09,
+        "bm25": 57.36,
+        "parallel_retrieval": 2763.64,
+        "rrf": 0.08,
+        "reranking": 1464.68,
+        "total": 4228.4
+      }
+    },
+    {
+      "id": "P04",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2776.51,
+        "embedding": 686.96,
+        "qdrant": 2089.25,
+        "deduplication": 0.08,
+        "bm25": 66.67,
+        "parallel_retrieval": 2777.68,
+        "rrf": 0.07,
+        "reranking": 1715.95,
+        "total": 4493.71
+      }
+    },
+    {
+      "id": "P05",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2945.23,
+        "embedding": 870.78,
+        "qdrant": 2074.23,
+        "deduplication": 0.06,
+        "bm25": 58.5,
+        "parallel_retrieval": 2946.4,
+        "rrf": 0.09,
+        "reranking": 1993.63,
+        "total": 4940.12
+      }
+    },
+    {
+      "id": "P06",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2920.2,
+        "embedding": 842.89,
+        "qdrant": 2077.1,
+        "deduplication": 0.05,
+        "bm25": 72.69,
+        "parallel_retrieval": 2921.31,
+        "rrf": 0.08,
+        "reranking": 1847.84,
+        "total": 4769.24
+      }
+    },
+    {
+      "id": "P07",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 3021.98,
+        "embedding": 922.99,
+        "qdrant": 2098.62,
+        "deduplication": 0.08,
+        "bm25": 76.12,
+        "parallel_retrieval": 3023.08,
+        "rrf": 0.07,
+        "reranking": 1798.98,
+        "total": 4822.14
+      }
+    },
+    {
+      "id": "P08",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2757.76,
+        "embedding": 667.17,
+        "qdrant": 2090.15,
+        "deduplication": 0.08,
+        "bm25": 64.7,
+        "parallel_retrieval": 2759.04,
+        "rrf": 0.07,
+        "reranking": 1750.57,
+        "total": 4509.68
+      }
+    },
+    {
+      "id": "P09",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2862.05,
+        "embedding": 760.64,
+        "qdrant": 2101.07,
+        "deduplication": 0.06,
+        "bm25": 64.42,
+        "parallel_retrieval": 2863.23,
+        "rrf": 0.06,
+        "reranking": 1798.27,
+        "total": 4661.57
+      }
+    },
+    {
+      "id": "P10",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2823.09,
+        "embedding": 720.55,
+        "qdrant": 2102.09,
+        "deduplication": 0.08,
+        "bm25": 72.61,
+        "parallel_retrieval": 2824.15,
+        "rrf": 0.09,
+        "reranking": 1690.96,
+        "total": 4515.2
+      }
+    },
+    {
+      "id": "P11",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2891.19,
+        "embedding": 805.17,
+        "qdrant": 2085.15,
+        "deduplication": 0.04,
+        "bm25": 79.15,
+        "parallel_retrieval": 2892.37,
+        "rrf": 0.07,
+        "reranking": 1771.89,
+        "total": 4664.33
+      }
+    },
+    {
+      "id": "P12",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2823.96,
+        "embedding": 743.66,
+        "qdrant": 2079.95,
+        "deduplication": 0.07,
+        "bm25": 65.36,
+        "parallel_retrieval": 2825.02,
+        "rrf": 0.07,
+        "reranking": 2192.12,
+        "total": 5017.23
+      }
+    },
+    {
+      "id": "P13",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 3031.33,
+        "embedding": 765.07,
+        "qdrant": 2265.77,
+        "deduplication": 0.06,
+        "bm25": 66.36,
+        "parallel_retrieval": 3033.33,
+        "rrf": 0.07,
+        "reranking": 2010.18,
+        "total": 5043.58
+      }
+    },
+    {
+      "id": "P14",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2820.04,
+        "embedding": 718.98,
+        "qdrant": 2100.7,
+        "deduplication": 0.08,
+        "bm25": 67.57,
+        "parallel_retrieval": 2821.32,
+        "rrf": 0.05,
+        "reranking": 1824.51,
+        "total": 4645.89
+      }
+    },
+    {
+      "id": "P15",
+      "same_rankings": true,
+      "timings_ms": {
+        "dense": 2921.31,
+        "embedding": 794.59,
+        "qdrant": 2126.39,
+        "deduplication": 0.05,
+        "bm25": 74.29,
+        "parallel_retrieval": 2922.52,
+        "rrf": 0.06,
+        "reranking": 2009.19,
+        "total": 4931.77
+      }
+    }
+  ]
+}

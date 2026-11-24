@@ -1,0 +1,743 @@
+[
+  {
+    "profile_id": "P01",
+    "expected_occupation": "data analyst",
+    "expected_uri": "http://data.europa.eu/esco/occupation/d3edb8f8-3a06-47a0-8fb9-9b212c006aa2",
+    "before_rank": 1,
+    "after_rank": 1,
+    "query": "I am a student skilled in Python, SQL, Power BI and data visualization. I completed an internship analyzing sales data and creating dashboards. Which occupation best matches my profile?",
+    "mode": "chunk",
+    "dense_count": 20,
+    "bm25_count": 20,
+    "fusion_count": 20,
+    "before_reranking": [
+      {
+        "point_id": "cad0425a-f24c-5fef-be66-c506e448f799",
+        "uri": "http://data.europa.eu/esco/occupation/d3edb8f8-3a06-47a0-8fb9-9b212c006aa2",
+        "title": "data analyst",
+        "chunk_index": 0,
+        "text": "Occupation: data analyst Description: Data analysts import, inspect, clean, transform, validate, model, or interpret collections of data with regard to the business goals of the company. They ensure that the data sources and repositories provide consistent and reliable data. Data analysts use different algorithms and IT tools as demanded by the situation and the current data. They might prepare reports in the form of visualisations such as graphs, charts, and dashboards. Essential skills: digital data processing, information structure, business intelligence, data mining, documentation types, visual presentation techniques, data engineering, data visualisation software, information extraction, statistics, information categorisation, business analytics, resource description framework query language, query languages, information confidentiality, unstructured data, data quality assessment, data ethics, data science, data models, normalise data, use data processing techniques, interpret current data, establish data processes, execute analytical mathematical calculations, apply statistical analysis techniques, perform data mining, use databases, integrate ICT data, analyse big data, handle data samples, perform data cleansing, define data quality",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.029551337359792925
+      },
+      {
+        "point_id": "d9b5dbfa-3932-5fbe-ab8c-e1183850349c",
+        "uri": "http://data.europa.eu/esco/occupation/b11e1742-5e28-4270-b081-b0193d85ee7d",
+        "title": "database developer",
+        "chunk_index": 1,
+        "text": "ry, Perl, Pentaho Data Integration, Smalltalk (computer programming), PHP, OpenEdge Database, Assembly (computer programming), data engineering, ObjectStore, C#, MySQL, TripleStore, R, Groovy, ASP.NET, APL, SQL, SPARQL, WordPress, SQL Server Integration Services, IBM InfoSphere Information Server, Microsoft Visual C++, IBM Informix, TypeScript, Oracle Application Development Framework, Ajax Framework, QlikView Expressor, CoffeeScript, Objective-C, JavaScript Framework, ML (computer programming), LDAP, PostgreSQL, AJAX, C++, Filemaker (database management systems), SAP R3, Swift (computer programming), SQL Server, MATLAB, CA Datacom/DB, LINQ, Python (computer programming), ICT infrastructure, Scratch (computer programming), Teradata Database, VBScript, Oracle Relational Database, COBOL, hardware architectures, SAS Data Management, MarkLogic, Pascal (computer programming), ABAP, N1QL, ICT power consumption, SAP Data Services, Scala, create solutions to problems, use spreadsheets software, use software design",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.026500526500526502
+      },
+      {
+        "point_id": "8c577c9b-26f2-5df2-84ee-b2d707f61ef0",
+        "uri": "http://data.europa.eu/esco/occupation/10291962-c0c7-4e5b-a7ed-0762b4d9b010",
+        "title": "pharmacologist",
+        "chunk_index": 0,
+        "text": "Occupation: pharmacologist Description: Pharmacologists study the manner in which drugs and medicaments interact with organisms, living systems, and their parts (i.e. cells, tissues, or organs). Their research aims at identifying substances that can be ingested by humans and that exert adequate biochemical functions for curing illnesses. Essential skills: life sciences, pharmaceutical legislation, microbiology-bacteriology, medicines, biological chemistry, pharmaceutical drug development, pharmacovigilance legislation, pharmacology, communicable diseases, research design, scientific literature, pharmaceutical technology, laboratory techniques, cancer risks, pharmaceutical chemistry, toxicology, draft scientific or academic papers and technical documentation, manage research data, perform laboratory tests, interact professionally in research and professional environments, disseminate results to the scientific community, operate open source software, speak different languages, mix chemicals, record test data, maintain laboratory equipment, evaluate research activities, demonstrate disciplinary expertise, increase the impact of science on policy and society",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.01639344262295082
+      },
+      {
+        "point_id": "2ba05784-165b-5394-b92b-8c992cabb5fd",
+        "uri": "http://data.europa.eu/esco/occupation/d3edb8f8-3a06-47a0-8fb9-9b212c006aa2",
+        "title": "data analyst",
+        "chunk_index": 1,
+        "text": ", perform data mining, use databases, integrate ICT data, analyse big data, handle data samples, perform data cleansing, define data quality criteria, implement data quality processes, collect ICT data, manage data Optional skills: marketing analytics, web analytics, MDX, information architecture, social network analysis, XQuery, database, image recognition, SPARQL, statistical modeling techniques, research design, game theory, multidisciplinary research, healthcare analytics, LDAP, data storage, online analytical processing, cloud technologies, LINQ, Hadoop, N1QL, gather data for forensic purposes, use spreadsheets software, manage quantitative data, store digital data and systems, manage data collection systems, make data-driven decisions, deliver visual presentation of data, report analysis results, manage cloud data and storage, create data models",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.016129032258064516
+      },
+      {
+        "point_id": "932d4ae5-455d-536e-8821-4a1193694210",
+        "uri": "http://data.europa.eu/esco/occupation/c2d36adb-ecf4-4823-980b-d84b0f11b2c8",
+        "title": "battery simulation engineer",
+        "chunk_index": 0,
+        "text": "Occupation: battery simulation engineer Description: Battery simulation engineers predict the performance of batteries and battery systems under different conditions using mathematical models and simulation tools. They work with a team of engineers and scientists to create accurate and reliable simulations of the battery systems, which can be used to analyze and optimize the design, performance, and safety of the batteries. They are responsible for developing and maintaining the simulation models, performing simulations and analyzing the results, and providing recommendations for design changes and improvements. Essential skills: computer programming, algorithms, physics, computer science, mechanical engineering, Python (computer programming), troubleshoot, perform product testing, run simulations, inspect data, develop predictive models, process data Optional skills: battery design",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.016129032258064516
+      },
+      {
+        "point_id": "7c435f26-57aa-558e-8437-40722ddedbb7",
+        "uri": "http://data.europa.eu/esco/occupation/3d190639-90f8-4402-b1b3-a104a17e0d67",
+        "title": "database integrator",
+        "chunk_index": 0,
+        "text": "Occupation: database integrator Description: Database integrators perform integration among different databases. They maintain integration and ensure interoperability. Essential skills: information structure, domain name service, ICT debugging tools, resource description framework query language, query languages, data extraction, transformation and loading tools, database management systems, use interface description language, integrate ICT data, perform data cleansing, create database diagrams, manage ICT legacy implication, balance database resources, manage data, execute integration testing, verify formal ICT specifications, implement data warehousing techniques Optional skills: systems development life-cycle, Informatica PowerCenter, business intelligence, IBM InfoSphere DataStage, MDX, Oracle Warehouse Builder, digital systems, Oracle Data Integrator, DB2, Microsoft Access, XQuery, Pentaho Data Integration, database, OpenEdge Database, inter-organisational middleware system, data engineering, ObjectStore, MySQL, TripleStore, SPARQL, SQL Server Integration Services, IBM InfoSphere Information Server, IBM Informix, QlikView Expressor, LDAP, PostgreSQL, Filemaker (database management systems), SQL Server,",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015873015873015872
+      },
+      {
+        "point_id": "fea0370b-ac62-58a8-89d4-3ccf4349abe3",
+        "uri": "http://data.europa.eu/esco/occupation/a75c740c-d8d9-41a7-ab1a-e69a6eb6eac1",
+        "title": "alternative fuels engineer",
+        "chunk_index": 0,
+        "text": "Occupation: alternative fuels engineer Description: Alternative fuels engineers design and develop systems, components, motors, and equipment which replace the use of conventional fossil fuels as main power source for propulsion and power generation with the feature of using renewable energies and non-fossil fuels. They strive to optimise energy production from renewable sources and reduce production expenses and environmental strain. The alternative fuels employed mainly include Liquefied Natural Gas (LNG), Liquefied Petroleum Gas (LPG), biodiesel, bio-alcohol as well as electricity (i.e., batteries and fuel cells), hydrogen and fuels produced from biomass. Essential skills: systems development life-cycle, engineering principles, circular economy, chemical products, health, safety and hygiene legislation, technical drawings, fuel cell types, energy storage systems, environmental legislation, smart grids systems, fuel gas, statistics, energy efficiency, thermodynamics, power electronics, electrochemistry, electronics, offshore constructions and facilities, CAD software, offshore renewable energy technologies, market pricing, alternative fuels, mechanic",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015873015873015872
+      },
+      {
+        "point_id": "5945d2c0-a495-5c70-b890-6c74acffff18",
+        "uri": "http://data.europa.eu/esco/occupation/e7417f4f-7072-4b07-a71f-71f6fc7f5e5b",
+        "title": "zoo registrar",
+        "chunk_index": 0,
+        "text": "Occupation: zoo registrar Description: Zoo registrars are responsible for the maintenance of a wide variety of records relating to animals and their care in zoological collections. This includes both historic and current records. They have the responsibiltity to collate records into an organised and recognised records keeping system. In most cases this also involves submitting regular reports to regional or international species information systems and/or as part of managed breeding programmes i.e. zoo registrars are usually responsible for both internal and external management if institutional records. Zoo registrars also often coordinate animal transportation for the zoological collection. Essential skills: animal welfare legislation, unstructured data, data quality assessment, speak different languages, use ICT systems, use different communication channels, keep task records, create animal records, maintain data entry requirements, manage data collection systems, coordinate operational activities, ensure cross-department cooperation, produce reports based on animal records, process data Optional skills: animal transport regulations, liaise with transportation companies, coordinate transportation, analyse transportation costs, coordinate export transportation activities, manage data, inspect data, coordinate import transportation activities, solve operational",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015625
+      },
+      {
+        "point_id": "7dc6035d-3f6e-568d-a781-8495f44f1a62",
+        "uri": "http://data.europa.eu/esco/occupation/207d7b18-6540-432e-8aa6-785ed434572f",
+        "title": "business intelligence manager",
+        "chunk_index": 1,
+        "text": ", align efforts towards business development, liaise with managers, implement strategic planning Optional skills: continuous improvement philosophies, business intelligence, data mining, data visualisation software, risk management, project management, business analytics, sales strategies, supply chain management, data models, perform business research, identify suppliers, manage budgets, use consulting techniques, analyse business plans, deliver business research proposals, keep updated on innovations in various business fields, analyse supply chain strategies, implement a management system, advise on tax policy, recommend product improvements, monitor customer behaviour, train employees, analyse production processes for improvement, make strategic business decisions, perform market research",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015625
+      },
+      {
+        "point_id": "00b9a6c3-e243-5c57-9485-ab8de8e7d1e2",
+        "uri": "http://data.europa.eu/esco/occupation/3d190639-90f8-4402-b1b3-a104a17e0d67",
+        "title": "database integrator",
+        "chunk_index": 1,
+        "text": "here Information Server, IBM Informix, QlikView Expressor, LDAP, PostgreSQL, Filemaker (database management systems), SQL Server, CA Datacom/DB, LINQ, systems theory, Teradata Database, Oracle Relational Database, SAS Data Management, MarkLogic, N1QL, SAP Data Services, system design, create solutions to problems, perform data mining, define data quality criteria, use scripting programming, write database documentation, execute ICT audits, define integration strategy, design application interfaces, apply ICT systems theory, perform project management, manage cloud data and storage, manage ICT semantic integration",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015384615384615385
+      },
+      {
+        "point_id": "9a429efc-88de-5469-b006-2283690ec154",
+        "uri": "http://data.europa.eu/esco/occupation/9a6d8a84-a8a9-4c9b-9ead-59a710e93759",
+        "title": "business and marketing vocational teacher",
+        "chunk_index": 0,
+        "text": "Occupation: business and marketing vocational teacher Description: Business and marketing vocational teachers instruct students in their specialised field of study, sales and marketing, which is predominantly practical in nature. They provide theoretical instruction in service of the practical skills and techniques the students must subsequently master for a sales and marketing-related profession. Business and marketing vocational teachers monitor the students' progress, assist individually when necessary, and evaluate their knowledge and performance on the subject of sales and marketing through assignments, tests and examinations. Essential skills: customer service, assessment processes, sales activities, learning difficulties, instructional strategies, teamwork principles, marketing principles, curriculum objectives, guarantee students' safety, assign homework, prepare lesson content, facilitate teamwork between students, monitor developments in field of expertise, manage student relationships, adapt teaching to student's capabilities, apply teaching strategies, maintain students' discipline, assess students, teach marketing principles, teach customer service techniques, adapt training to labour market, give constructive feedback, perform classroom management, assist students in their learning, apply intercultural teaching strategies, work in vocational school, develop course outline Optional skills:",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015384615384615385
+      },
+      {
+        "point_id": "2ce52ad3-25df-592b-92bf-1a159de3fdb0",
+        "uri": "http://data.europa.eu/esco/occupation/072279cf-ed39-47e7-af23-ee6df571eb24",
+        "title": "clothing product grader",
+        "chunk_index": 0,
+        "text": "Occupation: clothing product grader Description: Clothing product graders produce patterns in different sizes (i.e. scaled-up and scaled-down) to reproduce the same wearing apparel in different sizes. They draft patterns by hand or using software following size charts. Essential skills: manufacturing of wearing apparel, manufacturing of made-up textile articles, apparel manufacturing technology, CAD for garment manufacturing, standard sizing systems for clothing, evaluate garment quality, coordinate manufacturing production activities, distinguish accessories, create patterns for garments, inspect wearing apparel products, perform process control in the wearing apparel industry, distinguish fabrics, alter wearing apparel, make technical drawings of fashion pieces, grade patterns for wearing apparel, operate garment manufacturing machines, operate computerised control systems, prepare production prototypes Optional skills: properties of textile materials, 3D body scanning technologies, analyse scanned data of the body, use 3D scanners for clothing, cut fabrics, examine sample garments, bundle fabrics, use pattern-cutting softwares",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015151515151515152
+      },
+      {
+        "point_id": "afe43048-4c32-56dd-bfad-f746385b72c4",
+        "uri": "http://data.europa.eu/esco/occupation/1c5a45b9-440e-4726-b565-16a952abd341",
+        "title": "computer vision engineer",
+        "chunk_index": 1,
+        "text": "manage data collection systems, deliver visual presentation of data, report analysis results, define technical requirements, develop data processing applications Optional skills: mathematical modelling, digital systems, image formation, resource description framework query language, query languages, computer graphics, cognitive computing, signal processing, state estimation, quantum computing, deep learning, use markup languages, debug software, perform data mining, conduct scholarly research, define data quality criteria, conduct quantitative research, conduct qualitative research, create data models, design user interface",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015151515151515152
+      },
+      {
+        "point_id": "221047a0-0a39-52ad-a8d1-a1a891772be6",
+        "uri": "http://data.europa.eu/esco/occupation/c3b82711-273d-4fa8-8de7-0ac3d99c16fc",
+        "title": "computer science lecturer",
+        "chunk_index": 1,
+        "text": "computer science, Microsoft Visual C++, SketchBook Pro, TypeScript, Microsoft Visio, CoffeeScript, Objective-C, ML (computer programming), graphics editor software, Synfig, C++, SAP R3, Swift (computer programming), MATLAB, Python (computer programming), Scratch (computer programming), VBScript, computer technology, COBOL, Pascal (computer programming), ABAP, curriculum objectives, Scala, guarantee students' safety, interact professionally in research and professional environments, prepare lesson content, monitor developments in field of expertise, compile course material, liaise with educational support staff, teach in academic or vocational contexts, apply teaching strategies, assess students, assist students with equipment, write work-related reports, think abstractly, mentor individuals, manage personal professional development, demonstrate when teaching, apply blended learning, teach computer science, give constructive feedback, perform classroom management, apply intercultural teaching strategies, liaise with educational staff, develop course outline, use IT tools, synthesise information, promote the participation of citizens in scientific and research activities, communicate with a non-scientific audience Optional skills:",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014925373134328358
+      },
+      {
+        "point_id": "749ee43e-8fbf-5809-8956-6685cf3cf27c",
+        "uri": "http://data.europa.eu/esco/occupation/d6b339ed-8dc9-4281-8c91-c8287eceee40",
+        "title": "rental service representative in video tapes and disks",
+        "chunk_index": 0,
+        "text": "Occupation: rental service representative in video tapes and disks Description: Rental service representatives in video tapes and disks are in charge of renting out equipment and determining specific periods of usage. They document transactions, insurances and payments. Essential skills: financial capability, product comprehension, company policies, guarantee customer satisfaction, perform multiple tasks at the same time, communicate with customers, apply numeracy skills, assist customers, identify customer's needs, handle rental overdues, record customers' personal data, process payments, achieve sales targets, maintain inventory of rented items, manage claims process, have computer literacy, provide customers with price information, provide customer follow-up services, review completed contracts, process data, work independently in rental services, handle financial transactions Optional skills: ",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014925373134328358
+      },
+      {
+        "point_id": "4e8c1870-fca4-53f9-b04e-a0fc066dc5bc",
+        "uri": "http://data.europa.eu/esco/occupation/4e4a1aa1-ca53-406e-9ca6-889d4621a0ed",
+        "title": "big data archive librarian",
+        "chunk_index": 1,
+        "text": ", ObjectStore, MySQL, TripleStore, SPARQL, SQL Server Integration Services, statistics, IBM InfoSphere Information Server, IBM Informix, QlikView Expressor, information confidentiality, LDAP, PostgreSQL, Filemaker (database management systems), SQL Server, CA Datacom/DB, LINQ, data quality assessment, Teradata Database, Oracle Relational Database, SAS Data Management, MarkLogic, N1QL, SAP Data Services, migrate existing data, normalise data, creatively use digital technologies, digitise documents, identify technological needs, integrate ICT data, manage information access aids, design database scheme, develop ICT workflow, monitor technology trends, apply information security policies, manage data collection systems, design database backup specifications, give live presentation, perform backups",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014705882352941176
+      },
+      {
+        "point_id": "ea176b23-dfa5-5645-a914-ec28a1a19e4d",
+        "uri": "http://data.europa.eu/esco/occupation/a527f263-0feb-4d55-b416-0577e9dc7847",
+        "title": "rental service representative in recreational and sports goods",
+        "chunk_index": 0,
+        "text": "Occupation: rental service representative in recreational and sports goods Description: Rental service representatives in recreational and sports goods are in charge of renting out equipment and determining specific periods of usage. They document transactions, insurances and payments. Essential skills: financial capability, product comprehension, company policies, guarantee customer satisfaction, perform multiple tasks at the same time, communicate with customers, apply numeracy skills, assist customers, identify customer's needs, handle rental overdues, record customers' personal data, process payments, achieve sales targets, maintain inventory of rented items, manage claims process, have computer literacy, provide customers with price information, provide customer follow-up services, review completed contracts, process data, work independently in rental services, handle financial transactions Optional skills: ",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014705882352941176
+      },
+      {
+        "point_id": "1aeba470-07ec-5e3c-a999-5b31e1933744",
+        "uri": "http://data.europa.eu/esco/occupation/ac37627c-a999-4779-997e-9795cc4f9a3d",
+        "title": "power distribution engineer",
+        "chunk_index": 1,
+        "text": "energy distribution schedules, approve engineering design Optional skills: information structure, marine engineering, battery fluids, business intelligence, data mining, chemical products, innovation processes, visual presentation techniques, transmission towers, wire harnesses, electricity market, hydroelectricity, hydraulics, information extraction, sensors, energy micro-generation technologies, fuel gas, battery chemistry, battery components, data analytics, data mining methods, data storage, offshore renewable energy technologies, statistical analysis system software, cloud technologies, unstructured data, renewable energy, test procedures in electricity transmission, research ocean energy projects, perform data analysis, troubleshoot, assemble sensors, maintain electrical equipment, perform data mining, adjust engineering designs, analyse big data, inspect facility sites, use remote control equipment, maintain sensor equipment, respond to electrical power contingencies, test sensors, install hydraulic systems, repair battery components, manage workflow processes, operate battery test equipment, analyse test data, utilise machine learning, maintain hydraulic systems, execute software tests, develop strategies for electricity contingencies, adjust voltage, design electric power systems",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014492753623188406
+      },
+      {
+        "point_id": "71301425-fa71-559c-9712-80034e1e895b",
+        "uri": "http://data.europa.eu/esco/occupation/f874980a-e08f-4a58-bc21-2ff3cf472ec5",
+        "title": "rental service representative in cars and light motor vehicles",
+        "chunk_index": 0,
+        "text": "Occupation: rental service representative in cars and light motor vehicles Description: Rental service representatives in cars and light motor vehicles are in charge of renting out vehicles and determining specific periods of usage. They document transactions, insurances and payments. Essential skills: financial capability, product comprehension, company policies, guarantee customer satisfaction, perform multiple tasks at the same time, communicate with customers, apply numeracy skills, assist customers, identify customer's needs, handle rental overdues, record customers' personal data, process payments, achieve sales targets, maintain inventory of rented items, manage claims process, have computer literacy, provide customers with price information, provide customer follow-up services, review completed contracts, process data, work independently in rental services, handle financial transactions Optional skills: ",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014492753623188406
+      },
+      {
+        "point_id": "afe6b732-2dbc-5d17-a4c8-aab903842586",
+        "uri": "http://data.europa.eu/esco/occupation/2f5de1ab-eddf-4715-8193-e994912c22ea",
+        "title": "warehouse manager",
+        "chunk_index": 1,
+        "text": "documentation, meet productivity targets, build business relationships, maintain stock control systems, maintain warehouse database, train employees, manage warehouse operations, maintain financial records, manage transport of goods from warehouse facilities, work in a logistics team Optional skills: statistics, fire-fighting systems, use spreadsheets software, manage budgets, act reliably, supervise the work of staff on different shifts, carry out storage risk management, evaluate employees, maintain updated professional knowledge, present reports, have computer literacy, perform services in a flexible manner, ensure safety conditions in storage rooms, analyse work-related written reports",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014285714285714285
+      }
+    ],
+    "results": [
+      {
+        "point_id": "cad0425a-f24c-5fef-be66-c506e448f799",
+        "uri": "http://data.europa.eu/esco/occupation/d3edb8f8-3a06-47a0-8fb9-9b212c006aa2",
+        "title": "data analyst",
+        "chunk_index": 0,
+        "text": "Occupation: data analyst Description: Data analysts import, inspect, clean, transform, validate, model, or interpret collections of data with regard to the business goals of the company. They ensure that the data sources and repositories provide consistent and reliable data. Data analysts use different algorithms and IT tools as demanded by the situation and the current data. They might prepare reports in the form of visualisations such as graphs, charts, and dashboards. Essential skills: digital data processing, information structure, business intelligence, data mining, documentation types, visual presentation techniques, data engineering, data visualisation software, information extraction, statistics, information categorisation, business analytics, resource description framework query language, query languages, information confidentiality, unstructured data, data quality assessment, data ethics, data science, data models, normalise data, use data processing techniques, interpret current data, establish data processes, execute analytical mathematical calculations, apply statistical analysis techniques, perform data mining, use databases, integrate ICT data, analyse big data, handle data samples, perform data cleansing, define data quality",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.029551337359792925,
+        "rerank_score": -4.064125061035156
+      },
+      {
+        "point_id": "2ba05784-165b-5394-b92b-8c992cabb5fd",
+        "uri": "http://data.europa.eu/esco/occupation/d3edb8f8-3a06-47a0-8fb9-9b212c006aa2",
+        "title": "data analyst",
+        "chunk_index": 1,
+        "text": ", perform data mining, use databases, integrate ICT data, analyse big data, handle data samples, perform data cleansing, define data quality criteria, implement data quality processes, collect ICT data, manage data Optional skills: marketing analytics, web analytics, MDX, information architecture, social network analysis, XQuery, database, image recognition, SPARQL, statistical modeling techniques, research design, game theory, multidisciplinary research, healthcare analytics, LDAP, data storage, online analytical processing, cloud technologies, LINQ, Hadoop, N1QL, gather data for forensic purposes, use spreadsheets software, manage quantitative data, store digital data and systems, manage data collection systems, make data-driven decisions, deliver visual presentation of data, report analysis results, manage cloud data and storage, create data models",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.016129032258064516,
+        "rerank_score": -4.548820495605469
+      },
+      {
+        "point_id": "afe43048-4c32-56dd-bfad-f746385b72c4",
+        "uri": "http://data.europa.eu/esco/occupation/1c5a45b9-440e-4726-b565-16a952abd341",
+        "title": "computer vision engineer",
+        "chunk_index": 1,
+        "text": "manage data collection systems, deliver visual presentation of data, report analysis results, define technical requirements, develop data processing applications Optional skills: mathematical modelling, digital systems, image formation, resource description framework query language, query languages, computer graphics, cognitive computing, signal processing, state estimation, quantum computing, deep learning, use markup languages, debug software, perform data mining, conduct scholarly research, define data quality criteria, conduct quantitative research, conduct qualitative research, create data models, design user interface",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015151515151515152,
+        "rerank_score": -4.861211776733398
+      },
+      {
+        "point_id": "7c435f26-57aa-558e-8437-40722ddedbb7",
+        "uri": "http://data.europa.eu/esco/occupation/3d190639-90f8-4402-b1b3-a104a17e0d67",
+        "title": "database integrator",
+        "chunk_index": 0,
+        "text": "Occupation: database integrator Description: Database integrators perform integration among different databases. They maintain integration and ensure interoperability. Essential skills: information structure, domain name service, ICT debugging tools, resource description framework query language, query languages, data extraction, transformation and loading tools, database management systems, use interface description language, integrate ICT data, perform data cleansing, create database diagrams, manage ICT legacy implication, balance database resources, manage data, execute integration testing, verify formal ICT specifications, implement data warehousing techniques Optional skills: systems development life-cycle, Informatica PowerCenter, business intelligence, IBM InfoSphere DataStage, MDX, Oracle Warehouse Builder, digital systems, Oracle Data Integrator, DB2, Microsoft Access, XQuery, Pentaho Data Integration, database, OpenEdge Database, inter-organisational middleware system, data engineering, ObjectStore, MySQL, TripleStore, SPARQL, SQL Server Integration Services, IBM InfoSphere Information Server, IBM Informix, QlikView Expressor, LDAP, PostgreSQL, Filemaker (database management systems), SQL Server,",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015873015873015872,
+        "rerank_score": -4.914807319641113
+      },
+      {
+        "point_id": "d9b5dbfa-3932-5fbe-ab8c-e1183850349c",
+        "uri": "http://data.europa.eu/esco/occupation/b11e1742-5e28-4270-b081-b0193d85ee7d",
+        "title": "database developer",
+        "chunk_index": 1,
+        "text": "ry, Perl, Pentaho Data Integration, Smalltalk (computer programming), PHP, OpenEdge Database, Assembly (computer programming), data engineering, ObjectStore, C#, MySQL, TripleStore, R, Groovy, ASP.NET, APL, SQL, SPARQL, WordPress, SQL Server Integration Services, IBM InfoSphere Information Server, Microsoft Visual C++, IBM Informix, TypeScript, Oracle Application Development Framework, Ajax Framework, QlikView Expressor, CoffeeScript, Objective-C, JavaScript Framework, ML (computer programming), LDAP, PostgreSQL, AJAX, C++, Filemaker (database management systems), SAP R3, Swift (computer programming), SQL Server, MATLAB, CA Datacom/DB, LINQ, Python (computer programming), ICT infrastructure, Scratch (computer programming), Teradata Database, VBScript, Oracle Relational Database, COBOL, hardware architectures, SAS Data Management, MarkLogic, Pascal (computer programming), ABAP, N1QL, ICT power consumption, SAP Data Services, Scala, create solutions to problems, use spreadsheets software, use software design",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.026500526500526502,
+        "rerank_score": -5.13906192779541
+      }
+    ],
+    "total_ms": 6100.39
+  },
+  {
+    "profile_id": "P06",
+    "expected_occupation": "data scientist",
+    "expected_uri": "http://data.europa.eu/esco/occupation/258e46f9-0075-4a2e-adae-1ff0477e0f30",
+    "before_rank": 2,
+    "after_rank": 2,
+    "query": "I use Python to build predictive models, apply statistical methods and evaluate machine learning algorithms. I also analyze datasets and communicate findings. Which occupation best matches my profile?",
+    "mode": "chunk",
+    "dense_count": 20,
+    "bm25_count": 20,
+    "fusion_count": 20,
+    "before_reranking": [
+      {
+        "point_id": "8a889767-fe4c-5c35-875c-c5739c79d10a",
+        "uri": "http://data.europa.eu/esco/occupation/8edd8bff-cb59-4c9c-ab0f-59e77d18be48",
+        "title": "predictive maintenance expert",
+        "chunk_index": 0,
+        "text": "Occupation: predictive maintenance expert Description: Predictive maintenance experts analyse data collected from sensors located in factories, machineries, cars, railroads and others to monitor their conditions in order to keep users informed and eventually notify the need to perform maintenance. Essential skills: computer programming, electrical engineering, mathematics, predictive maintenance, statistics, electronics, electricity, ICT networking hardware, gather data, perform data analysis, apply statistical analysis techniques, analyse big data, advise on equipment maintenance, test sensors, apply information security policies, manage data, ensure equipment maintenance, develop data processing applications, design sensors, model sensor Optional skills: computer simulation, automotive diagnostic equipment, automotive engineering, use automotive diagnostic equipment, deliver visual presentation of data",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.030679156908665108
+      },
+      {
+        "point_id": "26be0c6f-8edc-5901-acb5-265ac2e24314",
+        "uri": "http://data.europa.eu/esco/occupation/258e46f9-0075-4a2e-adae-1ff0477e0f30",
+        "title": "data scientist",
+        "chunk_index": 0,
+        "text": "Occupation: data scientist Description: Data scientists find and interpret rich data sources, manage large amounts of data, merge data sources, ensure consistency of data-sets, and create visualisations to aid in understanding data. They build mathematical models using data, present and communicate data insights and findings to specialists and scientists in their team and if required, to a non-expert audience, and recommend ways to apply the data. Essential skills: mathematical modelling, data mining, visual presentation techniques, data engineering, quantitative analysis, data visualisation software, statistical modeling techniques, information extraction, scientific literature, statistics, information categorisation, resource description framework query language, query languages, online analytical processing, data ethics, data science, empirical analysis, data models, draft scientific or academic papers and technical documentation, normalise data, manage research data, use data processing techniques, interpret current data, interact professionally in research and professional environments, disseminate results to the scientific community, operate open source software, establish data processes, speak different languages, execute analytical mathematical calculations, evaluate",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.029910714285714284
+      },
+      {
+        "point_id": "f23d3fa2-dcdf-57e2-9a72-eda47384631b",
+        "uri": "http://data.europa.eu/esco/occupation/35553663-deab-4d9a-bf22-15c1625d28e8",
+        "title": "artificial intelligence engineer",
+        "chunk_index": 0,
+        "text": "Occupation: artificial intelligence engineer Description: Artificial intelligence engineer apply methods of artificial intelligence in engineering, robotics and computer science to design programs which simulate intelligence including thinking models, cognitive and knowledge-based systems, problem solving, and decision making. They also integrate structured knowledge into computer systems (ontologies, knowledge bases) in order to solve complex problems normally requiring a high level of human expertise or artificial intelligence methods. Essential skills: digital data processing, information structure, computer simulation, systems development life-cycle, information architecture, computer programming, data mining, visual presentation techniques, algorithms, artificial neural networks, information extraction, task algorithmisation, information categorisation, business process modelling, resource description framework query language, unstructured data, Python (computer programming), principles of artificial intelligence, data science, data models, creatively use digital technologies, use data processing techniques, design process, analyse big data, develop creative ideas, create data sets, analyse business requirements, develop statistical software, deliver visual presentation of data, apply ICT systems theory, define technical requirements Optional skills: Haskell, Erlang, SAS language, Agile",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.02964254577157803
+      },
+      {
+        "point_id": "fe18fa52-c85b-5495-be88-fb16c9d2b033",
+        "uri": "http://data.europa.eu/esco/occupation/d2e63d7e-2605-4af1-bb7d-b1ed9ad08825",
+        "title": "statistical assistant",
+        "chunk_index": 0,
+        "text": "Occupation: statistical assistant Description: Statistical assistants collect data and use statistical formulas to execute statistical studies and create reports. They create charts, graphs and surveys. Essential skills: digital data processing, mathematics, quantitative analysis, statistics, statistical analysis system software, identify statistical patterns, gather data, perform data analysis, execute analytical mathematical calculations, apply statistical analysis techniques, apply scientific methods, conduct quantitative research, write work-related reports, write technical reports, process data Optional skills: algorithms, survey techniques, statistical modeling techniques, research design, data quality assessment, scientific research methodology, data science, produce statistical financial records, conduct financial surveys, use spreadsheets software, manage database, analyse big data, develop financial statistics reports, perform scientific research, conduct public surveys, perform clerical duties, carry out statistical forecasts, deliver visual presentation of data, revise questionnaires, assist scientific research, compile statistical data for insurance purposes, tabulate survey results, design questionnaires",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.028814262023217248
+      },
+      {
+        "point_id": "452436ee-47f6-5993-be8f-81f1e7ae6a65",
+        "uri": "http://data.europa.eu/esco/occupation/1c862e14-80f8-4aa8-8f1c-fd2ca95b63ad",
+        "title": "meteorologist",
+        "chunk_index": 0,
+        "text": "Occupation: meteorologist Description: Meteorologists study climate processes, measure and predict weather patterns and provide consultancy services to a variety of weather information users. They work out models for weather forecasting, develop instruments to collect meteorological data and compile statistics and databases. Essential skills: mathematics, meteorology, climatology, draft scientific or academic papers and technical documentation, manage research data, use specialised computer models for weather forecasting, interact professionally in research and professional environments, disseminate results to the scientific community, operate open source software, speak different languages, use meteorological tools to forecast meteorological conditions, execute analytical mathematical calculations, apply statistical analysis techniques, evaluate research activities, demonstrate disciplinary expertise, increase the impact of science on policy and society, manage findable accessible interoperable and reusable data, perform scientific research, manage intellectual property rights, review meteorological forecast data, apply for research funding, apply scientific methods, apply research ethics and scientific integrity principles in research activities, promote open innovation in research, publish academic research, promote the transfer of knowledge, think abstractly, mentor individuals, manage personal professional development,",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.028283227848101264
+      },
+      {
+        "point_id": "932d4ae5-455d-536e-8821-4a1193694210",
+        "uri": "http://data.europa.eu/esco/occupation/c2d36adb-ecf4-4823-980b-d84b0f11b2c8",
+        "title": "battery simulation engineer",
+        "chunk_index": 0,
+        "text": "Occupation: battery simulation engineer Description: Battery simulation engineers predict the performance of batteries and battery systems under different conditions using mathematical models and simulation tools. They work with a team of engineers and scientists to create accurate and reliable simulations of the battery systems, which can be used to analyze and optimize the design, performance, and safety of the batteries. They are responsible for developing and maintaining the simulation models, performing simulations and analyzing the results, and providing recommendations for design changes and improvements. Essential skills: computer programming, algorithms, physics, computer science, mechanical engineering, Python (computer programming), troubleshoot, perform product testing, run simulations, inspect data, develop predictive models, process data Optional skills: battery design",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.01639344262295082
+      },
+      {
+        "point_id": "ae1d44ae-c1d1-5355-8b4e-e0649c2adbc6",
+        "uri": "http://data.europa.eu/esco/occupation/ac8b3cd1-a127-4e6a-8208-5cfcf7111955",
+        "title": "statistician",
+        "chunk_index": 0,
+        "text": "Occupation: statistician Description: Statisticians collect, tabulate, and, most importantly, analyse quantitative information coming from a varied array of fields. They interpret and analyse statistical studies on fields such as health, demographics, finance, business, etc. and advise based on patterns and drawn analysis. Essential skills: digital data processing, mathematical modelling, mathematics, quantitative analysis, statistical modeling techniques, research design, scientific literature, statistics, statistical analysis system software, data quality assessment, data ethics, scientific research methodology, data science, draft scientific or academic papers and technical documentation, identify statistical patterns, manage research data, gather data, interact professionally in research and professional environments, disseminate results to the scientific community, operate open source software, perform data analysis, speak different languages, execute analytical mathematical calculations, apply statistical analysis techniques, evaluate research activities, demonstrate disciplinary expertise, increase the impact of science on policy and society, manage findable accessible interoperable and reusable data, perform scientific research, manage intellectual property rights, apply for research funding, apply",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.016129032258064516
+      },
+      {
+        "point_id": "7b7f30f8-272f-5e8c-aec1-4079b99e6962",
+        "uri": "http://data.europa.eu/esco/occupation/6ce5f7e3-a534-4aa2-ab23-255408ddb53a",
+        "title": "IoT developer",
+        "chunk_index": 0,
+        "text": "Occupation: IoT developer Description: IoT developers analyse and gather data for interpreting the pattern and predicting the result. They use artificial intelligence for managing the tasks and autonomous decisions, employing machine learning algorithms to create smarter devices through data sensors. IoT developers create software for connecting objects to systems and devices, or for programming these objects to make them function on their own. Essential skills: digital data processing, machine learning, hardware testing methods, algorithms, task algorithmisation, computer science, ICT software specifications, ICT system programming, mechatronics, computer technology, principles of artificial intelligence, Internet of Things, use data processing techniques, perform dimensionality reduction, analyse big data, develop ICT workflow, utilise machine learning, design information system Optional skills: mobile device software frameworks, ICT architectural frameworks, perform online data analysis, establish data processes",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015873015873015872
+      },
+      {
+        "point_id": "cad0425a-f24c-5fef-be66-c506e448f799",
+        "uri": "http://data.europa.eu/esco/occupation/d3edb8f8-3a06-47a0-8fb9-9b212c006aa2",
+        "title": "data analyst",
+        "chunk_index": 0,
+        "text": "Occupation: data analyst Description: Data analysts import, inspect, clean, transform, validate, model, or interpret collections of data with regard to the business goals of the company. They ensure that the data sources and repositories provide consistent and reliable data. Data analysts use different algorithms and IT tools as demanded by the situation and the current data. They might prepare reports in the form of visualisations such as graphs, charts, and dashboards. Essential skills: digital data processing, information structure, business intelligence, data mining, documentation types, visual presentation techniques, data engineering, data visualisation software, information extraction, statistics, information categorisation, business analytics, resource description framework query language, query languages, information confidentiality, unstructured data, data quality assessment, data ethics, data science, data models, normalise data, use data processing techniques, interpret current data, establish data processes, execute analytical mathematical calculations, apply statistical analysis techniques, perform data mining, use databases, integrate ICT data, analyse big data, handle data samples, perform data cleansing, define data quality",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015873015873015872
+      },
+      {
+        "point_id": "8c577c9b-26f2-5df2-84ee-b2d707f61ef0",
+        "uri": "http://data.europa.eu/esco/occupation/10291962-c0c7-4e5b-a7ed-0762b4d9b010",
+        "title": "pharmacologist",
+        "chunk_index": 0,
+        "text": "Occupation: pharmacologist Description: Pharmacologists study the manner in which drugs and medicaments interact with organisms, living systems, and their parts (i.e. cells, tissues, or organs). Their research aims at identifying substances that can be ingested by humans and that exert adequate biochemical functions for curing illnesses. Essential skills: life sciences, pharmaceutical legislation, microbiology-bacteriology, medicines, biological chemistry, pharmaceutical drug development, pharmacovigilance legislation, pharmacology, communicable diseases, research design, scientific literature, pharmaceutical technology, laboratory techniques, cancer risks, pharmaceutical chemistry, toxicology, draft scientific or academic papers and technical documentation, manage research data, perform laboratory tests, interact professionally in research and professional environments, disseminate results to the scientific community, operate open source software, speak different languages, mix chemicals, record test data, maintain laboratory equipment, evaluate research activities, demonstrate disciplinary expertise, increase the impact of science on policy and society",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015384615384615385
+      },
+      {
+        "point_id": "f7103884-109e-50d4-aa75-2449e36c690f",
+        "uri": "http://data.europa.eu/esco/occupation/0d7ae791-653e-4297-9f61-8bad87f61d57",
+        "title": "meteorology technician",
+        "chunk_index": 1,
+        "text": "related issues, analyse scientific data, conduct research on climate processes, maintain equipment, manage meteorological database, study aerial photos, analyse weather forecast, write scientific publications, create weather maps, write weather briefing, design scientific equipment",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015384615384615385
+      },
+      {
+        "point_id": "d5fb0c74-1405-591c-9ecb-38cf33553146",
+        "uri": "http://data.europa.eu/esco/occupation/ac8b3cd1-a127-4e6a-8208-5cfcf7111955",
+        "title": "statistician",
+        "chunk_index": 2,
+        "text": "ive models, analyse big data, teach in academic or vocational contexts, develop financial statistics reports, manage quantitative data, conduct public surveys, advise on financial matters, develop scientific theories, apply blended learning, develop statistical software, carry out statistical forecasts, deliver visual presentation of data, present reports, provide lesson materials, assist scientific research, use mathematical tools and equipment, advise on legislative acts, design questionnaires, plan research process",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015151515151515152
+      },
+      {
+        "point_id": "fea0370b-ac62-58a8-89d4-3ccf4349abe3",
+        "uri": "http://data.europa.eu/esco/occupation/a75c740c-d8d9-41a7-ab1a-e69a6eb6eac1",
+        "title": "alternative fuels engineer",
+        "chunk_index": 0,
+        "text": "Occupation: alternative fuels engineer Description: Alternative fuels engineers design and develop systems, components, motors, and equipment which replace the use of conventional fossil fuels as main power source for propulsion and power generation with the feature of using renewable energies and non-fossil fuels. They strive to optimise energy production from renewable sources and reduce production expenses and environmental strain. The alternative fuels employed mainly include Liquefied Natural Gas (LNG), Liquefied Petroleum Gas (LPG), biodiesel, bio-alcohol as well as electricity (i.e., batteries and fuel cells), hydrogen and fuels produced from biomass. Essential skills: systems development life-cycle, engineering principles, circular economy, chemical products, health, safety and hygiene legislation, technical drawings, fuel cell types, energy storage systems, environmental legislation, smart grids systems, fuel gas, statistics, energy efficiency, thermodynamics, power electronics, electrochemistry, electronics, offshore constructions and facilities, CAD software, offshore renewable energy technologies, market pricing, alternative fuels, mechanic",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015151515151515152
+      },
+      {
+        "point_id": "723c76f5-3e98-56d5-b160-0174b9046ae7",
+        "uri": "http://data.europa.eu/esco/occupation/1c5a45b9-440e-4726-b565-16a952abd341",
+        "title": "computer vision engineer",
+        "chunk_index": 0,
+        "text": "Occupation: computer vision engineer Description: Computer vision engineers research, design, develop, and train artificial intelligence algorithms and machine learning primitives that understand the content of digital images based on a large amount of data. They apply this understanding to solve different real-world problems such as security, autonomous driving, robotic manufacturing, digital image classification, medical image processing and diagnosis, etc. Essential skills: computer simulation, computer programming, machine learning, image recognition, data engineering, scientific computing, digital twin technology, statistics, integrated development environment software, digital image processing, Python (computer programming), principles of artificial intelligence, data science, normalise data, conduct literature research, utilise computer-aided software engineering tools, interpret current data, establish data processes, execute analytical mathematical calculations, apply statistical analysis techniques, perform dimensionality reduction, develop computer vision system, handle data samples, perform data cleansing, implement data quality processes, develop software prototype, use software libraries, manage data collection systems, deliver visual presentation of data, report analysis results, define technical requirements, develop data processing applications Optional skills: mathematical model",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014925373134328358
+      },
+      {
+        "point_id": "5945d2c0-a495-5c70-b890-6c74acffff18",
+        "uri": "http://data.europa.eu/esco/occupation/e7417f4f-7072-4b07-a71f-71f6fc7f5e5b",
+        "title": "zoo registrar",
+        "chunk_index": 0,
+        "text": "Occupation: zoo registrar Description: Zoo registrars are responsible for the maintenance of a wide variety of records relating to animals and their care in zoological collections. This includes both historic and current records. They have the responsibiltity to collate records into an organised and recognised records keeping system. In most cases this also involves submitting regular reports to regional or international species information systems and/or as part of managed breeding programmes i.e. zoo registrars are usually responsible for both internal and external management if institutional records. Zoo registrars also often coordinate animal transportation for the zoological collection. Essential skills: animal welfare legislation, unstructured data, data quality assessment, speak different languages, use ICT systems, use different communication channels, keep task records, create animal records, maintain data entry requirements, manage data collection systems, coordinate operational activities, ensure cross-department cooperation, produce reports based on animal records, process data Optional skills: animal transport regulations, liaise with transportation companies, coordinate transportation, analyse transportation costs, coordinate export transportation activities, manage data, inspect data, coordinate import transportation activities, solve operational",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014705882352941176
+      },
+      {
+        "point_id": "8f29f9f7-05d4-5638-9586-43920b05e349",
+        "uri": "http://data.europa.eu/esco/occupation/aeb7c6bd-22c9-43c2-8551-a1cc2560584f",
+        "title": "forecast manager",
+        "chunk_index": 0,
+        "text": "Occupation: forecast manager Description: Forecast managers have a deep understanding of the operations of the company, the inventory levels, production batches, requirements and costs of production per product, and trends in the demand levels. They use all that information in combination with forecasting software in order to define production orders aiming for the most efficient production combinations. Essential skills: financial forecasting, corporate social responsibility, supply chain principles, supply chain management, supplier management, manage supplies, identify suppliers, order supplies, maintain relationship with customers, analyse market financial trends, strive for company growth, maintain relationship with suppliers, analyse logistic changes, analyse economic trends, analyse supply chain strategies, assess supplier risks, forecast dividend trends, forecast future levels of business, manage inventory, analyse supply chain trends, estimate costs of required supplies, forecast production quantities, liaise with managers, follow company standards Optional skills: consumer goods industry, international business, statistics, economics, forecast sales over periods of time, study sales levels of products, monitor ingredient storage, calculate purchasing levels of raw materials, coordinate purchasing activities, forecast products' demand",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014705882352941176
+      },
+      {
+        "point_id": "0b8df9c0-2c43-5005-a2ee-c919f620ea5c",
+        "uri": "http://data.europa.eu/esco/occupation/ac8b3cd1-a127-4e6a-8208-5cfcf7111955",
+        "title": "statistician",
+        "chunk_index": 1,
+        "text": "and society, manage findable accessible interoperable and reusable data, perform scientific research, manage intellectual property rights, apply for research funding, apply scientific methods, conduct quantitative research, apply research ethics and scientific integrity principles in research activities, promote open innovation in research, publish academic research, promote the transfer of knowledge, think abstractly, mentor individuals, manage personal professional development, write scientific publications, develop professional network with researchers and scientists, integrate gender dimension in research, perform project management, manage open publications, process data, synthesise information, conduct research across disciplines, promote the participation of citizens in scientific and research activities, communicate with a non-scientific audience Optional skills: computer simulation, marketing analytics, social network analysis, biometrics, algorithms, market research, opinion poll, multidisciplinary research, healthcare analytics, information confidentiality, demography, set theory, write research proposals, use spreadsheets software, prepare lesson content, manage database, build predictive models, analyse big data, teach in academic or vocational contexts, develop financial statistics reports, manage quantitative data, conduct public surveys,",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014492753623188406
+      },
+      {
+        "point_id": "652a1532-17ec-584b-bd72-545e6d6cb2ae",
+        "uri": "http://data.europa.eu/esco/occupation/6d03eaef-1ce5-4a1e-bb41-0908e1af1b65",
+        "title": "occupational analyst",
+        "chunk_index": 0,
+        "text": "Occupation: occupational analyst Description: Occupational analysts collect and analyse occupational information within one field or company in order to make recommendations for reducing costs and general business improvements. They provide technical assistance to employers in dealing with problematic staff recruitment and development and with staff restructuring. Occupational analysts study and write job descriptions and prepare occupational classification systems. Essential skills: digital data processing, labour legislation, job market offers, employment law, market analysis, human resource management, company policies, carry out job analysis, advise on personnel management, design job analysis tools, advise on efficiency improvements, write work-related reports, develop occupational classification systems, write job descriptions, report analysis results, present reports Optional skills: management consulting, organisational structure, human resources department processes, liaise with union officials, support managers, liaise with government officials, create training materials, develop training programmes, hire human resources, gather feedback from employees, interview people, liaise with industry experts, manage tests, maintain professional administration, administer appointments, identify necessary human resources, document interviews, profile people, train employees, liaise with managers",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014492753623188406
+      },
+      {
+        "point_id": "2ba05784-165b-5394-b92b-8c992cabb5fd",
+        "uri": "http://data.europa.eu/esco/occupation/d3edb8f8-3a06-47a0-8fb9-9b212c006aa2",
+        "title": "data analyst",
+        "chunk_index": 1,
+        "text": ", perform data mining, use databases, integrate ICT data, analyse big data, handle data samples, perform data cleansing, define data quality criteria, implement data quality processes, collect ICT data, manage data Optional skills: marketing analytics, web analytics, MDX, information architecture, social network analysis, XQuery, database, image recognition, SPARQL, statistical modeling techniques, research design, game theory, multidisciplinary research, healthcare analytics, LDAP, data storage, online analytical processing, cloud technologies, LINQ, Hadoop, N1QL, gather data for forensic purposes, use spreadsheets software, manage quantitative data, store digital data and systems, manage data collection systems, make data-driven decisions, deliver visual presentation of data, report analysis results, manage cloud data and storage, create data models",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014084507042253521
+      },
+      {
+        "point_id": "651fab98-4ee7-595d-8dc1-957e57fa634b",
+        "uri": "http://data.europa.eu/esco/occupation/a0f9903e-2ba5-4b9d-bb0a-a8646db15221",
+        "title": "extrusion machine operator",
+        "chunk_index": 0,
+        "text": "Occupation: extrusion machine operator Description: Extrusion machine operators set up, monitor and maintain machines which heat or melt raw materials, and pull or push the heated material through a shaped die to form it into a continuous profile with a preset cross section such as tubes, pipes and sheeting. They may also clean and maintain the equipment. Essential skills: extrusion processes, dies, quality standards, remove inadequate workpieces, troubleshoot, remove processed workpiece, monitor moving workpiece in a machine, perform test run, ensure equipment availability, monitor automated machines, supply machine, consult technical resources, set up the controller of a machine, replace die Optional skills: statistical process control, manufacturing of cutlery, quality and cycle time optimisation, ferrous metal processing, manufacturing of metal household articles, metal forming technologies, types of metal, manufacturing of metal assembly products, types of plastic, types of metal manufacturing processes, manufacturing of door furniture from metal, manufacturing of light metal packaging, manufacturing of weapons and ammunition, manufacturing of tools, manufacturing of steam generators, solve technical problems, work ergonomically, monitor",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014084507042253521
+      }
+    ],
+    "results": [
+      {
+        "point_id": "723c76f5-3e98-56d5-b160-0174b9046ae7",
+        "uri": "http://data.europa.eu/esco/occupation/1c5a45b9-440e-4726-b565-16a952abd341",
+        "title": "computer vision engineer",
+        "chunk_index": 0,
+        "text": "Occupation: computer vision engineer Description: Computer vision engineers research, design, develop, and train artificial intelligence algorithms and machine learning primitives that understand the content of digital images based on a large amount of data. They apply this understanding to solve different real-world problems such as security, autonomous driving, robotic manufacturing, digital image classification, medical image processing and diagnosis, etc. Essential skills: computer simulation, computer programming, machine learning, image recognition, data engineering, scientific computing, digital twin technology, statistics, integrated development environment software, digital image processing, Python (computer programming), principles of artificial intelligence, data science, normalise data, conduct literature research, utilise computer-aided software engineering tools, interpret current data, establish data processes, execute analytical mathematical calculations, apply statistical analysis techniques, perform dimensionality reduction, develop computer vision system, handle data samples, perform data cleansing, implement data quality processes, develop software prototype, use software libraries, manage data collection systems, deliver visual presentation of data, report analysis results, define technical requirements, develop data processing applications Optional skills: mathematical model",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014925373134328358,
+        "rerank_score": -0.4687438905239105
+      },
+      {
+        "point_id": "26be0c6f-8edc-5901-acb5-265ac2e24314",
+        "uri": "http://data.europa.eu/esco/occupation/258e46f9-0075-4a2e-adae-1ff0477e0f30",
+        "title": "data scientist",
+        "chunk_index": 0,
+        "text": "Occupation: data scientist Description: Data scientists find and interpret rich data sources, manage large amounts of data, merge data sources, ensure consistency of data-sets, and create visualisations to aid in understanding data. They build mathematical models using data, present and communicate data insights and findings to specialists and scientists in their team and if required, to a non-expert audience, and recommend ways to apply the data. Essential skills: mathematical modelling, data mining, visual presentation techniques, data engineering, quantitative analysis, data visualisation software, statistical modeling techniques, information extraction, scientific literature, statistics, information categorisation, resource description framework query language, query languages, online analytical processing, data ethics, data science, empirical analysis, data models, draft scientific or academic papers and technical documentation, normalise data, manage research data, use data processing techniques, interpret current data, interact professionally in research and professional environments, disseminate results to the scientific community, operate open source software, establish data processes, speak different languages, execute analytical mathematical calculations, evaluate",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.029910714285714284,
+        "rerank_score": -2.069711208343506
+      },
+      {
+        "point_id": "7b7f30f8-272f-5e8c-aec1-4079b99e6962",
+        "uri": "http://data.europa.eu/esco/occupation/6ce5f7e3-a534-4aa2-ab23-255408ddb53a",
+        "title": "IoT developer",
+        "chunk_index": 0,
+        "text": "Occupation: IoT developer Description: IoT developers analyse and gather data for interpreting the pattern and predicting the result. They use artificial intelligence for managing the tasks and autonomous decisions, employing machine learning algorithms to create smarter devices through data sensors. IoT developers create software for connecting objects to systems and devices, or for programming these objects to make them function on their own. Essential skills: digital data processing, machine learning, hardware testing methods, algorithms, task algorithmisation, computer science, ICT software specifications, ICT system programming, mechatronics, computer technology, principles of artificial intelligence, Internet of Things, use data processing techniques, perform dimensionality reduction, analyse big data, develop ICT workflow, utilise machine learning, design information system Optional skills: mobile device software frameworks, ICT architectural frameworks, perform online data analysis, establish data processes",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015873015873015872,
+        "rerank_score": -2.190643310546875
+      },
+      {
+        "point_id": "fe18fa52-c85b-5495-be88-fb16c9d2b033",
+        "uri": "http://data.europa.eu/esco/occupation/d2e63d7e-2605-4af1-bb7d-b1ed9ad08825",
+        "title": "statistical assistant",
+        "chunk_index": 0,
+        "text": "Occupation: statistical assistant Description: Statistical assistants collect data and use statistical formulas to execute statistical studies and create reports. They create charts, graphs and surveys. Essential skills: digital data processing, mathematics, quantitative analysis, statistics, statistical analysis system software, identify statistical patterns, gather data, perform data analysis, execute analytical mathematical calculations, apply statistical analysis techniques, apply scientific methods, conduct quantitative research, write work-related reports, write technical reports, process data Optional skills: algorithms, survey techniques, statistical modeling techniques, research design, data quality assessment, scientific research methodology, data science, produce statistical financial records, conduct financial surveys, use spreadsheets software, manage database, analyse big data, develop financial statistics reports, perform scientific research, conduct public surveys, perform clerical duties, carry out statistical forecasts, deliver visual presentation of data, revise questionnaires, assist scientific research, compile statistical data for insurance purposes, tabulate survey results, design questionnaires",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.028814262023217248,
+        "rerank_score": -2.212334632873535
+      },
+      {
+        "point_id": "f23d3fa2-dcdf-57e2-9a72-eda47384631b",
+        "uri": "http://data.europa.eu/esco/occupation/35553663-deab-4d9a-bf22-15c1625d28e8",
+        "title": "artificial intelligence engineer",
+        "chunk_index": 0,
+        "text": "Occupation: artificial intelligence engineer Description: Artificial intelligence engineer apply methods of artificial intelligence in engineering, robotics and computer science to design programs which simulate intelligence including thinking models, cognitive and knowledge-based systems, problem solving, and decision making. They also integrate structured knowledge into computer systems (ontologies, knowledge bases) in order to solve complex problems normally requiring a high level of human expertise or artificial intelligence methods. Essential skills: digital data processing, information structure, computer simulation, systems development life-cycle, information architecture, computer programming, data mining, visual presentation techniques, algorithms, artificial neural networks, information extraction, task algorithmisation, information categorisation, business process modelling, resource description framework query language, unstructured data, Python (computer programming), principles of artificial intelligence, data science, data models, creatively use digital technologies, use data processing techniques, design process, analyse big data, develop creative ideas, create data sets, analyse business requirements, develop statistical software, deliver visual presentation of data, apply ICT systems theory, define technical requirements Optional skills: Haskell, Erlang, SAS language, Agile",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.02964254577157803,
+        "rerank_score": -2.661531686782837
+      }
+    ],
+    "total_ms": 4814.37
+  },
+  {
+    "profile_id": "P08",
+    "expected_occupation": "ICT business analyst",
+    "expected_uri": "http://data.europa.eu/esco/occupation/fe0fa514-b48d-4a53-9757-a283c0baacf0",
+    "before_rank": 1,
+    "after_rank": 3,
+    "query": "I gather business requirements, communicate with stakeholders and translate business needs into technical specifications for information systems. Which occupation suits my experience?",
+    "mode": "chunk",
+    "dense_count": 20,
+    "bm25_count": 20,
+    "fusion_count": 20,
+    "before_reranking": [
+      {
+        "point_id": "c0631423-dd9b-523f-9050-3b3f9733b33a",
+        "uri": "http://data.europa.eu/esco/occupation/fe0fa514-b48d-4a53-9757-a283c0baacf0",
+        "title": "ICT business analyst",
+        "chunk_index": 0,
+        "text": "Occupation: ICT business analyst Description: ICT business analysts are in charge of analysing and designing an organisation's processes and systems, assessing the business model and its integration with technology. They also identify change needs, assess the impact of the change, capture and document requirements and then ensure that these requirements are delivered whilst supporting the business through the implementation process. Essential skills: business requirements techniques, digital systems, product usage risks analysis, business process modelling, legal requirements of ICT products, propose ICT solutions to business problems, identify customer requirements, translate requirements into visual design, apply change management, provide cost benefit analysis reports, analyse business processes, create business process models, analyse the context of an organisation, interact with users to gather requirements, analyse business requirements, identify legal requirements, define technical requirements, implement strategic planning Optional skills: systems development life-cycle, internal risk management policy, business intelligence, information architecture, innovation processes, visual presentation techniques, decision support systems, information extraction, organisational resilience, information categorisation, cloud technologies, business strategy concepts, unstructured data, business ICT systems, ICT market, design process, execute analytical mathematical calcula",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.03252247488101534
+      },
+      {
+        "point_id": "2a98eebe-6574-5064-9e98-4359f1b22b3b",
+        "uri": "http://data.europa.eu/esco/occupation/a520fba4-2a29-43a0-bfd5-43892306501d",
+        "title": "building information modelling consultant",
+        "chunk_index": 0,
+        "text": "Occupation: building information modelling consultant Description: Building information modelling consultants advice, guide and evaluate clients in building information modelling (BIM) business processes, as well as construction teams on performing BIM technologies. They manage the communication with staff and clients, implement strategies and BIM solutions for completing the deliverables, and draft documents such as flow charts, agendas and guides for best practices. Essential skills: business analysis, business processes, building information modelling, interpret business information, identify customer's needs, improve customer interaction, analyse business requirements, communicate with customer service department Optional skills: information architecture, project management principles, project management, business process modelling, business ICT systems, write technical reports, perform project management",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.02967032967032967
+      },
+      {
+        "point_id": "ea7e1218-0527-5236-a456-7f908cba5cc9",
+        "uri": "http://data.europa.eu/esco/occupation/4b3201cb-ffc5-4f61-9fc3-5c0f0038fa5f",
+        "title": "ICT business analysis manager",
+        "chunk_index": 0,
+        "text": "Occupation: ICT business analysis manager Description: ICT business analysis managers identify areas where information system changes are needed to support business plans and monitor the impact in terms of change management. They contribute to the general ICT functional requirements of the business organisation. ICT business analysis managers analyse business needs and translate them into ICT solutions. Essential skills: digital communication and collaboration, decision support systems, ICT security legislation, business process modelling, business processes, propose ICT solutions to business problems, define technology strategy, perform business analysis, provide ICT consulting advice, design process, manage ICT project, provide cost benefit analysis reports, create business process models, improve business processes, track key performance indicators, write work-related reports, coordinate technological activities, analyse business requirements, define technical requirements, make strategic business decisions, implement strategic planning Optional skills: systems development life-cycle, data mining, visual presentation techniques, information extraction, business strategy concepts, ICT market, communicate with customers, execute analytical mathematical calculations, apply change management, use different communication channels, perform data mining, provide training on technological business developments, identify processes for re-engineering, adapt to changing situations",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.029030910609857977
+      },
+      {
+        "point_id": "d45c8816-9ea2-5c8a-83a6-9892200fe458",
+        "uri": "http://data.europa.eu/esco/occupation/a6a0b60f-08da-4faa-bf54-942987efb471",
+        "title": "ICT system analyst",
+        "chunk_index": 0,
+        "text": "Occupation: ICT system analyst Description: ICT system analysts specify the system needs to meet the end user requirements. They analyse system functions in order to define their goals or purposes and to discover operations and procedures for accomplishing them most efficiently. They also design new IT solutions to improve business efficiency and productivity, produce outline designs and estimate costs of new systems, specify the operations the system will perform, and the way data will be viewed by the end user. They present the design to the users and work closely with the users to implement the solution. Essential skills: systems development life-cycle, software architecture models, digital systems, decision support systems, attack vectors, levels of software testing, online analytical processing, ICT infrastructure, ICT performance analysis methods, software metrics, use an application-specific interface, identify customer requirements, apply statistical analysis techniques, analyse business processes, analyse ICT system, manage ICT legacy implication, monitor system performance, analyse the context of an organisation, solve ICT system problems, design information system, interact with users to gather requirements, manage system testing, execute feasibility study, define technical requirements, identify ICT system we",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.027583600982429624
+      },
+      {
+        "point_id": "d040298e-5973-55e7-9322-0591c193972e",
+        "uri": "http://data.europa.eu/esco/occupation/98c3d8f8-e3a8-49b7-9e58-236f25a6f6a0",
+        "title": "system configurator",
+        "chunk_index": 0,
+        "text": "Occupation: system configurator Description: System configurators tailor a computer system to the organisation's and users' needs. They adjust the base system and software to the needs of the customer. They perform configuration activities and scripting and ensure communication with users. Essential skills: cognitive psychology, digital systems, ICT system user requirements, ICT infrastructure, ICT performance analysis methods, migrate existing data, develop automated migration methods, collect customer feedback on applications, interpret technical texts, create flowchart diagram, configure ICT system, define technical requirements, replicate customer software issues, integrate system components, analyse software specifications Optional skills: Haskell, Erlang, SAS language, Ruby (computer programming), Common Lisp, Lisp, Visual Basic, Java (computer programming), information architecture, solution deployment, embedded systems, computer programming, interfacing techniques, software architecture models, Prolog (computer programming), OpenEdge Advanced Business Language, JavaScript, DB2, Microsoft Access, ICT accessibility standards, Perl, Smalltalk (computer programming), PHP, OpenEdge Database, Assembly (computer programming), software components libraries, ObjectStore, hardware",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.01639344262295082
+      },
+      {
+        "point_id": "5ada997b-f404-5db7-a49c-f4544647b996",
+        "uri": "http://data.europa.eu/esco/occupation/04ba4d6c-957d-417f-bf63-5b9e015a9f86",
+        "title": "software analyst",
+        "chunk_index": 0,
+        "text": "Occupation: software analyst Description: Software analysts elicit and prioritise user requirements, produce and document software specifications, test their application, and review them during software development. They act as the interface between the software users and the software development team. Essential skills: business requirements techniques, software architecture models, software design methodologies, legal requirements of ICT products, ICT system user requirements, data models, translate requirements into visual design, create software design, analyse business processes, develop documentation in accordance with legal requirements, develop software prototype, manage ICT legacy implication, design information system, interact with users to gather requirements, execute feasibility study, define technical requirements, identify ICT user needs, define software architecture, create data models Optional skills: Haskell, incremental development, Erlang, SAS language, Agile project management, Ruby (computer programming), Common Lisp, Lisp, Visual Basic, Java (computer programming), MDX, computer programming, Prolog (computer programming), OpenEdge Advanced Business Language, iterative development, JavaScript, XQuery, Perl, Smalltalk (computer programming), PHP, inter-organisational middleware system, Assembly",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.016129032258064516
+      },
+      {
+        "point_id": "e4641d0c-a29e-5939-a2f4-03fd3407f5ca",
+        "uri": "http://data.europa.eu/esco/occupation/3765a20d-5160-4e8f-82f1-ad7872b9db24",
+        "title": "information manager",
+        "chunk_index": 0,
+        "text": "Occupation: information manager Description: Information managers are responsible for systems that provide information to people. They assure access to the information in different work environments (public or private) based on theoretical principles and hands-on capabilities in storing, retrieving and communicating information. Essential skills: data quality assessment, copyright legislation, corporate sustainability, manage digital libraries, develop information standards, evaluate project plans, perform data mining, develop solutions to information issues, recruit employees, assess informational needs, manage information access aids, develop organisational information goals, perform customer management, cooperate to resolve information issues, manage data, design information system, analyse information systems Optional skills: knowledge base, organisational learning, manage schedule of tasks, maintain information network hardware, manage budgets, digitise documents, use software for data preservation, use databases, analyse big data, supervise daily information operations, manage digital documents, manage digital identity, create semantic trees",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015873015873015872
+      },
+      {
+        "point_id": "1b33dfea-1b29-57f6-8824-f7a267342aa3",
+        "uri": "http://data.europa.eu/esco/occupation/bd9d395a-d587-45c6-8d72-ceef226df9e1",
+        "title": "ICT system integration consultant",
+        "chunk_index": 0,
+        "text": "Occupation: ICT system integration consultant Description: ICT system integration consultants advise on bringing together different systems to interoperate within an organisation for enabling data sharing and reducing redundancy. Essential skills: systems development life-cycle, digital systems, inter-organisational middleware system, web services, manage changes in ICT system, keep up with the latest information systems solutions, provide ICT consulting advice, optimise choice of ICT solution, integrate ICT data, use scripting programming, monitor technology trends, attend to ICT systems quality, apply information security policies, monitor system performance, consult with business clients, define integration strategy, ensure proper document management, define technical requirements, integrate system components, verify formal ICT specifications Optional skills: Agile project management, information architecture, model based system engineering, software components libraries, hardware components, ICT system integration, engineering processes, trading software, ICT project management methodologies, Process-based management, lean project management, software components suppliers, hardware components suppliers, ICT performance analysis methods, system design, use an application-specific interface, manage ICT change request process, plan migration to cloud, implement ICT security policies, provide connected car solutions,",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015625
+      },
+      {
+        "point_id": "822195ec-11af-57d9-bd04-161f385f4c8e",
+        "uri": "http://data.europa.eu/esco/occupation/96e20037-0a25-4bf6-a25e-808d1605d890",
+        "title": "user interface designer",
+        "chunk_index": 0,
+        "text": "Occupation: user interface designer Description: User interface designers are in charge of designing user interfaces for applications and systems. They perform layout, graphics and dialogues design activities as well as adaptation activities. Essential skills: software UI design patterns, interactive media, ICT accessibility standards, web programming, task algorithmisation, ICT security legislation, World Wide Web Consortium standards, human-computer interaction, graphics editor software, application usability, software interaction design, use an application-specific interface, use markup languages, design process, translate requirements into visual design, assess users' interaction with ICT applications, use methodologies for user-centered design, develop creative ideas, interact with users to gather requirements, test system accessibility for users with special needs, manage online content, define technical requirements, build business relationships, design graphics, create website wireframe, draw design sketches, design user interface Optional skills: Haskell, incremental development, Erlang, SAS language, Agile project management, Ruby (computer programming), Common Lisp, Lisp, Visual Basic, Adobe Photoshop, screen reader, Java (computer programming), computer programming,",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015625
+      },
+      {
+        "point_id": "6100feab-1c13-5e6e-888b-fb53c7e6cf0e",
+        "uri": "http://data.europa.eu/esco/occupation/2bef94db-0088-4507-982a-2ca717529adb",
+        "title": "enterprise architect",
+        "chunk_index": 0,
+        "text": "Occupation: enterprise architect Description: Enterprise architects balance technological opportunities with business requirements. They also maintain a holistic view of the organisation's strategy, processes, information and ICT assets and link the business mission, strategy and processes to the ICT strategy. Essential skills: information architecture, object-oriented modelling, legal requirements of ICT products, business strategy concepts, ICT project management methodologies, ICT architectural frameworks, ICT market, use an application-specific interface, implement ICT security policies, perform risk analysis, keep up with the latest information systems solutions, provide ICT consulting advice, align software with system architectures, manage ICT data architecture, identify processes for re-engineering, collect customer feedback on applications, apply ICT system usage policies, design information system, review development process of an organisation, perform project management, execute feasibility study, design enterprise architecture, define software architecture Optional skills: Haskell, incremental development, Erlang, SAS language, Agile project management, Ruby (computer programming), Common Lisp, Lisp, business requirements techniques, Visual Basic, Java (computer programming), computer programming, software architecture models, Prolog (computer programmi",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015384615384615385
+      },
+      {
+        "point_id": "5c87a687-463b-56a0-a463-cad55b741a8b",
+        "uri": "http://data.europa.eu/esco/occupation/a74f6c51-37e5-423e-aa5b-044e98663027",
+        "title": "web content manager",
+        "chunk_index": 0,
+        "text": "Occupation: web content manager Description: Web content managers curate or create content for a web platform according to the long-term strategic goals, policies and procedures for an organisation's online content or their customers. They control and monitor compliance with standards, legal and privacy regulations and ensure web optimisation. They are also responsible for integrating the work of writers and designers to produce a final layout which is compatible with corporate standards. Essential skills: digital content creation, information structure, keywords in digital content, web programming, web based collaborative platforms, legal requirements of ICT products, style sheet languages, authoring software, publishing strategy, content development processes, use markup languages, translate requirement concepts into content, identify customer requirements, ensure compliance with legal requirements, conduct content quality assurance, translate requirements into visual design, apply tools for content development, comply with legal regulations, ensure compliance with company regulations, use content management system software, develop digital content, utilise content types, interpret technical texts, compile content, manage content metadata, conduct search engine optimisation, identify legal requirements, provide written content, integrate content into output media, manage online content, create",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015151515151515152
+      },
+      {
+        "point_id": "af739509-4169-5d72-b5b2-37e671920feb",
+        "uri": "http://data.europa.eu/esco/occupation/456ed487-02f2-45c9-9213-d0fd8e9a069d",
+        "title": "ICT application configurator",
+        "chunk_index": 0,
+        "text": "Occupation: ICT application configurator Description: ICT application configurators identify, record, and maintain user-specific application configurations based upon user requirements and business rules. They configure generic software systems in order to create a specific version applied to an organisation's context. These configurations range from adjusting basic parameters through the creation of business rules and roles in the ICT system to developing specific modules (including the configuration of Commercial off-the-shelf systems (COTS). They also document configurations, perform configuration updates, and ensure the configurations are correctly implemented in the application. Essential skills: computer programming, digital systems, ICT debugging tools, integrated development environment software, tools for software configuration management, migrate existing data, develop automated migration methods, debug software, use software design patterns, integrate ICT data, collect customer feedback on applications, develop software prototype, use software libraries, create flowchart diagram, build business relationships, integrate system components, analyse software specifications Optional skills: Haskell, KDevelop, SAS language, Ruby (computer programming), Common Lisp, Apache Maven, Lisp, Visual Basic, Java (computer programming",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015151515151515152
+      },
+      {
+        "point_id": "48f8954e-c2ea-5cdf-a438-8cdf3b15876f",
+        "uri": "http://data.europa.eu/esco/occupation/719f101d-1866-49d3-8d5c-2256f606a8b9",
+        "title": "digital transformation manager",
+        "chunk_index": 0,
+        "text": "Occupation: digital transformation manager Description: Digital transformation managers are professionals in charge of the acceleration of digital transformation in business by implementing emerging trends initiatives and digital strategies within an organisation. Additionally, they identify new business opportunities in sustainable innovation and develop guidance regarding to ensure a qualified transition to the latest technology business processes. Digital transformation managers translate business requirements and market needs into digital solutions. Essential skills: innovation processes, strategic planning, business strategy concepts, ICT market, keep up with digital transformation of industrial processes, propose ICT solutions to business problems, manage ICT change request process, conduct impact evaluation of ICT processes on business, manage changes in ICT system, collaborate through digital technologies, develop solutions to information issues, implement strategic management, identify process improvements, lead technology development of an organisation, develop company strategies, provide improvement strategies, deal with changing operational demand, develop business plans, align efforts towards business development, adapt to changes in technological development plans, seek innovation in current practices Optional skills: digital marketing techniques, information governance compliance, combine business technology with user experience, apply change management, use content management system software, develop digital content, implement operational business plans",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014925373134328358
+      },
+      {
+        "point_id": "67bc6ca6-aaca-564b-867e-55558de437c7",
+        "uri": "http://data.europa.eu/esco/occupation/ef5b17a5-3ca8-4965-bd3d-61c4aca490d1",
+        "title": "document management officer",
+        "chunk_index": 1,
+        "text": "analyse business processes, set up documentation control system, apply information security policies, manage content metadata, manage data collection systems, organise information, ensure proper document management, manage archive, apply organisational techniques, oversee record management, train employees, facilitate access to information, manage digital archives Optional skills: Adobe Illustrator, Microsoft Access, ICT security standards, ICT project management, procurement legislation, data storage, organisational structure, principles of artificial intelligence, public law, propose ICT solutions to business problems, develop information standards, ensure compliance with legal requirements, perform data analysis, digitise documents, ensure information transparency, file documents, communicate with stakeholders, provide cost benefit analysis reports, draft tender documentation, operate relational database management system, utilise machine learning, monitor legislation developments, evaluate tender, assess reliability of data, maintain computer hardware, appraise historical documents",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014705882352941176
+      },
+      {
+        "point_id": "7752f056-9367-58b1-8620-ef6002b19e8c",
+        "uri": "http://data.europa.eu/esco/occupation/8cb59bc4-1f39-477e-beea-effed12d186c",
+        "title": "technical communicator",
+        "chunk_index": 0,
+        "text": "Occupation: technical communicator Description: Technical communicators prepare clear, concise and professional communication from product developers to users of the products such as online help, user manuals, white papers, specifications and industrial videos. For this, they analyse products, legal requirements, markets, customers and users. They develop information and media concepts, standards, structures and software tool support. They plan the content creation and media production processes, develop written, graphical, video or other contents, generate media output, release their information products and receive feedback from the users. Essential skills: cognitive psychology, documentation types, visual presentation techniques, knowledge base, product usage risks analysis, ICT software specifications, multimedia systems, publishing strategy, content development processes, gather technical information, provide technical documentation, conduct content quality assurance, apply tools for content development, develop documentation in accordance with legal requirements, interpret technical texts, compile content, manage content metadata, provide written content, integrate content into output media, structure information, apply ICT terminology, develop ICT safety information, identify ICT user needs, manage information sources Optional skills: Sass, LESS, ICT help platforms, ",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014705882352941176
+      },
+      {
+        "point_id": "18ae95a9-bad1-5eb9-b7cb-712aef359eba",
+        "uri": "http://data.europa.eu/esco/occupation/a9c30651-ccbc-4a80-900c-7880615cdf6e",
+        "title": "instructional designer",
+        "chunk_index": 0,
+        "text": "Occupation: instructional designer Description: Instructional designers develop instructional material for training courses using multimedia technology and authoring tools. They aim to create instructional experiences which make the acquisition of knowledge and skills more efficient, effective, and appealing. Essential skills: cognitive psychology, web programming, learning management systems, task algorithmisation, instructional strategies, authoring software, publishing strategy, standards for web-based e-learning, instructional design models, content development processes, use markup languages, translate requirement concepts into content, identify customer requirements, teach writing, conduct content quality assurance, translate requirements into visual design, apply tools for content development, create SCORM packages, design web-based courses, use different communication channels, identify training needs, apply teaching strategies, use scripting programming, develop digital content, proofread text, conduct educational activities, compile content, manage content metadata, manage content development projects, develop digital educational materials, provide written content, create script for artistic production, structure information, apply ICT terminology, identify ICT user needs, provide multimedia content Optional skills: Absorb (learning management systems",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014492753623188406
+      },
+      {
+        "point_id": "f714893d-bf9a-5782-acf3-ac98e8061df1",
+        "uri": "http://data.europa.eu/esco/occupation/07e60525-1aad-4099-aaf3-2c7014c92212",
+        "title": "integration engineer",
+        "chunk_index": 0,
+        "text": "Occupation: integration engineer Description: Integration engineers develop and implement solutions which coordinate applications across the enterprise or its units and departments. They evaluate existing components or systems to determine integration requirements and ensure that the final solutions meet organisational needs. They reuse components when possible and assist management in taking decisions. They perform ICT system integration troubleshooting. Essential skills: procurement of ICT network equipment, inter-organisational middleware system, ICT communications protocols, ICT project management methodologies, ICT system user requirements, software components suppliers, hardware components suppliers, apply company policies, define technology strategy, use scripting programming, deploy ICT systems, apply ICT system usage policies, define integration strategy, analyse network bandwidth requirements, integrate system components, design component interfaces Optional skills: Haskell, SAS language, systems development life-cycle, Agile project management, Ruby (computer programming), Common Lisp, Apache Maven, ICT network routing, Lisp, information security strategy, Visual Basic, Java (computer programming), information architecture, solution deployment, embedded systems, computer programming, interfacing techniques, model based system engineering, Pro",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014492753623188406
+      },
+      {
+        "point_id": "163f903f-e891-52eb-be1b-47e51b16f304",
+        "uri": "http://data.europa.eu/esco/occupation/faed411a-f920-4100-86a8-b877928b429c",
+        "title": "user experience analyst",
+        "chunk_index": 0,
+        "text": "Occupation: user experience analyst Description: User experience analysts assess client interaction and experience and analyse users' behaviours, attitudes, and emotions about the usage of a particular product, system or service. They make proposals for the improvement of the interface and usability of products, systems or services. In doing so, they take into consideration the practical, experiential, affective, meaningful and valuable aspects of human–computer interaction and product ownership, as well as the person's perceptions of system aspects such as utility, ease of use and efficiency, and user experience dynamics. Essential skills: interactive media, cognitive psychology, behavioural science, human-computer interaction, application usability, software interaction design, use experience map, create prototype of user experience solutions, assess users' interaction with ICT applications, conduct quantitative research, conduct research interview, measure customer feedback, execute ICT user research activities, analyse business requirements, measure software usability, report analysis results, define technical requirements, conduct qualitative research Optional skills: Agile project management, web analytics, MDX, visual presentation techniques, XQuery, SPARQL, World Wide Web Consortium standards, resource description framework",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014285714285714285
+      },
+      {
+        "point_id": "7c435f26-57aa-558e-8437-40722ddedbb7",
+        "uri": "http://data.europa.eu/esco/occupation/3d190639-90f8-4402-b1b3-a104a17e0d67",
+        "title": "database integrator",
+        "chunk_index": 0,
+        "text": "Occupation: database integrator Description: Database integrators perform integration among different databases. They maintain integration and ensure interoperability. Essential skills: information structure, domain name service, ICT debugging tools, resource description framework query language, query languages, data extraction, transformation and loading tools, database management systems, use interface description language, integrate ICT data, perform data cleansing, create database diagrams, manage ICT legacy implication, balance database resources, manage data, execute integration testing, verify formal ICT specifications, implement data warehousing techniques Optional skills: systems development life-cycle, Informatica PowerCenter, business intelligence, IBM InfoSphere DataStage, MDX, Oracle Warehouse Builder, digital systems, Oracle Data Integrator, DB2, Microsoft Access, XQuery, Pentaho Data Integration, database, OpenEdge Database, inter-organisational middleware system, data engineering, ObjectStore, MySQL, TripleStore, SPARQL, SQL Server Integration Services, IBM InfoSphere Information Server, IBM Informix, QlikView Expressor, LDAP, PostgreSQL, Filemaker (database management systems), SQL Server,",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014084507042253521
+      },
+      {
+        "point_id": "8d25e7f0-8d28-58dc-a752-559e4e54daf1",
+        "uri": "http://data.europa.eu/esco/occupation/6c999fc7-c6b7-4ef3-a4b9-af124a1783a2",
+        "title": "office clerk",
+        "chunk_index": 0,
+        "text": "Occupation: office clerk Description: Office clerks are responsible for performing clerical and administrative duties in an office setting and support of business operations within a department. They assist all the administrative staff, secretaries, and assistants by sorting mail, filing forms and documents, answering phones, greeting clients and scheduling meetings. Essential skills: information confidentiality, company policies, communicate with customers, use spreadsheets software, disseminate internal communications, file documents, organise business documents, use different communication channels, align content with form, process commissioned instructions, use office systems, handle mail, perform office routine activities, disseminate messages to people, fill out forms, prepare correspondence for customers, apply grammar and spelling rules, maintain correspondence records, manage digital documents, organise facilities for office personnel, route correspondence to business departments, communicate by telephone, deliver correspondence, handle delivered packages, process data, facilitate access to information Optional skills: transcription methods, accounting techniques, document sharing procedures, translate keywords into full texts, respect data protection principles, maintain inventory of office supplies",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014084507042253521
+      }
+    ],
+    "results": [
+      {
+        "point_id": "5ada997b-f404-5db7-a49c-f4544647b996",
+        "uri": "http://data.europa.eu/esco/occupation/04ba4d6c-957d-417f-bf63-5b9e015a9f86",
+        "title": "software analyst",
+        "chunk_index": 0,
+        "text": "Occupation: software analyst Description: Software analysts elicit and prioritise user requirements, produce and document software specifications, test their application, and review them during software development. They act as the interface between the software users and the software development team. Essential skills: business requirements techniques, software architecture models, software design methodologies, legal requirements of ICT products, ICT system user requirements, data models, translate requirements into visual design, create software design, analyse business processes, develop documentation in accordance with legal requirements, develop software prototype, manage ICT legacy implication, design information system, interact with users to gather requirements, execute feasibility study, define technical requirements, identify ICT user needs, define software architecture, create data models Optional skills: Haskell, incremental development, Erlang, SAS language, Agile project management, Ruby (computer programming), Common Lisp, Lisp, Visual Basic, Java (computer programming), MDX, computer programming, Prolog (computer programming), OpenEdge Advanced Business Language, iterative development, JavaScript, XQuery, Perl, Smalltalk (computer programming), PHP, inter-organisational middleware system, Assembly",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.016129032258064516,
+        "rerank_score": 3.616729736328125
+      },
+      {
+        "point_id": "ea7e1218-0527-5236-a456-7f908cba5cc9",
+        "uri": "http://data.europa.eu/esco/occupation/4b3201cb-ffc5-4f61-9fc3-5c0f0038fa5f",
+        "title": "ICT business analysis manager",
+        "chunk_index": 0,
+        "text": "Occupation: ICT business analysis manager Description: ICT business analysis managers identify areas where information system changes are needed to support business plans and monitor the impact in terms of change management. They contribute to the general ICT functional requirements of the business organisation. ICT business analysis managers analyse business needs and translate them into ICT solutions. Essential skills: digital communication and collaboration, decision support systems, ICT security legislation, business process modelling, business processes, propose ICT solutions to business problems, define technology strategy, perform business analysis, provide ICT consulting advice, design process, manage ICT project, provide cost benefit analysis reports, create business process models, improve business processes, track key performance indicators, write work-related reports, coordinate technological activities, analyse business requirements, define technical requirements, make strategic business decisions, implement strategic planning Optional skills: systems development life-cycle, data mining, visual presentation techniques, information extraction, business strategy concepts, ICT market, communicate with customers, execute analytical mathematical calculations, apply change management, use different communication channels, perform data mining, provide training on technological business developments, identify processes for re-engineering, adapt to changing situations",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.029030910609857977,
+        "rerank_score": 3.580371379852295
+      },
+      {
+        "point_id": "c0631423-dd9b-523f-9050-3b3f9733b33a",
+        "uri": "http://data.europa.eu/esco/occupation/fe0fa514-b48d-4a53-9757-a283c0baacf0",
+        "title": "ICT business analyst",
+        "chunk_index": 0,
+        "text": "Occupation: ICT business analyst Description: ICT business analysts are in charge of analysing and designing an organisation's processes and systems, assessing the business model and its integration with technology. They also identify change needs, assess the impact of the change, capture and document requirements and then ensure that these requirements are delivered whilst supporting the business through the implementation process. Essential skills: business requirements techniques, digital systems, product usage risks analysis, business process modelling, legal requirements of ICT products, propose ICT solutions to business problems, identify customer requirements, translate requirements into visual design, apply change management, provide cost benefit analysis reports, analyse business processes, create business process models, analyse the context of an organisation, interact with users to gather requirements, analyse business requirements, identify legal requirements, define technical requirements, implement strategic planning Optional skills: systems development life-cycle, internal risk management policy, business intelligence, information architecture, innovation processes, visual presentation techniques, decision support systems, information extraction, organisational resilience, information categorisation, cloud technologies, business strategy concepts, unstructured data, business ICT systems, ICT market, design process, execute analytical mathematical calcula",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.03252247488101534,
+        "rerank_score": 3.381523370742798
+      },
+      {
+        "point_id": "7752f056-9367-58b1-8620-ef6002b19e8c",
+        "uri": "http://data.europa.eu/esco/occupation/8cb59bc4-1f39-477e-beea-effed12d186c",
+        "title": "technical communicator",
+        "chunk_index": 0,
+        "text": "Occupation: technical communicator Description: Technical communicators prepare clear, concise and professional communication from product developers to users of the products such as online help, user manuals, white papers, specifications and industrial videos. For this, they analyse products, legal requirements, markets, customers and users. They develop information and media concepts, standards, structures and software tool support. They plan the content creation and media production processes, develop written, graphical, video or other contents, generate media output, release their information products and receive feedback from the users. Essential skills: cognitive psychology, documentation types, visual presentation techniques, knowledge base, product usage risks analysis, ICT software specifications, multimedia systems, publishing strategy, content development processes, gather technical information, provide technical documentation, conduct content quality assurance, apply tools for content development, develop documentation in accordance with legal requirements, interpret technical texts, compile content, manage content metadata, provide written content, integrate content into output media, structure information, apply ICT terminology, develop ICT safety information, identify ICT user needs, manage information sources Optional skills: Sass, LESS, ICT help platforms, ",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.014705882352941176,
+        "rerank_score": 1.4051258563995361
+      },
+      {
+        "point_id": "6100feab-1c13-5e6e-888b-fb53c7e6cf0e",
+        "uri": "http://data.europa.eu/esco/occupation/2bef94db-0088-4507-982a-2ca717529adb",
+        "title": "enterprise architect",
+        "chunk_index": 0,
+        "text": "Occupation: enterprise architect Description: Enterprise architects balance technological opportunities with business requirements. They also maintain a holistic view of the organisation's strategy, processes, information and ICT assets and link the business mission, strategy and processes to the ICT strategy. Essential skills: information architecture, object-oriented modelling, legal requirements of ICT products, business strategy concepts, ICT project management methodologies, ICT architectural frameworks, ICT market, use an application-specific interface, implement ICT security policies, perform risk analysis, keep up with the latest information systems solutions, provide ICT consulting advice, align software with system architectures, manage ICT data architecture, identify processes for re-engineering, collect customer feedback on applications, apply ICT system usage policies, design information system, review development process of an organisation, perform project management, execute feasibility study, design enterprise architecture, define software architecture Optional skills: Haskell, incremental development, Erlang, SAS language, Agile project management, Ruby (computer programming), Common Lisp, Lisp, business requirements techniques, Visual Basic, Java (computer programming), computer programming, software architecture models, Prolog (computer programmi",
+        "source": "ESCO v1.2.1",
+        "rrf_score": 0.015384615384615385,
+        "rerank_score": 1.1744410991668701
+      }
+    ],
+    "total_ms": 4172.98
+  }
+]

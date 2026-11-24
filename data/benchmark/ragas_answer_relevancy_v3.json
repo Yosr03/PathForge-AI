@@ -1,0 +1,34 @@
+{
+  "project": "PathForge AI",
+  "metric": "answer_relevancy",
+  "prompt_version": "v3",
+  "judge": "gemma2:2b",
+  "embeddings": "BAAI/bge-m3",
+  "profiles": 3,
+  "results": [
+    {
+      "profile_id": "P01",
+      "score_v1": 0.6190659282502294,
+      "score_v3": 0.6343754855041873,
+      "delta": 0.015309557253957884
+    },
+    {
+      "profile_id": "P06",
+      "score_v1": 0.5590340251351801,
+      "score_v3": 0.584005257448491,
+      "delta": 0.024971232313310887
+    },
+    {
+      "profile_id": "P13",
+      "score_v1": 0.665956445992293,
+      "score_v3": 0.5838652323274324,
+      "delta": -0.08209121366486061
+    }
+  ],
+  "mean_v1": 0.6146854664592342,
+  "mean_v3": 0.6007486584267036,
+  "delta": -0.013936808032530612,
+  "target": 0.8,
+  "target_reached": false,
+  "evaluation_seconds": 143.76
+}
